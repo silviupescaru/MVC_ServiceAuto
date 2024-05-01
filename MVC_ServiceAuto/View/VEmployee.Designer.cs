@@ -241,7 +241,7 @@
             comboBoxCarFilter.Name = "comboBoxCarFilter";
             comboBoxCarFilter.Size = new Size(151, 24);
             comboBoxCarFilter.TabIndex = 17;
-            comboBoxCarFilter.SelectedIndexChanged += comboBoxCarFilter_SelectedIndexChanged;
+            //comboBoxCarFilter.SelectedIndexChanged += comboBoxCarFilter_SelectedIndexChanged;
             // 
             // comboBoxFilterBy
             // 
@@ -252,7 +252,7 @@
             comboBoxFilterBy.Name = "comboBoxFilterBy";
             comboBoxFilterBy.Size = new Size(151, 24);
             comboBoxFilterBy.TabIndex = 18;
-            comboBoxFilterBy.SelectedIndexChanged += comboBoxFilterBy_SelectedIndexChanged;
+            //comboBoxFilterBy.SelectedIndexChanged += comboBoxFilterBy_SelectedIndexChanged;
             // 
             // textBoxSearchBar
             // 

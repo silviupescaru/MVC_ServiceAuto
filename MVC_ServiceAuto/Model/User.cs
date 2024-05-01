@@ -2,7 +2,7 @@ namespace MVC_ServiceAuto.Model
 {
 
 
-    public class User
+    public abstract class User
     {
         protected uint userID;
         protected string username;

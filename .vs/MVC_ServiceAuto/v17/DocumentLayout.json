@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|e:\\facultate\\iii\\ps\\mvc_serviceauto\\mvc_serviceauto\\controller\\controllervadministrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\controller\\controllervadministrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|e:\\facultate\\iii\\ps\\mvc_serviceauto\\mvc_serviceauto\\controller\\controllervemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\controller\\controllervemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|e:\\facultate\\iii\\ps\\mvc_serviceauto\\mvc_serviceauto\\controller\\controllervmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\controller\\controllervmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|e:\\facultate\\iii\\ps\\mvc_serviceauto\\mvc_serviceauto\\controller\\controllervlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\controller\\controllervlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|e:\\facultate\\iii\\ps\\mvc_serviceauto\\mvc_serviceauto\\view\\vadministrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\view\\vadministrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|e:\\facultate\\iii\\ps\\mvc_serviceauto\\mvc_serviceauto\\view\\vmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\view\\vmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ControllerVLogin.cs",
-              "DocumentMoniker": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVLogin.cs",
-              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Controller\\ControllerVLogin.cs",
-              "ToolTip": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVLogin.cs",
-              "RelativeToolTip": "MVC_ServiceAuto\\Controller\\ControllerVLogin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T11:00:22.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ControllerVManager.cs",
-              "DocumentMoniker": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
-              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
-              "ToolTip": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
-              "RelativeToolTip": "MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T11:00:12.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ControllerVEmployee.cs",
-              "DocumentMoniker": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
-              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
-              "ToolTip": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
-              "RelativeToolTip": "MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T11:00:02.861Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ControllerVAdministrator.cs",
-              "DocumentMoniker": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVAdministrator.cs",
-              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Controller\\ControllerVAdministrator.cs",
-              "ToolTip": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVAdministrator.cs",
-              "RelativeToolTip": "MVC_ServiceAuto\\Controller\\ControllerVAdministrator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Title": "VManager.cs [Design]",
+              "DocumentMoniker": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VManager.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\View\\VManager.cs",
+              "ToolTip": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VManager.cs [Design]",
+              "RelativeToolTip": "MVC_ServiceAuto\\View\\VManager.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T10:59:52.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VAdministrator.cs",
-              "DocumentMoniker": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VAdministrator.cs",
-              "RelativeDocumentMoniker": "MVC_ServiceAuto\\View\\VAdministrator.cs",
-              "ToolTip": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VAdministrator.cs",
-              "RelativeToolTip": "MVC_ServiceAuto\\View\\VAdministrator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T10:56:48.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T12:38:32.777Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
