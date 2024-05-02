@@ -19,7 +19,8 @@ namespace MVC_ServiceAuto.Model.Repository
         public bool AddUser(User user)
         {
             string commandSQL = "insert into [User] values('";
-            commandSQL += user.Username + "','" + user.Password + "','" + user.Role + "')";
+            commandSQL += user.Username + "','" + user.Password + "','" + user.Role;
+            commandSQL += "','" + user.Language + "');";
             return this.repository.CommandSQL(commandSQL);
         }
 
@@ -53,6 +54,20 @@ namespace MVC_ServiceAuto.Model.Repository
             return "";
         }
 
+        public string GetLanguage(string username, string password)
+        {
+            string commandSQL = "SELECT * FROM [User] WHERE username = '";
+            commandSQL += username + "' AND password = '" + password + "'";
+            DataTable userTable = this.repository.GetTable(commandSQL);
+
+            if(userTable != null || userTable.Rows.Count != 0)
+            {
+                DataRow row = userTable.Rows[0];
+                return row["language"].ToString();
+            }
+
+            return "";
+        }
 
         public bool DeleteUser(uint userID)
         {
@@ -64,7 +79,7 @@ namespace MVC_ServiceAuto.Model.Repository
         {
             string commandSQL = "update [User] set [username] = '";
             commandSQL += user.Username + "', [password] = '" + user.Password;
-            commandSQL += "', [role] = '" + user.Role;
+            commandSQL += "', [role] = '" + user.Role + "', [language] = '" + user.Language;
             commandSQL += "' where [userID] = '" + user.UserID + "'";
             return this.repository.CommandSQL(commandSQL);
         }
@@ -159,7 +174,7 @@ namespace MVC_ServiceAuto.Model.Repository
         private User convertToUser(DataRow dataRow)
         {
             int id = (int)dataRow["userID"];
-            return new User((uint)id, (string)dataRow["username"], (string)dataRow["password"], (string)dataRow["role"]);
+            return new User((uint)id, (string)dataRow["username"], (string)dataRow["password"], (string)dataRow["role"], (string)dataRow["language"]);
         }
 
     }

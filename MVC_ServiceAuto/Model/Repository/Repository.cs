@@ -13,7 +13,7 @@ namespace MVC_ServiceAuto.Model.Repository
 
         private Repository()
         {
-            string s = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ServiceAutoMVP_DB;Integrated Security=True;";
+            string s = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ServiceAutoMVC_DB;Integrated Security=True;";
             //s += "";
             this.connection = new SqlConnection(s);
         }

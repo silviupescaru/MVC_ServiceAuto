@@ -2,12 +2,13 @@ namespace MVC_ServiceAuto.Model
 {
 
 
-    public abstract class User
+    public class User
     {
         protected uint userID;
         protected string username;
         protected string password;
         protected string role;
+        protected string language;
 
         public User()
         {
@@ -15,14 +16,16 @@ namespace MVC_ServiceAuto.Model
             this.username = "mike";
             this.password = "nebunu";
             this.role = "Administrator";
+            this.language = "English";
         }
 
-        public User(uint userID, string username, string password, string role)
+        public User(uint userID, string username, string password, string role, string language)
         {
             this.userID = userID;
             this.username = username;
             this.password = password;
             this.role = role;
+            this.language = language;
         }
 
         public User(User user)
@@ -31,6 +34,7 @@ namespace MVC_ServiceAuto.Model
             this.username = user.username;
             this.password = user.password;
             this.role = user.role;
+            this.language = user.language;
         }
 
         public uint UserID
@@ -55,6 +59,12 @@ namespace MVC_ServiceAuto.Model
         {
             get { return this.role; }
             set { this.role = value; }
+        }
+
+        public string Language 
+        { 
+            get { return this.language; }
+            set { this.language = value; }
         }
 
         public override string ToString()

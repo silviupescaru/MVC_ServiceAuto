@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace MVC_ServiceAuto.View
 {
-    public partial class VManager : Form, Observable
+    public partial class VManager : Form
     {
 
         public VManager()
@@ -67,12 +67,6 @@ namespace MVC_ServiceAuto.View
         public TextBox GetSearchBy()
         {
             return this.textBoxSearchBar;
-        }
-
-        public void Update(Subject obs)
-        {
-            ControllerVManager controller = (ControllerVManager)obs;
-
         }
 
     }
