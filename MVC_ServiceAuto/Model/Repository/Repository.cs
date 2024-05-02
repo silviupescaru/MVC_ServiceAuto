@@ -8,12 +8,23 @@ namespace MVC_ServiceAuto.Model.Repository
     public class Repository
     {
         protected SqlConnection connection;
+        private static Repository instance = null;
 
-        public Repository()
+
+        private Repository()
         {
             string s = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ServiceAutoMVP_DB;Integrated Security=True;";
             //s += "";
             this.connection = new SqlConnection(s);
+        }
+
+        public static Repository GetInstance()
+        {
+            if (instance == null)
+            {
+                instance = new Repository();
+            }
+            return instance;
         }
 
         public SqlConnection Connection

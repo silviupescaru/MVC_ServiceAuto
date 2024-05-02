@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|e:\\facultate\\iii\\ps\\mvc_serviceauto\\mvc_serviceauto\\view\\vmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|e:\\facultate\\iii\\ps\\mvc_serviceauto\\mvc_serviceauto\\model\\repository\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\model\\repository\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|e:\\facultate\\iii\\ps\\mvc_serviceauto\\mvc_serviceauto\\model\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\model\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|e:\\facultate\\iii\\ps\\mvc_serviceauto\\mvc_serviceauto\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|e:\\facultate\\iii\\ps\\mvc_serviceauto\\mvc_serviceauto\\model\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\model\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\mvc_serviceauto\\controller\\controllervemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\controller\\controllervemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\mvc_serviceauto\\view\\vmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\view\\vmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\mvc_serviceauto\\view\\vmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\view\\vmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\mvc_serviceauto\\controller\\controllervmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\controller\\controllervmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +47,102 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CarRepository.cs",
+              "DocumentMoniker": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Model\\Repository\\CarRepository.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Model\\Repository\\CarRepository.cs",
+              "ToolTip": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Model\\Repository\\CarRepository.cs",
+              "RelativeToolTip": "MVC_ServiceAuto\\Model\\Repository\\CarRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T16:09:59.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Model\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Model\\Repository\\UserRepository.cs",
+              "ToolTip": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Model\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "MVC_ServiceAuto\\Model\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T16:07:30.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Model\\User.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Model\\User.cs",
+              "ToolTip": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Model\\User.cs",
+              "RelativeToolTip": "MVC_ServiceAuto\\Model\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T16:09:10.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Model\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Model\\Repository\\Repository.cs",
+              "ToolTip": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Model\\Repository\\Repository.cs",
+              "RelativeToolTip": "MVC_ServiceAuto\\Model\\Repository\\Repository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T16:07:31.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ControllerVEmployee.cs",
+              "DocumentMoniker": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
+              "ToolTip": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
+              "RelativeToolTip": "MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T14:21:06.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "VManager.cs [Design]",
               "DocumentMoniker": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VManager.cs",
               "RelativeDocumentMoniker": "MVC_ServiceAuto\\View\\VManager.cs",
               "ToolTip": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VManager.cs [Design]",
               "RelativeToolTip": "MVC_ServiceAuto\\View\\VManager.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T12:38:32.777Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-01T13:50:56.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VManager.cs",
+              "DocumentMoniker": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VManager.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\View\\VManager.cs",
+              "ToolTip": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VManager.cs",
+              "RelativeToolTip": "MVC_ServiceAuto\\View\\VManager.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAA8AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T13:50:30.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ControllerVManager.cs",
+              "DocumentMoniker": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
+              "ToolTip": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
+              "RelativeToolTip": "MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T13:03:05.192Z"
             }
           ]
         }

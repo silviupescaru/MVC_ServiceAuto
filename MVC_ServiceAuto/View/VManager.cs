@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MVC_ServiceAuto.Controller;
+using MVC_ServiceAuto.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,12 +13,66 @@ using System.Windows.Forms;
 
 namespace MVC_ServiceAuto.View
 {
-    public partial class VManager : Form
+    public partial class VManager : Form, Observable
     {
 
         public VManager()
         {
             InitializeComponent();
+            this.numericUpDownCarID.Value = 1;
+            this.textBoxOwner.Text = string.Empty;
+            this.textBoxBrand.Text = string.Empty;
+            this.textBoxColor.Text = string.Empty;
+            this.textBoxSearchBar.Text = string.Empty;
+            this.comboBoxFuel.SelectedItem = 0;
+            this.comboBoxFilterBy.SelectedItem = 0;
+            this.comboBoxCarFilter.SelectedItem = 0;
+        }
+
+        public NumericUpDown GetCarID()
+        {
+            return this.numericUpDownCarID;
+        }
+
+        public TextBox GetOwner()
+        {
+            return this.textBoxOwner;
+        }
+
+        public TextBox GetBrand()
+        {
+            return this.textBoxBrand;
+        }
+
+        public TextBox GetColor()
+        {
+            return this.textBoxColor;
+        }
+
+        public ComboBox GetFuel()
+        {
+            return this.comboBoxFuel;
+        }
+
+        public ComboBox GetOrderBy()
+        {
+            return this.comboBoxCarFilter;
+        }
+
+        public ComboBox GetFilterBy()
+        {
+            return this.comboBoxFilterBy;
+        }
+
+        public TextBox GetSearchBy()
+        {
+            return this.textBoxSearchBar;
+        }
+
+        public void Update(Subject obs)
+        {
+            ControllerVManager controller = (ControllerVManager)obs;
+
         }
 
     }

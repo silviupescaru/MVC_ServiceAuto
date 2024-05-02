@@ -12,7 +12,7 @@ namespace MVC_ServiceAuto.Model.Repository
 
         public CarRepository()
         {
-            this.repository = new Repository();
+            this.repository = Repository.GetInstance();
         }
 
         public bool AddCar(Car car)

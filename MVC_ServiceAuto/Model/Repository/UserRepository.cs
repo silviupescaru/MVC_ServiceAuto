@@ -13,7 +13,7 @@ namespace MVC_ServiceAuto.Model.Repository
 
         public UserRepository()
         {
-            this.repository = new Repository();
+            this.repository = Repository.GetInstance();
         }
 
         public bool AddUser(User user)
