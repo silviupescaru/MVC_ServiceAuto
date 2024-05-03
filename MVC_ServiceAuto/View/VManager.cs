@@ -64,9 +64,39 @@ namespace MVC_ServiceAuto.View
             return this.comboBoxFilterBy;
         }
 
+        public DataGridView GetCarTable()
+        {
+            return this.dataGridViewCarTable;
+        }
+
         public TextBox GetSearchBy()
         {
             return this.textBoxSearchBar;
+        }
+
+        public Button GetSaveCSVButton()
+        {
+            return this.buttonSaveCSV;
+        }
+
+        public Button GetSaveJSONButton()
+        {
+            return this.buttonSaveJSON;
+        }
+
+        public Button GetSaveXMLButton()
+        {
+            return this.buttonSaveXML;
+        }
+
+        public Button GetSaveDOCButton()
+        {
+            return this.buttonSaveDOC;
+        }
+
+        public Button GetLogoutButton()
+        {
+            return this.buttonLogout;
         }
 
     }

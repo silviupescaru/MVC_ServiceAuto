@@ -17,6 +17,109 @@ namespace MVC_ServiceAuto.View
         public VEmployee()
         {
             InitializeComponent();
+            this.numericUpDownCarID.Value = 0;
+            this.textBoxOwner.Text = string.Empty;
+            this.textBoxBrand.Text = string.Empty;
+            this.textBoxColor.Text = string.Empty;
+            this.comboBoxFuel.SelectedItem = 0;
+            this.comboBoxCarFilter.SelectedItem = 0;
+            this.comboBoxFilterBy.SelectedItem = 0;
+            this.textBoxSearchBar.Text = string.Empty;
+        }
+
+        public NumericUpDown GetCarID()
+        {
+            return this.numericUpDownCarID;
+        }
+
+        public TextBox GetOwner()
+        {
+            return this.textBoxOwner;
+        }
+
+        public TextBox GetBrand()
+        {
+            return this.textBoxBrand;
+        }
+
+        public TextBox GetColor()
+        {
+            return this.textBoxColor;
+        }
+
+        public ComboBox GetFuel()
+        {
+            return this.comboBoxFuel;
+        }
+
+        public ComboBox GetCarOrderBy()
+        {
+            return this.comboBoxCarFilter;
+        }
+
+        public ComboBox GetFilterBy()
+        {
+            return this.comboBoxFilterBy;
+        }
+
+        public TextBox GetSearch()
+        {
+            return this.textBoxSearchBar;
+        }
+
+        public DataGridView GetCarTable()
+        {
+            return this.dataGridViewCarTable;
+        }
+
+        public Button GetAddButton()
+        {
+            return this.buttonAdd;
+        }
+
+        public Button GetUpdateButton()
+        {
+            return this.buttonUpdate;
+        }
+
+        public Button GetDeleteButton()
+        {
+            return this.buttonDelete;
+        }
+
+        public Button GetSaveCSVButton()
+        {
+            return this.buttonSaveCSV;
+        }
+
+        public Button GetSaveJSONButton()
+        {
+            return this.buttonSaveJSON;
+        }
+
+        public Button GetSaveXMLButton()
+        {
+            return this.buttonSaveXML;
+        }
+
+        public Button GetSaveDOCButton()
+        {
+            return this.buttonSaveDOC;
+        }
+
+        public Button GetSearchButton()
+        {
+            return this.buttonSearch;
+        }
+
+        public Button GetViewAllButton()
+        {
+            return this.buttonViewAll;
+        }
+
+        public Button GetLogoutButton()
+        {
+            return this.buttonLogout;
         }
 
     }

@@ -15,6 +15,23 @@ namespace MVC_ServiceAuto.View
         public VLogin()
         {
             InitializeComponent();
+            this.textBoxUsername.Text = string.Empty;
+            this.textBoxPassword.Text = string.Empty;
+        }
+
+        public TextBox GetUsername()
+        {
+            return this.textBoxUsername;
+        }
+
+        public TextBox GetPassword()
+        {
+            return this.textBoxPassword;
+        }
+
+        public Button GetLoginButton()
+        {
+            return this.buttonLogin;
         }
     }
 }

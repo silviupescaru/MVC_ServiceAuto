@@ -49,6 +49,8 @@
             dataGridViewUsers = new DataGridView();
             buttonLogout = new Button();
             labelLoggedUser = new Label();
+            comboBoxLanguage = new ComboBox();
+            labelLanguage = new Label();
             ((System.ComponentModel.ISupportInitialize)numericUpDownUserID).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).BeginInit();
             SuspendLayout();
@@ -251,6 +253,27 @@
             labelLoggedUser.TabIndex = 17;
             labelLoggedUser.Text = "Logged in as Administrator";
             // 
+            // comboBoxLanguage
+            // 
+            comboBoxLanguage.FormattingEnabled = true;
+            comboBoxLanguage.Items.AddRange(new object[] { "", "English", "Japanese", "Russian" });
+            comboBoxLanguage.Location = new Point(650, 123);
+            comboBoxLanguage.Name = "comboBoxLanguage";
+            comboBoxLanguage.Size = new Size(163, 23);
+            comboBoxLanguage.TabIndex = 18;
+            // 
+            // labelLanguage
+            // 
+            labelLanguage.AutoSize = true;
+            labelLanguage.BackColor = Color.Transparent;
+            labelLanguage.Font = new Font("Montserrat", 12.75F, FontStyle.Bold);
+            labelLanguage.ForeColor = Color.White;
+            labelLanguage.Location = new Point(507, 122);
+            labelLanguage.Name = "labelLanguage";
+            labelLanguage.Size = new Size(99, 24);
+            labelLanguage.TabIndex = 19;
+            labelLanguage.Text = "Language";
+            // 
             // VAdministrator
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -258,6 +281,8 @@
             BackgroundImage = Properties.Resources.adminBG;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(869, 733);
+            Controls.Add(labelLanguage);
+            Controls.Add(comboBoxLanguage);
             Controls.Add(labelLoggedUser);
             Controls.Add(buttonLogout);
             Controls.Add(dataGridViewUsers);
@@ -306,5 +331,7 @@
         private DataGridView dataGridViewUsers;
         private Button buttonLogout;
         private Label labelLoggedUser;
+        private ComboBox comboBoxLanguage;
+        private Label labelLanguage;
     }
 }
