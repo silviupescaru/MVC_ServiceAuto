@@ -15,6 +15,7 @@ namespace MVC_ServiceAuto.Controller
     public class ControllerVAdministrator
     {
         private VAdministrator vAdministrator;
+        private VLogin vLogin;
         private UserRepository userRepository;
         private Repository repository;
 
@@ -182,12 +183,47 @@ namespace MVC_ServiceAuto.Controller
 
         private void logout(object sender, EventArgs e)
         {
-            //TODO
+            try
+            {
+                vLogin.Show();
+                this.vAdministrator.Hide();
+            }
+            catch( Exception ex )
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
         }
 
         private void setUserControls(object sender, EventArgs e)
         {
-            //TODO
+            try
+            {
+                if(this.vAdministrator.GetUserTable().SelectedRows.Count > 0)
+                {
+                    DataGridViewRow drvr = this.vAdministrator.GetUserTable().SelectedRows[0];
+                    
+                    uint userID = Convert.ToUInt32(drvr.Cells[0].Value);
+                    this.vAdministrator.GetUserID().Value = userID;
+
+                    string username = drvr.Cells[1].Value.ToString();
+                    this.vAdministrator.GetUsername().Text = username;
+
+                    string password = drvr.Cells[2].Value.ToString();
+                    this.vAdministrator.GetPassword().Text = password;
+
+                    string role = drvr.Cells[3].Value.ToString();
+                    this.vAdministrator.GetRole().Text = role;
+
+                    string language = drvr.Cells[4].Value.ToString();
+                    this.vAdministrator.GetLanguage().Text = language;
+
+                }
+            }
+            catch(Exception ex) 
+            {
+                MessageBox.Show(ex.ToString());    
+            }
         }
 
         private User validInformation()
