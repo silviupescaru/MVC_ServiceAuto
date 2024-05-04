@@ -56,10 +56,12 @@ namespace MVC_ServiceAuto.Controller
                         {
                             this.vLogin.Hide();
                             ControllerVEmployee em = new ControllerVEmployee();
+                            //em.GetView();
                         } else if (role.Equals("Manager"))
                         {
                             this.vLogin.Hide();
                             ControllerVManager ma = new ControllerVManager();
+                            ma.GetView();
                         } else if (role.Equals("Administrator"))
                         {
                             this.vLogin.Hide();

@@ -94,6 +94,16 @@ namespace MVC_ServiceAuto.View
             return this.buttonSaveDOC;
         }
 
+        public Button GetViewAllButton()
+        {
+            return this.buttonViewAll;
+        }
+
+        public Button GetSearchButton()
+        {
+            return this.buttonSearch;
+        }
+
         public Button GetLogoutButton()
         {
             return this.buttonLogout;
