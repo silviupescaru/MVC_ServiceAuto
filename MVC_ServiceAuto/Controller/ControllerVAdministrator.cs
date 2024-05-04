@@ -30,6 +30,7 @@ namespace MVC_ServiceAuto.Controller
 
         public VAdministrator GetView()
         {
+            this.vAdministrator.Show();
             return this.vAdministrator;
         }
 
@@ -185,7 +186,8 @@ namespace MVC_ServiceAuto.Controller
         {
             try
             {
-                vLogin.Show();
+                ControllerVLogin login = new ControllerVLogin();
+                login.GetView();
                 this.vAdministrator.Hide();
             }
             catch( Exception ex )

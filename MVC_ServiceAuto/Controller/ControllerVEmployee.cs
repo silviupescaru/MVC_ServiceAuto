@@ -7,21 +7,7 @@ using MVC_ServiceAuto.Controller;
 
 namespace MVC_ServiceAuto.Controller
 {
-    public class ControllerVEmployee : ControllerView
+    public class ControllerVEmployee
     {
-        public override void DisplayTable()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void FilterTable(string selectedCriterion)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void SearchBy(string searchedContent)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

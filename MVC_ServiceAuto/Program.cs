@@ -1,3 +1,5 @@
+using MVC_ServiceAuto.Controller;
+
 namespace MVC_ServiceAuto
 {
     internal static class Program
@@ -11,7 +13,8 @@ namespace MVC_ServiceAuto
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            ControllerVLogin login = new ControllerVLogin();
+            Application.Run(login.GetView());
         }
     }
 }
