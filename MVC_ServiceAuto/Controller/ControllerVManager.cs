@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices.Marshalling;
 using System.Text;
@@ -39,6 +40,8 @@ namespace MVC_ServiceAuto.Controller
         {
             this.vManager.FormClosed += new FormClosedEventHandler(exitApplication);
             this.vManager.GetSearchButton().Click += new EventHandler(searchBy);
+            this.vManager.GetFilterBy().SelectedIndexChanged += new EventHandler(filterBy);
+            this.vManager.GetOrderBy().SelectedIndexChanged += new EventHandler(orderBy);
             this.vManager.GetViewAllButton().Click += new EventHandler(viewAll);
             this.vManager.GetSaveCSVButton().Click += new EventHandler(saveCSV);
             this.vManager.GetSaveJSONButton().Click += new EventHandler(saveJSON);
@@ -57,26 +60,39 @@ namespace MVC_ServiceAuto.Controller
         {
             try
             {
-                if(this.vManager.GetCarTable() != null)
-                    this.vManager.GetCarTable().Rows.Clear();
+                if (this.vManager.GetCarTable() != null)
+                {
+                    this.vManager.GetCarTable().DataSource = repository.GetTable("select * from Car where 1=0;");
+                }
                 if (this.vManager.GetSearchBy().Text.Length > 0)
                 {
-                    List<Car> list = this.carRepository.SearchCarByOwner(this.vManager.GetSearchBy().Text);
+                    string searchedOwner = this.vManager.GetSearchBy().Text;
+                    List<Car> list = this.carRepository.SearchCarByOwner(searchedOwner);
+
+                    DataTable dt = new DataTable();
+                    dt.Columns.Add("carID", typeof(uint));
+                    dt.Columns.Add("owner", typeof(string));
+                    dt.Columns.Add("brand", typeof(string));
+                    dt.Columns.Add("color", typeof(string));
+                    dt.Columns.Add("fuel", typeof(string));
+
+
                     if (list != null && list.Count > 0)
                     {
                         foreach (Car cars in list)
                         {
-                            DataGridViewRow row = new DataGridViewRow();
-                            row.CreateCells(this.vManager.GetCarTable());
+                            DataRow row = dt.NewRow();
 
-                            row.Cells[0].Value = cars.CarID;
-                            row.Cells[1].Value = cars.Owner;
-                            row.Cells[2].Value = cars.Brand;
-                            row.Cells[3].Value = cars.Color;
-                            row.Cells[4].Value = cars.Fuel;
+                            row["carID"] = cars.CarID;
+                            row["owner"] = cars.Owner;
+                            row["brand"] = cars.Brand;
+                            row["color"] = cars.Color;
+                            row["fuel"] = cars.Fuel;
 
-                            this.vManager.GetCarTable().Rows.Add(row);
+                            dt.Rows.Add(row);
                         }
+
+                        this.vManager.GetCarTable().DataSource = dt;
                     }
                     else MessageBox.Show("There is no car with desired owner!");
                 }
@@ -87,13 +103,17 @@ namespace MVC_ServiceAuto.Controller
             }
         }
 
+        private void filterBy(object sender, EventArgs e) { }
+
+        private void orderBy(object sender, EventArgs e) { }
+
         private void viewAll(object sender, EventArgs e)
         {
             try
             {
                 if(this.vManager.GetCarTable() != null)
                 {
-                    this.vManager.GetCarTable().Rows.Clear();
+                    this.vManager.GetCarTable().DataSource = repository.GetTable("select * from Car where 1=0;");
                     this.vManager.GetCarTable().DataSource = this.repository.GetTable("SELECT * FROM [Car]");
                 }
             }

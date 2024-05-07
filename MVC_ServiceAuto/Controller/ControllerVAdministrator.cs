@@ -83,7 +83,7 @@ namespace MVC_ServiceAuto.Controller
         {
             try
             {
-                if (Convert.ToBoolean(this.vAdministrator.GetUserID()))
+                if (Convert.ToBoolean(this.vAdministrator.GetUserID().Value))
                 {
                     User user = this.validInformation();
                     if (user != null)
@@ -139,25 +139,46 @@ namespace MVC_ServiceAuto.Controller
             try
             {
                 if (this.vAdministrator.GetUserTable() != null)
-                    this.vAdministrator.GetUserTable().Rows.Clear();
-                if(this.vAdministrator.GetSearch().Text != null && this.vAdministrator.GetSearch().Text.Length > 0)
+                    this.vAdministrator.GetUserTable().DataSource = repository.GetTable("select * from [User] where 1=0;");
+                if (this.vAdministrator.GetSearch().Text != null && this.vAdministrator.GetSearch().Text.Length > 0)
                 {
+                    
                     List<User> list = this.userRepository.SearchUserByRole(this.vAdministrator.GetSearch().Text);
-                    foreach (User user in list)
+
+                    if (list == null)
                     {
-                        DataGridViewRow row = new DataGridViewRow();
-                        row.CreateCells(this.vAdministrator.GetUserTable());
+                        MessageBox.Show("No user with desired role!");
+                    }
+                    else
+                    {
 
-                        row.Cells[0].Value = user.UserID;
-                        row.Cells[1].Value = user.Username;
-                        row.Cells[2].Value = user.Password;
-                        row.Cells[3].Value = user.Role;
-                        row.Cells[4].Value = user.Language;
+                        DataTable dt = new DataTable();
 
-                        this.vAdministrator.GetUserTable().Rows.Add(row);
+                        dt.Columns.Add("userID", typeof(uint));
+                        dt.Columns.Add("username", typeof(string));
+                        dt.Columns.Add("password", typeof(string));
+                        dt.Columns.Add("role", typeof(string));
+                        dt.Columns.Add("language", typeof(string));
+
+
+                        foreach (User user in list)
+                        {
+                            DataRow row = dt.NewRow();
+
+                            row["userID"] = user.UserID;
+                            row["username"] = user.Username;
+                            row["password"] = user.Password;
+                            row["role"] = user.Role;
+                            row["language"] = user.Language;
+
+                            dt.Rows.Add(row);
+                        }
+
+                        this.vAdministrator.GetUserTable().DataSource = dt;
                     }
 
                 }
+                else MessageBox.Show("Search bar is empty!");
             }
             catch( Exception ex )
             {
@@ -171,7 +192,7 @@ namespace MVC_ServiceAuto.Controller
             {
                 if (this.vAdministrator.GetUserTable() != null)
                 {
-                    this.vAdministrator.GetUserTable().Rows.Clear();
+                    this.vAdministrator.GetUserTable().DataSource = repository.GetTable("select * from [User] where 1=0;");
                     this.vAdministrator.GetUserTable().DataSource = this.repository.GetTable("SELECT * FROM [User]");
                 }
 
