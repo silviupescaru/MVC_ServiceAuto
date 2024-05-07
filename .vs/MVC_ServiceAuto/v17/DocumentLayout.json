@@ -25,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|D:\\Facultate\\MVC_ServiceAuto\\mvc_serviceauto\\controller\\controllervlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\controller\\controllervlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|D:\\Facultate\\MVC_ServiceAuto\\mvc_serviceauto\\view\\vmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C0A59922-BBCB-4D5A-9FE4-380497C5CB6B}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\view\\vmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,7 +44,7 @@
               "RelativeDocumentMoniker": "MVC_ServiceAuto\\Controller\\ControllerVAdministrator.cs",
               "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVAdministrator.cs",
               "RelativeToolTip": "MVC_ServiceAuto\\Controller\\ControllerVAdministrator.cs",
-              "ViewState": "AQIAAI4AAAAAAAAAAAAiwLEAAAAVAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAiwLEAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T15:20:47.607Z",
               "EditorCaption": ""
@@ -63,7 +59,8 @@
               "RelativeToolTip": "MVC_ServiceAuto\\Controller\\ControllerVLogin.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAAAAD8AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T15:19:21.312Z"
+              "WhenOpened": "2024-05-04T15:19:21.312Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -75,19 +72,8 @@
               "RelativeToolTip": "MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T15:17:44.15Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VManager.cs [Design]",
-              "DocumentMoniker": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VManager.cs",
-              "RelativeDocumentMoniker": "MVC_ServiceAuto\\View\\VManager.cs",
-              "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VManager.cs [Design]",
-              "RelativeToolTip": "MVC_ServiceAuto\\View\\VManager.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T16:14:18.309Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-04T15:17:44.15Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -99,7 +85,8 @@
               "RelativeToolTip": "MVC_ServiceAuto\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T15:16:17.09Z"
+              "WhenOpened": "2024-05-04T15:16:17.09Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -115,7 +102,7 @@
               "RelativeDocumentMoniker": "MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
               "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
               "RelativeToolTip": "MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAAGsAAAA8AAAA",
+              "ViewState": "AQIAAEQBAAAAAAAAAAAYwNsBAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T15:17:53.634Z",
               "EditorCaption": ""
@@ -128,7 +115,7 @@
               "RelativeDocumentMoniker": "MVC_ServiceAuto\\View\\VManager.cs",
               "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VManager.cs",
               "RelativeToolTip": "MVC_ServiceAuto\\View\\VManager.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAEUAAAAJAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAEIAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T16:15:16.415Z",
               "EditorCaption": ""

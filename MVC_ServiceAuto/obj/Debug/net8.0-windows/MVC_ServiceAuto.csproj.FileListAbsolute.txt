@@ -56,3 +56,6 @@ D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\obj\Debug\net8.0-windows\refint\MVC
 D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\obj\Debug\net8.0-windows\MVC_ServiceAuto.pdb
 D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\obj\Debug\net8.0-windows\MVC_ServiceAuto.genruntimeconfig.cache
 D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\obj\Debug\net8.0-windows\ref\MVC_ServiceAuto.dll
+D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\bin\Debug\net8.0-windows\DocumentFormat.OpenXml.dll
+D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\bin\Debug\net8.0-windows\DocumentFormat.OpenXml.Framework.dll
+D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
