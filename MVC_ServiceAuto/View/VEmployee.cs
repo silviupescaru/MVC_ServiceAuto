@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVC_ServiceAuto.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,7 +12,7 @@ using System.Windows.Forms;
 
 namespace MVC_ServiceAuto.View
 {
-    public partial class VEmployee : Form
+    public partial class VEmployee : Form, Observable
     {
 
         public VEmployee()
@@ -122,5 +123,9 @@ namespace MVC_ServiceAuto.View
             return this.buttonLogout;
         }
 
+        public void Update(Subject obs)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
