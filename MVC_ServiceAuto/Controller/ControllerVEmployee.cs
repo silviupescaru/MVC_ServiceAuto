@@ -553,7 +553,7 @@ namespace MVC_ServiceAuto.Controller
         {
             try
             {
-                ControllerVLogin login = new ControllerVLogin();
+                ControllerVLogin login = new ControllerVLogin(1);
                 login.GetView();
                 this.vEmployee.Hide();
             }

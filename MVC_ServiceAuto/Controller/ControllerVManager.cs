@@ -29,7 +29,7 @@ namespace MVC_ServiceAuto.Controller
         public ControllerVManager()
         {
             this.vManager = new VManager();
-            this.vLogin = new VLogin();
+            this.vLogin = new VLogin(1);
             this.carRepository = new CarRepository();
             this.repository = Repository.GetInstance();
 
@@ -480,7 +480,7 @@ namespace MVC_ServiceAuto.Controller
         {
             try
             {
-                ControllerVLogin login = new ControllerVLogin();
+                ControllerVLogin login = new ControllerVLogin(1);
                 login.GetView();
                 this.vManager.Hide();
             }

@@ -14,6 +14,17 @@
         },
         "runtime": {
           "MVC_ServiceAuto.dll": {}
+        },
+        "resources": {
+          "en/MVC_ServiceAuto.resources.dll": {
+            "locale": "en"
+          },
+          "fr/MVC_ServiceAuto.resources.dll": {
+            "locale": "fr"
+          },
+          "ru/MVC_ServiceAuto.resources.dll": {
+            "locale": "ru"
+          }
         }
       },
       "DocumentFormat.OpenXml/3.0.2": {

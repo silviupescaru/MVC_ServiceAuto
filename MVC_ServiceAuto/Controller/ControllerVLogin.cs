@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MVC_ServiceAuto.Controller;
+using MVC_ServiceAuto.Model.Language;
 using MVC_ServiceAuto.Model.Repository;
 using MVC_ServiceAuto.View;
 
@@ -14,9 +16,9 @@ namespace MVC_ServiceAuto.Controller
         private VLogin vLogin;
         private UserRepository userRepository;
 
-        public ControllerVLogin()
+        public ControllerVLogin(int index)
         {
-            this.vLogin = new VLogin();
+            this.vLogin = new VLogin(index);
             this.userRepository = new UserRepository();
 
             this.eventsManagement();
@@ -32,11 +34,36 @@ namespace MVC_ServiceAuto.Controller
         {
             this.vLogin.FormClosed += new FormClosedEventHandler(exitApplication);
             this.vLogin.GetLoginButton().Click += new EventHandler(login);
+            this.vLogin.GetChangeLangugae().SelectedIndexChanged += new EventHandler(changeLanguage);
         }
 
         private void exitApplication(object sender, FormClosedEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void changeLanguage(object sender, EventArgs e)
+        {
+            if (this.vLogin.GetChangeLangugae().SelectedIndex == 1)
+            {
+                LangHelper.ChangeLanguage("en");
+            }
+            else if (this.vLogin.GetChangeLangugae().SelectedIndex == 2)
+            {
+                LangHelper.ChangeLanguage("ru");
+            }
+            else if (this.vLogin.GetChangeLangugae().SelectedIndex == 3)
+            {
+                LangHelper.ChangeLanguage("fr");
+            }
+
+
+            Debug.WriteLine($"{LangHelper.GetString("sig")} {LangHelper.GetString("World")}!");
+
+            this.vLogin.GetChangeLanguageLabel().Text = ($"{LangHelper.GetString("labelChangeLanguage")}");
+            this.vLogin.GetLoginButton().Text = ($"{LangHelper.GetString("buttonLogin")}");
+
+
         }
 
         private void login(object sender, EventArgs e)
