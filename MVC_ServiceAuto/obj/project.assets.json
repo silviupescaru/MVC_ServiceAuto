@@ -640,19 +640,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mike\\.nuget\\packages\\": {}
+    "C:\\Users\\mike\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\MVC_ServiceAuto.csproj",
+      "projectUniqueName": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\MVC_ServiceAuto.csproj",
       "projectName": "MVC_ServiceAuto",
-      "projectPath": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\MVC_ServiceAuto.csproj",
+      "projectPath": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\MVC_ServiceAuto.csproj",
       "packagesPath": "C:\\Users\\mike\\.nuget\\packages\\",
-      "outputPath": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\obj\\",
+      "outputPath": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\mike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

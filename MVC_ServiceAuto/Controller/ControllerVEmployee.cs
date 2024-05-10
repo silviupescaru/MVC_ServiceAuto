@@ -14,6 +14,7 @@ using Newtonsoft.Json;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 using System.Security.Cryptography;
+using System.Reflection;
 
 namespace MVC_ServiceAuto.Controller
 {
@@ -558,13 +559,11 @@ namespace MVC_ServiceAuto.Controller
                 string brand = this.vEmployee.GetBrand().Text;
                 string color = this.vEmployee.GetColor().Text;
                 string imageName = brand + "_" + color;
-                string path = "E:/Facultate/III/PS/MVC_ServiceAuto/MVC_ServiceAuto/resources/cars/" + imageName + ".jpg";
+                string path = "../../../resources/cars/" + imageName + ".jpg";
 
                 this.vEmployee.GetPictureBox().Image = Image.FromFile(path);
-
-
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
@@ -606,6 +605,11 @@ namespace MVC_ServiceAuto.Controller
 
                     string fuel = drvr.Cells[4].Value.ToString();
                     this.vEmployee.GetFuel().Text = fuel;
+
+                    string imageName = brand + "_" + color;
+                    string path = "../../../resources/cars/" + imageName + ".jpg";
+
+                    this.vEmployee.GetPictureBox().Image = Image.FromFile(path);
                 }
             }
             catch( Exception ex)

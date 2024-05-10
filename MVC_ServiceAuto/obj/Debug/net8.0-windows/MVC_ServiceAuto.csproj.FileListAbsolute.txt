@@ -71,3 +71,12 @@ E:\Facultate\III\PS\MVC_ServiceAuto\MVC_ServiceAuto\obj\Debug\net8.0-windows\fr\
 E:\Facultate\III\PS\MVC_ServiceAuto\MVC_ServiceAuto\bin\Debug\net8.0-windows\en\MVC_ServiceAuto.resources.dll
 E:\Facultate\III\PS\MVC_ServiceAuto\MVC_ServiceAuto\obj\Debug\net8.0-windows\MVC_ServiceAuto.Model.Language.string.en.resources
 E:\Facultate\III\PS\MVC_ServiceAuto\MVC_ServiceAuto\obj\Debug\net8.0-windows\en\MVC_ServiceAuto.resources.dll
+D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\bin\Debug\net8.0-windows\en\MVC_ServiceAuto.resources.dll
+D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\bin\Debug\net8.0-windows\fr\MVC_ServiceAuto.resources.dll
+D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\bin\Debug\net8.0-windows\ru\MVC_ServiceAuto.resources.dll
+D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\obj\Debug\net8.0-windows\MVC_ServiceAuto.Model.Language.string.en.resources
+D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\obj\Debug\net8.0-windows\MVC_ServiceAuto.Model.Language.string.fr.resources
+D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\obj\Debug\net8.0-windows\MVC_ServiceAuto.Model.Language.string.ru.resources
+D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\obj\Debug\net8.0-windows\en\MVC_ServiceAuto.resources.dll
+D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\obj\Debug\net8.0-windows\fr\MVC_ServiceAuto.resources.dll
+D:\Facultate\MVC_ServiceAuto\MVC_ServiceAuto\obj\Debug\net8.0-windows\ru\MVC_ServiceAuto.resources.dll

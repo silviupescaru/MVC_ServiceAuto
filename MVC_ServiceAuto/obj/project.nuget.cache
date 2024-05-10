@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sfiME44dlwXUZHDbNvXD5yFPhA0ycw11/0LrvuNYYE+w5Oj4C+gUPNgDhtKIYiYc2l80pbJOgnimhukNpoywww==",
+  "dgSpecHash": "hxlhn2la03Oe60mOlcQfTOnhpWWrkebRImFIMt+wqHLb1UWPR5WP39BnoBeIxnYr0Nm4MkgVlyO1comPt3ROKg==",
   "success": true,
-  "projectFilePath": "E:\\Facultate\\III\\PS\\MVC_ServiceAuto\\MVC_ServiceAuto\\MVC_ServiceAuto.csproj",
+  "projectFilePath": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\MVC_ServiceAuto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mike\\.nuget\\packages\\documentformat.openxml\\3.0.2\\documentformat.openxml.3.0.2.nupkg.sha512",
     "C:\\Users\\mike\\.nuget\\packages\\documentformat.openxml.framework\\3.0.2\\documentformat.openxml.framework.3.0.2.nupkg.sha512",
