@@ -118,11 +118,21 @@ namespace MVC_ServiceAuto.View
             return this.buttonViewAll;
         }
 
+        public Button GetShowImageButton()
+        {
+            return this.buttonShowImage;
+        }
+
         public Button GetLogoutButton()
         {
             return this.buttonLogout;
         }
 
+        public PictureBox GetPictureBox()
+        {
+            return this.pictureBoxCar;
+        }
+        
         public void Update(Subject obs)
         {
             throw new NotImplementedException();

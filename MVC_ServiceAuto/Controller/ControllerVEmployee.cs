@@ -13,6 +13,7 @@ using System.Data;
 using Newtonsoft.Json;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
+using System.Security.Cryptography;
 
 namespace MVC_ServiceAuto.Controller
 {
@@ -52,6 +53,7 @@ namespace MVC_ServiceAuto.Controller
             this.vEmployee.GetSaveJSONButton().Click += new EventHandler(saveJSON);
             this.vEmployee.GetSaveXMLButton().Click += new EventHandler(saveXML);
             this.vEmployee.GetSaveDOCButton().Click += new EventHandler(saveDOC);
+            this.vEmployee.GetShowImageButton().Click += new EventHandler(showImage);
             this.vEmployee.GetLogoutButton().Click += new EventHandler(logout);
             this.vEmployee.GetCarTable().RowStateChanged += new DataGridViewRowStateChangedEventHandler(setCarControls);
         }
@@ -544,6 +546,25 @@ namespace MVC_ServiceAuto.Controller
                 }
             }
             catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void showImage(object sender, EventArgs e)
+        {
+            try
+            {
+                string brand = this.vEmployee.GetBrand().Text;
+                string color = this.vEmployee.GetColor().Text;
+                string imageName = brand + "_" + color;
+                string path = "E:/Facultate/III/PS/MVC_ServiceAuto/MVC_ServiceAuto/resources/cars/" + imageName + ".jpg";
+
+                this.vEmployee.GetPictureBox().Image = Image.FromFile(path);
+
+
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }

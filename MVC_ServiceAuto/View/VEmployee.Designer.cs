@@ -59,8 +59,11 @@
             buttonSaveDOC = new Button();
             buttonSaveCSV = new Button();
             buttonSaveJSON = new Button();
+            buttonShowImage = new Button();
+            pictureBoxCar = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)numericUpDownCarID).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCarTable).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCar).BeginInit();
             SuspendLayout();
             // 
             // labelCarID
@@ -202,7 +205,7 @@
             labelCarOrderBy.BackColor = Color.Transparent;
             labelCarOrderBy.Font = new Font("Montserrat SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelCarOrderBy.ForeColor = Color.White;
-            labelCarOrderBy.Location = new Point(354, 81);
+            labelCarOrderBy.Location = new Point(336, 81);
             labelCarOrderBy.Name = "labelCarOrderBy";
             labelCarOrderBy.Size = new Size(116, 22);
             labelCarOrderBy.TabIndex = 13;
@@ -214,7 +217,7 @@
             labelSearchBar.BackColor = Color.Transparent;
             labelSearchBar.Font = new Font("Montserrat SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelSearchBar.ForeColor = Color.White;
-            labelSearchBar.Location = new Point(354, 184);
+            labelSearchBar.Location = new Point(336, 184);
             labelSearchBar.Name = "labelSearchBar";
             labelSearchBar.Size = new Size(99, 22);
             labelSearchBar.TabIndex = 14;
@@ -226,7 +229,7 @@
             labelFilterBy.BackColor = Color.Transparent;
             labelFilterBy.Font = new Font("Montserrat SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelFilterBy.ForeColor = Color.White;
-            labelFilterBy.Location = new Point(354, 134);
+            labelFilterBy.Location = new Point(336, 134);
             labelFilterBy.Name = "labelFilterBy";
             labelFilterBy.Size = new Size(79, 22);
             labelFilterBy.TabIndex = 15;
@@ -237,27 +240,25 @@
             comboBoxCarFilter.Font = new Font("Montserrat", 8.999999F);
             comboBoxCarFilter.FormattingEnabled = true;
             comboBoxCarFilter.Items.AddRange(new object[] { "", "None", "Brand and Fuel" });
-            comboBoxCarFilter.Location = new Point(358, 106);
+            comboBoxCarFilter.Location = new Point(340, 106);
             comboBoxCarFilter.Name = "comboBoxCarFilter";
             comboBoxCarFilter.Size = new Size(151, 24);
             comboBoxCarFilter.TabIndex = 17;
-            //comboBoxCarFilter.SelectedIndexChanged += comboBoxCarFilter_SelectedIndexChanged;
             // 
             // comboBoxFilterBy
             // 
             comboBoxFilterBy.Font = new Font("Montserrat", 8.999999F);
             comboBoxFilterBy.FormattingEnabled = true;
             comboBoxFilterBy.Items.AddRange(new object[] { "", "Owner", "Brand", "Color", "Fuel" });
-            comboBoxFilterBy.Location = new Point(358, 159);
+            comboBoxFilterBy.Location = new Point(340, 159);
             comboBoxFilterBy.Name = "comboBoxFilterBy";
             comboBoxFilterBy.Size = new Size(151, 24);
             comboBoxFilterBy.TabIndex = 18;
-            //comboBoxFilterBy.SelectedIndexChanged += comboBoxFilterBy_SelectedIndexChanged;
             // 
             // textBoxSearchBar
             // 
             textBoxSearchBar.Font = new Font("Montserrat", 8.999999F);
-            textBoxSearchBar.Location = new Point(358, 209);
+            textBoxSearchBar.Location = new Point(340, 209);
             textBoxSearchBar.Name = "textBoxSearchBar";
             textBoxSearchBar.Size = new Size(151, 22);
             textBoxSearchBar.TabIndex = 19;
@@ -265,7 +266,7 @@
             // buttonSearch
             // 
             buttonSearch.Font = new Font("Montserrat", 7.5F);
-            buttonSearch.Location = new Point(526, 209);
+            buttonSearch.Location = new Point(508, 209);
             buttonSearch.Name = "buttonSearch";
             buttonSearch.Size = new Size(75, 23);
             buttonSearch.TabIndex = 21;
@@ -275,7 +276,7 @@
             // buttonViewAll
             // 
             buttonViewAll.Font = new Font("Montserrat", 7.5F);
-            buttonViewAll.Location = new Point(612, 209);
+            buttonViewAll.Location = new Point(594, 209);
             buttonViewAll.Name = "buttonViewAll";
             buttonViewAll.Size = new Size(75, 23);
             buttonViewAll.TabIndex = 20;
@@ -332,7 +333,7 @@
             // buttonSaveXML
             // 
             buttonSaveXML.Font = new Font("Montserrat", 7.5F);
-            buttonSaveXML.Location = new Point(526, 159);
+            buttonSaveXML.Location = new Point(508, 159);
             buttonSaveXML.Name = "buttonSaveXML";
             buttonSaveXML.Size = new Size(75, 23);
             buttonSaveXML.TabIndex = 26;
@@ -342,7 +343,7 @@
             // buttonSaveDOC
             // 
             buttonSaveDOC.Font = new Font("Montserrat", 7.5F);
-            buttonSaveDOC.Location = new Point(612, 159);
+            buttonSaveDOC.Location = new Point(594, 159);
             buttonSaveDOC.Name = "buttonSaveDOC";
             buttonSaveDOC.Size = new Size(75, 23);
             buttonSaveDOC.TabIndex = 25;
@@ -352,7 +353,7 @@
             // buttonSaveCSV
             // 
             buttonSaveCSV.Font = new Font("Montserrat", 7.5F);
-            buttonSaveCSV.Location = new Point(526, 107);
+            buttonSaveCSV.Location = new Point(508, 107);
             buttonSaveCSV.Name = "buttonSaveCSV";
             buttonSaveCSV.Size = new Size(75, 23);
             buttonSaveCSV.TabIndex = 28;
@@ -362,20 +363,41 @@
             // buttonSaveJSON
             // 
             buttonSaveJSON.Font = new Font("Montserrat", 7.5F);
-            buttonSaveJSON.Location = new Point(612, 107);
+            buttonSaveJSON.Location = new Point(594, 107);
             buttonSaveJSON.Name = "buttonSaveJSON";
             buttonSaveJSON.Size = new Size(75, 23);
             buttonSaveJSON.TabIndex = 27;
             buttonSaveJSON.Text = "SAVE JSON";
             buttonSaveJSON.UseVisualStyleBackColor = true;
             // 
+            // buttonShowImage
+            // 
+            buttonShowImage.Font = new Font("Montserrat", 7.5F);
+            buttonShowImage.Location = new Point(679, 210);
+            buttonShowImage.Name = "buttonShowImage";
+            buttonShowImage.Size = new Size(75, 23);
+            buttonShowImage.TabIndex = 29;
+            buttonShowImage.Text = "SHOW IMG";
+            buttonShowImage.UseVisualStyleBackColor = true;
+            // 
+            // pictureBoxCar
+            // 
+            pictureBoxCar.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxCar.Location = new Point(850, 250);
+            pictureBoxCar.Name = "pictureBoxCar";
+            pictureBoxCar.Size = new Size(350, 350);
+            pictureBoxCar.TabIndex = 30;
+            pictureBoxCar.TabStop = false;
+            // 
             // VEmployee
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.employeeBG;
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(822, 739);
+            BackgroundImageLayout = ImageLayout.None;
+            ClientSize = new Size(1240, 739);
+            Controls.Add(pictureBoxCar);
+            Controls.Add(buttonShowImage);
             Controls.Add(buttonSaveCSV);
             Controls.Add(buttonSaveJSON);
             Controls.Add(buttonSaveXML);
@@ -410,6 +432,7 @@
             Text = "EmployeeGUI";
             ((System.ComponentModel.ISupportInitialize)numericUpDownCarID).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCarTable).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -444,5 +467,7 @@
         private Button buttonSaveDOC;
         private Button buttonSaveCSV;
         private Button buttonSaveJSON;
+        private Button buttonShowImage;
+        private PictureBox pictureBoxCar;
     }
 }
