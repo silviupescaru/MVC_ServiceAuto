@@ -1,4 +1,7 @@
-﻿namespace MVC_ServiceAuto.View
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace MVC_ServiceAuto.View
 {
     partial class VStatistics
     {
@@ -28,58 +31,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            chartCarStatistics = new FastReport.DataVisualization.Charting.Chart();
-            buttonBack = new Button();
-            buttonShowStatistics = new Button();
-            ((System.ComponentModel.ISupportInitialize)chartCarStatistics).BeginInit();
-            SuspendLayout();
-            // 
-            // chartCarStatistics
-            // 
-            chartCarStatistics.Location = new Point(12, 12);
-            chartCarStatistics.Name = "chartCarStatistics";
-            chartCarStatistics.Size = new Size(941, 532);
-            chartCarStatistics.TabIndex = 0;
-            chartCarStatistics.Text = "chart1";
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.buttonBack = new System.Windows.Forms.Button();
+            this.buttonShowStatistics = new System.Windows.Forms.Button();
+            this.chartCarStatistics = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.chartCarStatistics)).BeginInit();
+            this.SuspendLayout();
             // 
             // buttonBack
             // 
-            buttonBack.Font = new Font("Montserrat", 9F);
-            buttonBack.Location = new Point(277, 590);
-            buttonBack.Name = "buttonBack";
-            buttonBack.Size = new Size(161, 34);
-            buttonBack.TabIndex = 1;
-            buttonBack.Text = "Back to Manager";
-            buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Font = new System.Drawing.Font("Montserrat", 9F);
+            this.buttonBack.Location = new System.Drawing.Point(237, 511);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(138, 29);
+            this.buttonBack.TabIndex = 1;
+            this.buttonBack.Text = "Back to Manager";
+            this.buttonBack.UseVisualStyleBackColor = true;
             // 
             // buttonShowStatistics
             // 
-            buttonShowStatistics.Font = new Font("Montserrat", 9F);
-            buttonShowStatistics.Location = new Point(550, 590);
-            buttonShowStatistics.Name = "buttonShowStatistics";
-            buttonShowStatistics.Size = new Size(161, 34);
-            buttonShowStatistics.TabIndex = 2;
-            buttonShowStatistics.Text = "Show Statistics";
-            buttonShowStatistics.UseVisualStyleBackColor = true;
+            this.buttonShowStatistics.Font = new System.Drawing.Font("Montserrat", 9F);
+            this.buttonShowStatistics.Location = new System.Drawing.Point(471, 511);
+            this.buttonShowStatistics.Name = "buttonShowStatistics";
+            this.buttonShowStatistics.Size = new System.Drawing.Size(138, 29);
+            this.buttonShowStatistics.TabIndex = 2;
+            this.buttonShowStatistics.Text = "Show Statistics";
+            this.buttonShowStatistics.UseVisualStyleBackColor = true;
+            // 
+            // chartCarStatistics
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartCarStatistics.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartCarStatistics.Legends.Add(legend1);
+            this.chartCarStatistics.Location = new System.Drawing.Point(22, 21);
+            this.chartCarStatistics.Name = "chartCarStatistics";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartCarStatistics.Series.Add(series1);
+            this.chartCarStatistics.Size = new System.Drawing.Size(781, 474);
+            this.chartCarStatistics.TabIndex = 3;
+            this.chartCarStatistics.Text = "chartCarStatistics";
             // 
             // VStatistics
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(965, 657);
-            Controls.Add(buttonShowStatistics);
-            Controls.Add(buttonBack);
-            Controls.Add(chartCarStatistics);
-            Name = "VStatistics";
-            Text = "VStatistics";
-            ((System.ComponentModel.ISupportInitialize)chartCarStatistics).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(827, 569);
+            this.Controls.Add(this.chartCarStatistics);
+            this.Controls.Add(this.buttonShowStatistics);
+            this.Controls.Add(this.buttonBack);
+            this.Name = "VStatistics";
+            this.Text = "VStatistics";
+            ((System.ComponentModel.ISupportInitialize)(this.chartCarStatistics)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
 
-        private FastReport.DataVisualization.Charting.Chart chartCarStatistics;
         private Button buttonBack;
         private Button buttonShowStatistics;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartCarStatistics;
     }
 }

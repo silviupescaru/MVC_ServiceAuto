@@ -1,4 +1,7 @@
-﻿namespace MVC_ServiceAuto.View
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace MVC_ServiceAuto.View
 {
     partial class VAdministrator
     {
@@ -28,287 +31,295 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VAdministrator));
-            labelUserID = new Label();
-            labelRole = new Label();
-            labelPassword = new Label();
-            labelUsername = new Label();
-            buttonAdd = new Button();
-            buttonDelete = new Button();
-            buttonUpdate = new Button();
-            numericUpDownUserID = new NumericUpDown();
-            textBoxUsername = new TextBox();
-            textBoxRole = new TextBox();
-            textBoxPassword = new TextBox();
-            labelSearch = new Label();
-            textBoxSearch = new TextBox();
-            buttonViewAll = new Button();
-            buttonSearch = new Button();
-            dataGridViewUsers = new DataGridView();
-            buttonLogout = new Button();
-            labelLoggedUser = new Label();
-            comboBoxLanguage = new ComboBox();
-            labelLanguage = new Label();
-            ((System.ComponentModel.ISupportInitialize)numericUpDownUserID).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).BeginInit();
-            SuspendLayout();
+            this.labelUserID = new System.Windows.Forms.Label();
+            this.labelRole = new System.Windows.Forms.Label();
+            this.labelPassword = new System.Windows.Forms.Label();
+            this.labelUsername = new System.Windows.Forms.Label();
+            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonUpdate = new System.Windows.Forms.Button();
+            this.numericUpDownUserID = new System.Windows.Forms.NumericUpDown();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.textBoxRole = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.labelSearch = new System.Windows.Forms.Label();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.buttonViewAll = new System.Windows.Forms.Button();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.dataGridViewUsers = new System.Windows.Forms.DataGridView();
+            this.buttonLogout = new System.Windows.Forms.Button();
+            this.labelLoggedUser = new System.Windows.Forms.Label();
+            this.comboBoxLanguage = new System.Windows.Forms.ComboBox();
+            this.labelLanguage = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownUserID)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
+            this.SuspendLayout();
             // 
             // labelUserID
             // 
-            labelUserID.AutoSize = true;
-            labelUserID.BackColor = Color.Transparent;
-            labelUserID.Font = new Font("Montserrat", 12.75F, FontStyle.Bold);
-            labelUserID.ForeColor = Color.White;
-            labelUserID.Location = new Point(59, 118);
-            labelUserID.Name = "labelUserID";
-            labelUserID.Size = new Size(75, 24);
-            labelUserID.TabIndex = 0;
-            labelUserID.Text = "User ID";
+            this.labelUserID.AutoSize = true;
+            this.labelUserID.BackColor = System.Drawing.Color.Transparent;
+            this.labelUserID.Font = new System.Drawing.Font("Montserrat", 12.75F, System.Drawing.FontStyle.Bold);
+            this.labelUserID.ForeColor = System.Drawing.Color.White;
+            this.labelUserID.Location = new System.Drawing.Point(51, 102);
+            this.labelUserID.Name = "labelUserID";
+            this.labelUserID.Size = new System.Drawing.Size(75, 24);
+            this.labelUserID.TabIndex = 0;
+            this.labelUserID.Text = "User ID";
             // 
             // labelRole
             // 
-            labelRole.AutoSize = true;
-            labelRole.BackColor = Color.Transparent;
-            labelRole.Font = new Font("Montserrat", 12.75F, FontStyle.Bold);
-            labelRole.ForeColor = Color.White;
-            labelRole.Location = new Point(59, 199);
-            labelRole.Name = "labelRole";
-            labelRole.Size = new Size(49, 24);
-            labelRole.TabIndex = 1;
-            labelRole.Text = "Role";
+            this.labelRole.AutoSize = true;
+            this.labelRole.BackColor = System.Drawing.Color.Transparent;
+            this.labelRole.Font = new System.Drawing.Font("Montserrat", 12.75F, System.Drawing.FontStyle.Bold);
+            this.labelRole.ForeColor = System.Drawing.Color.White;
+            this.labelRole.Location = new System.Drawing.Point(51, 172);
+            this.labelRole.Name = "labelRole";
+            this.labelRole.Size = new System.Drawing.Size(49, 24);
+            this.labelRole.TabIndex = 1;
+            this.labelRole.Text = "Role";
             // 
             // labelPassword
             // 
-            labelPassword.AutoSize = true;
-            labelPassword.BackColor = Color.Transparent;
-            labelPassword.Font = new Font("Montserrat", 12.75F, FontStyle.Bold);
-            labelPassword.ForeColor = Color.White;
-            labelPassword.Location = new Point(59, 172);
-            labelPassword.Name = "labelPassword";
-            labelPassword.Size = new Size(96, 24);
-            labelPassword.TabIndex = 2;
-            labelPassword.Text = "Password";
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.BackColor = System.Drawing.Color.Transparent;
+            this.labelPassword.Font = new System.Drawing.Font("Montserrat", 12.75F, System.Drawing.FontStyle.Bold);
+            this.labelPassword.ForeColor = System.Drawing.Color.White;
+            this.labelPassword.Location = new System.Drawing.Point(51, 149);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(96, 24);
+            this.labelPassword.TabIndex = 2;
+            this.labelPassword.Text = "Password";
             // 
             // labelUsername
             // 
-            labelUsername.AutoSize = true;
-            labelUsername.BackColor = Color.Transparent;
-            labelUsername.Font = new Font("Montserrat", 12.75F, FontStyle.Bold);
-            labelUsername.ForeColor = Color.White;
-            labelUsername.Location = new Point(59, 145);
-            labelUsername.Name = "labelUsername";
-            labelUsername.Size = new Size(101, 24);
-            labelUsername.TabIndex = 3;
-            labelUsername.Text = "Username";
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.BackColor = System.Drawing.Color.Transparent;
+            this.labelUsername.Font = new System.Drawing.Font("Montserrat", 12.75F, System.Drawing.FontStyle.Bold);
+            this.labelUsername.ForeColor = System.Drawing.Color.White;
+            this.labelUsername.Location = new System.Drawing.Point(51, 126);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(101, 24);
+            this.labelUsername.TabIndex = 3;
+            this.labelUsername.Text = "Username";
             // 
             // buttonAdd
             // 
-            buttonAdd.Font = new Font("Montserrat", 8F);
-            buttonAdd.Location = new Point(59, 236);
-            buttonAdd.Name = "buttonAdd";
-            buttonAdd.Size = new Size(75, 23);
-            buttonAdd.TabIndex = 4;
-            buttonAdd.Text = "ADD";
-            buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Font = new System.Drawing.Font("Montserrat", 8F);
+            this.buttonAdd.Location = new System.Drawing.Point(51, 205);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(64, 20);
+            this.buttonAdd.TabIndex = 4;
+            this.buttonAdd.Text = "ADD";
+            this.buttonAdd.UseVisualStyleBackColor = true;
             // 
             // buttonDelete
             // 
-            buttonDelete.Font = new Font("Montserrat", 8F);
-            buttonDelete.Location = new Point(238, 236);
-            buttonDelete.Name = "buttonDelete";
-            buttonDelete.Size = new Size(75, 23);
-            buttonDelete.TabIndex = 5;
-            buttonDelete.Text = "DELETE";
-            buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Font = new System.Drawing.Font("Montserrat", 8F);
+            this.buttonDelete.Location = new System.Drawing.Point(204, 205);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(64, 20);
+            this.buttonDelete.TabIndex = 5;
+            this.buttonDelete.Text = "DELETE";
+            this.buttonDelete.UseVisualStyleBackColor = true;
             // 
             // buttonUpdate
             // 
-            buttonUpdate.Font = new Font("Montserrat", 8F);
-            buttonUpdate.Location = new Point(148, 236);
-            buttonUpdate.Name = "buttonUpdate";
-            buttonUpdate.Size = new Size(75, 23);
-            buttonUpdate.TabIndex = 6;
-            buttonUpdate.Text = "UPDATE";
-            buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Font = new System.Drawing.Font("Montserrat", 8F);
+            this.buttonUpdate.Location = new System.Drawing.Point(127, 205);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(64, 20);
+            this.buttonUpdate.TabIndex = 6;
+            this.buttonUpdate.Text = "UPDATE";
+            this.buttonUpdate.UseVisualStyleBackColor = true;
             // 
             // numericUpDownUserID
             // 
-            numericUpDownUserID.Font = new Font("Montserrat", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            numericUpDownUserID.Location = new Point(181, 123);
-            numericUpDownUserID.Maximum = new decimal(new int[] { 4000000, 0, 0, 0 });
-            numericUpDownUserID.Name = "numericUpDownUserID";
-            numericUpDownUserID.Size = new Size(132, 22);
-            numericUpDownUserID.TabIndex = 7;
+            this.numericUpDownUserID.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownUserID.Location = new System.Drawing.Point(155, 107);
+            this.numericUpDownUserID.Maximum = new decimal(new int[] {
+            4000000,
+            0,
+            0,
+            0});
+            this.numericUpDownUserID.Name = "numericUpDownUserID";
+            this.numericUpDownUserID.Size = new System.Drawing.Size(113, 22);
+            this.numericUpDownUserID.TabIndex = 7;
             // 
             // textBoxUsername
             // 
-            textBoxUsername.Font = new Font("Montserrat", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxUsername.Location = new Point(181, 152);
-            textBoxUsername.Name = "textBoxUsername";
-            textBoxUsername.Size = new Size(132, 22);
-            textBoxUsername.TabIndex = 8;
+            this.textBoxUsername.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsername.Location = new System.Drawing.Point(155, 132);
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(114, 22);
+            this.textBoxUsername.TabIndex = 8;
             // 
             // textBoxRole
             // 
-            textBoxRole.Font = new Font("Montserrat", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxRole.Location = new Point(181, 208);
-            textBoxRole.Name = "textBoxRole";
-            textBoxRole.Size = new Size(132, 22);
-            textBoxRole.TabIndex = 9;
+            this.textBoxRole.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxRole.Location = new System.Drawing.Point(155, 180);
+            this.textBoxRole.Name = "textBoxRole";
+            this.textBoxRole.Size = new System.Drawing.Size(114, 22);
+            this.textBoxRole.TabIndex = 9;
             // 
             // textBoxPassword
             // 
-            textBoxPassword.Font = new Font("Montserrat", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxPassword.Location = new Point(181, 180);
-            textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.Size = new Size(132, 22);
-            textBoxPassword.TabIndex = 10;
+            this.textBoxPassword.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassword.Location = new System.Drawing.Point(155, 156);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(114, 22);
+            this.textBoxPassword.TabIndex = 10;
             // 
             // labelSearch
             // 
-            labelSearch.AutoSize = true;
-            labelSearch.BackColor = Color.Transparent;
-            labelSearch.Font = new Font("Montserrat", 15F, FontStyle.Bold);
-            labelSearch.ForeColor = Color.White;
-            labelSearch.Location = new Point(506, 147);
-            labelSearch.Name = "labelSearch";
-            labelSearch.Size = new Size(138, 27);
-            labelSearch.TabIndex = 11;
-            labelSearch.Text = "Search Role";
+            this.labelSearch.AutoSize = true;
+            this.labelSearch.BackColor = System.Drawing.Color.Transparent;
+            this.labelSearch.Font = new System.Drawing.Font("Montserrat", 15F, System.Drawing.FontStyle.Bold);
+            this.labelSearch.ForeColor = System.Drawing.Color.White;
+            this.labelSearch.Location = new System.Drawing.Point(434, 127);
+            this.labelSearch.Name = "labelSearch";
+            this.labelSearch.Size = new System.Drawing.Size(138, 27);
+            this.labelSearch.TabIndex = 11;
+            this.labelSearch.Text = "Search Role";
             // 
             // textBoxSearch
             // 
-            textBoxSearch.Font = new Font("Montserrat", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxSearch.Location = new Point(511, 180);
-            textBoxSearch.Name = "textBoxSearch";
-            textBoxSearch.Size = new Size(302, 22);
-            textBoxSearch.TabIndex = 12;
+            this.textBoxSearch.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearch.Location = new System.Drawing.Point(438, 156);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(259, 22);
+            this.textBoxSearch.TabIndex = 12;
             // 
             // buttonViewAll
             // 
-            buttonViewAll.Font = new Font("Montserrat", 8F);
-            buttonViewAll.Location = new Point(694, 222);
-            buttonViewAll.Name = "buttonViewAll";
-            buttonViewAll.Size = new Size(119, 23);
-            buttonViewAll.TabIndex = 13;
-            buttonViewAll.Text = "VIEW ALL";
-            buttonViewAll.UseVisualStyleBackColor = true;
+            this.buttonViewAll.Font = new System.Drawing.Font("Montserrat", 8F);
+            this.buttonViewAll.Location = new System.Drawing.Point(595, 192);
+            this.buttonViewAll.Name = "buttonViewAll";
+            this.buttonViewAll.Size = new System.Drawing.Size(102, 20);
+            this.buttonViewAll.TabIndex = 13;
+            this.buttonViewAll.Text = "VIEW ALL";
+            this.buttonViewAll.UseVisualStyleBackColor = true;
             // 
             // buttonSearch
             // 
-            buttonSearch.Font = new Font("Montserrat", 8F);
-            buttonSearch.Location = new Point(511, 222);
-            buttonSearch.Name = "buttonSearch";
-            buttonSearch.Size = new Size(116, 23);
-            buttonSearch.TabIndex = 14;
-            buttonSearch.Text = "SEARCH";
-            buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Font = new System.Drawing.Font("Montserrat", 8F);
+            this.buttonSearch.Location = new System.Drawing.Point(438, 192);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(99, 20);
+            this.buttonSearch.TabIndex = 14;
+            this.buttonSearch.Text = "SEARCH";
+            this.buttonSearch.UseVisualStyleBackColor = true;
             // 
             // dataGridViewUsers
             // 
-            dataGridViewUsers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Montserrat SemiBold", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dataGridViewUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.Window;
-            dataGridViewCellStyle2.Font = new Font("Montserrat", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            dataGridViewUsers.DefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewUsers.Location = new Point(59, 296);
-            dataGridViewUsers.Name = "dataGridViewUsers";
-            dataGridViewUsers.Size = new Size(754, 319);
-            dataGridViewUsers.TabIndex = 15;
+            this.dataGridViewUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewUsers.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewUsers.Location = new System.Drawing.Point(51, 257);
+            this.dataGridViewUsers.Name = "dataGridViewUsers";
+            this.dataGridViewUsers.Size = new System.Drawing.Size(646, 276);
+            this.dataGridViewUsers.TabIndex = 15;
             // 
             // buttonLogout
             // 
-            buttonLogout.Font = new Font("Montserrat", 8F);
-            buttonLogout.Location = new Point(124, 680);
-            buttonLogout.Name = "buttonLogout";
-            buttonLogout.Size = new Size(75, 23);
-            buttonLogout.TabIndex = 16;
-            buttonLogout.Text = "LOGOUT";
-            buttonLogout.UseVisualStyleBackColor = true;
+            this.buttonLogout.Font = new System.Drawing.Font("Montserrat", 8F);
+            this.buttonLogout.Location = new System.Drawing.Point(106, 589);
+            this.buttonLogout.Name = "buttonLogout";
+            this.buttonLogout.Size = new System.Drawing.Size(64, 20);
+            this.buttonLogout.TabIndex = 16;
+            this.buttonLogout.Text = "LOGOUT";
+            this.buttonLogout.UseVisualStyleBackColor = true;
             // 
             // labelLoggedUser
             // 
-            labelLoggedUser.AutoSize = true;
-            labelLoggedUser.BackColor = Color.Transparent;
-            labelLoggedUser.Font = new Font("Montserrat", 10F, FontStyle.Bold);
-            labelLoggedUser.ForeColor = Color.White;
-            labelLoggedUser.Location = new Point(57, 654);
-            labelLoggedUser.Name = "labelLoggedUser";
-            labelLoggedUser.Size = new Size(209, 20);
-            labelLoggedUser.TabIndex = 17;
-            labelLoggedUser.Text = "Logged in as Administrator";
+            this.labelLoggedUser.AutoSize = true;
+            this.labelLoggedUser.BackColor = System.Drawing.Color.Transparent;
+            this.labelLoggedUser.Font = new System.Drawing.Font("Montserrat", 10F, System.Drawing.FontStyle.Bold);
+            this.labelLoggedUser.ForeColor = System.Drawing.Color.White;
+            this.labelLoggedUser.Location = new System.Drawing.Point(34, 566);
+            this.labelLoggedUser.Name = "labelLoggedUser";
+            this.labelLoggedUser.Size = new System.Drawing.Size(209, 20);
+            this.labelLoggedUser.TabIndex = 17;
+            this.labelLoggedUser.Text = "Logged in as Administrator";
             // 
             // comboBoxLanguage
             // 
-            comboBoxLanguage.FormattingEnabled = true;
-            comboBoxLanguage.Items.AddRange(new object[] { "", "English", "Japanese", "Russian" });
-            comboBoxLanguage.Location = new Point(650, 123);
-            comboBoxLanguage.Name = "comboBoxLanguage";
-            comboBoxLanguage.Size = new Size(163, 23);
-            comboBoxLanguage.TabIndex = 18;
+            this.comboBoxLanguage.FormattingEnabled = true;
+            this.comboBoxLanguage.Items.AddRange(new object[] {
+            "",
+            "English",
+            "Japanese",
+            "Russian"});
+            this.comboBoxLanguage.Location = new System.Drawing.Point(557, 107);
+            this.comboBoxLanguage.Name = "comboBoxLanguage";
+            this.comboBoxLanguage.Size = new System.Drawing.Size(140, 21);
+            this.comboBoxLanguage.TabIndex = 18;
             // 
             // labelLanguage
             // 
-            labelLanguage.AutoSize = true;
-            labelLanguage.BackColor = Color.Transparent;
-            labelLanguage.Font = new Font("Montserrat", 12.75F, FontStyle.Bold);
-            labelLanguage.ForeColor = Color.White;
-            labelLanguage.Location = new Point(507, 122);
-            labelLanguage.Name = "labelLanguage";
-            labelLanguage.Size = new Size(99, 24);
-            labelLanguage.TabIndex = 19;
-            labelLanguage.Text = "Language";
+            this.labelLanguage.AutoSize = true;
+            this.labelLanguage.BackColor = System.Drawing.Color.Transparent;
+            this.labelLanguage.Font = new System.Drawing.Font("Montserrat", 12.75F, System.Drawing.FontStyle.Bold);
+            this.labelLanguage.ForeColor = System.Drawing.Color.White;
+            this.labelLanguage.Location = new System.Drawing.Point(435, 106);
+            this.labelLanguage.Name = "labelLanguage";
+            this.labelLanguage.Size = new System.Drawing.Size(99, 24);
+            this.labelLanguage.TabIndex = 19;
+            this.labelLanguage.Text = "Language";
             // 
             // VAdministrator
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.adminBG;
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(869, 733);
-            Controls.Add(labelLanguage);
-            Controls.Add(comboBoxLanguage);
-            Controls.Add(labelLoggedUser);
-            Controls.Add(buttonLogout);
-            Controls.Add(dataGridViewUsers);
-            Controls.Add(buttonSearch);
-            Controls.Add(buttonViewAll);
-            Controls.Add(textBoxSearch);
-            Controls.Add(labelSearch);
-            Controls.Add(textBoxPassword);
-            Controls.Add(textBoxRole);
-            Controls.Add(textBoxUsername);
-            Controls.Add(numericUpDownUserID);
-            Controls.Add(buttonUpdate);
-            Controls.Add(buttonDelete);
-            Controls.Add(buttonAdd);
-            Controls.Add(labelUsername);
-            Controls.Add(labelPassword);
-            Controls.Add(labelRole);
-            Controls.Add(labelUserID);
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "VAdministrator";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "AdministratorGUI";
-            ((System.ComponentModel.ISupportInitialize)numericUpDownUserID).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(745, 635);
+            this.Controls.Add(this.labelLanguage);
+            this.Controls.Add(this.comboBoxLanguage);
+            this.Controls.Add(this.labelLoggedUser);
+            this.Controls.Add(this.buttonLogout);
+            this.Controls.Add(this.dataGridViewUsers);
+            this.Controls.Add(this.buttonSearch);
+            this.Controls.Add(this.buttonViewAll);
+            this.Controls.Add(this.textBoxSearch);
+            this.Controls.Add(this.labelSearch);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.textBoxRole);
+            this.Controls.Add(this.textBoxUsername);
+            this.Controls.Add(this.numericUpDownUserID);
+            this.Controls.Add(this.buttonUpdate);
+            this.Controls.Add(this.buttonDelete);
+            this.Controls.Add(this.buttonAdd);
+            this.Controls.Add(this.labelUsername);
+            this.Controls.Add(this.labelPassword);
+            this.Controls.Add(this.labelRole);
+            this.Controls.Add(this.labelUserID);
+            this.Name = "VAdministrator";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "AdministratorGUI";
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownUserID)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Diagnostics;
 using System.Linq;
-using System.Runtime.InteropServices.Marshalling;
 using System.Text;
-using System.Threading.Tasks;
-using DocumentFormat.OpenXml.ExtendedProperties;
-using MVC_ServiceAuto.Controller;
 using MVC_ServiceAuto.Model;
 using MVC_ServiceAuto.Model.Repository;
 using MVC_ServiceAuto.View;
@@ -16,6 +11,9 @@ using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 using static System.Net.Mime.MediaTypeNames;
 using Text = DocumentFormat.OpenXml.Wordprocessing.Text;
+using System.Windows.Forms;
+using System.IO;
+using System.Diagnostics;
 
 namespace MVC_ServiceAuto.Controller
 {
@@ -514,8 +512,12 @@ namespace MVC_ServiceAuto.Controller
                     this.vManager.GetFuel().Text = fuel;
 
                     string imageName = brand + "_" + color;
-                    string path = "../../../resources/cars/" + imageName + ".jpg";
-                    string secondPath = "../../../resources/cars/noCarFound.jpg";
+
+                    string workingDirectory = Environment.CurrentDirectory;
+                    workingDirectory = workingDirectory.Substring(0, workingDirectory.Length - 9);
+
+                    string path = workingDirectory + "resources\\cars\\" + imageName + ".jpg";
+                    string secondPath = workingDirectory + "resources\\cars\\noCarFound.jpg";
 
                     try
                     {

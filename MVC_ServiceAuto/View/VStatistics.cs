@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FastReport.DataVisualization.Charting;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace MVC_ServiceAuto.View
 {

@@ -18,7 +18,7 @@ namespace MVC_ServiceAuto.Model.Language
             rm = new ResourceManager("MVC_ServiceAuto.Model.Language.string", Assembly.GetExecutingAssembly());
         }
 
-        public static string? GetString(string name)
+        public static string GetString(string name)
         {
             return rm.GetString(name);
         }

@@ -15,6 +15,9 @@ using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 using System.Security.Cryptography;
 using System.Reflection;
+using System.Windows.Forms;
+using System.IO;
+using System.Drawing;
 
 namespace MVC_ServiceAuto.Controller
 {
@@ -607,8 +610,11 @@ namespace MVC_ServiceAuto.Controller
                     this.vEmployee.GetFuel().Text = fuel;
 
                     string imageName = brand + "_" + color;
-                    string path = "../../../resources/cars/" + imageName + ".jpg";
-                    string secondPath = "../../../resources/cars/noCarFound.jpg";
+                    string workingDirectory = Environment.CurrentDirectory;
+                    workingDirectory = workingDirectory.Substring(0, workingDirectory.Length - 9);
+
+                    string path = workingDirectory + "resources\\cars\\" + imageName + ".jpg";
+                    string secondPath = workingDirectory + "resources\\cars\\noCarFound.jpg";
 
                     try
                     {

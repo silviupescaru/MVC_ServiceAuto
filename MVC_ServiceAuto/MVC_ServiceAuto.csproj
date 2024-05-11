@@ -1,47 +1,187 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DAE47706-161B-4FE7-974C-FAEC86C2060F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <UseWindowsForms>true</UseWindowsForms>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>MVC_ServiceAuto</RootNamespace>
+    <AssemblyName>MVC_ServiceAuto</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
-
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
   <ItemGroup>
-    <Compile Update="Model\Language\string.en.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>string.en.resx</DependentUpon>
+    <Reference Include="DocumentFormat.OpenXml, Version=3.0.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.3.0.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml.Framework, Version=3.0.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.Framework.3.0.2\lib\net46\DocumentFormat.OpenXml.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\ControllerVAdministrator.cs" />
+    <Compile Include="Controller\ControllerVEmployee.cs" />
+    <Compile Include="Controller\ControllerVLogin.cs" />
+    <Compile Include="Controller\ControllerVManager.cs" />
+    <Compile Include="Controller\ControllerVStatistics.cs" />
+    <Compile Include="Model\Car.cs" />
+    <Compile Include="Model\Language\LangHelper.cs" />
+    <Compile Include="Model\Language\string.en.Designer.cs" />
+    <Compile Include="Model\Observable.cs" />
+    <Compile Include="Model\Repository\CarRepository.cs" />
+    <Compile Include="Model\Repository\Repository.cs" />
+    <Compile Include="Model\Repository\UserRepository.cs" />
+    <Compile Include="Model\Subject.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\VAdministrator.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Properties\Resources.Designer.cs">
-      <DesignTime>True</DesignTime>
+    <Compile Include="View\VAdministrator.Designer.cs">
+      <DependentUpon>VAdministrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\VEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\VEmployee.Designer.cs">
+      <DependentUpon>VEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\VLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\VLogin.Designer.cs">
+      <DependentUpon>VLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\VManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\VManager.Designer.cs">
+      <DependentUpon>VManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\VStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\VStatistics.Designer.cs">
+      <DependentUpon>VStatistics.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Model\Language\string.en.resx" />
+    <EmbeddedResource Include="Model\Language\string.fr.resx" />
+    <EmbeddedResource Include="Model\Language\string.ru.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Model\Language\string.en.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>string.en.Designer.cs</LastGenOutput>
+    <EmbeddedResource Include="View\VAdministrator.resx">
+      <DependentUpon>VAdministrator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    <EmbeddedResource Include="View\VEmployee.resx">
+      <DependentUpon>VEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\VLogin.resx">
+      <DependentUpon>VLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\VManager.resx">
+      <DependentUpon>VManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\VStatistics.resx">
+      <DependentUpon>VStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="DocumentFormat.OpenXml" Version="3.0.2" />
-    <PackageReference Include="FastReport.DataVisualization" Version="2024.2.3" />
-    <PackageReference Include="HIC.System.Windows.Forms.DataVisualization" Version="1.0.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <None Include="App.config" />
   </ItemGroup>
-
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="resources\cars\" />
+    <Content Include="resources\adminBG.jpg" />
+    <Content Include="resources\adminBG1.jpg" />
+    <Content Include="resources\cars\Audi_Blue.jpg" />
+    <Content Include="resources\cars\Audi_Gray.jpg" />
+    <Content Include="resources\cars\Audi_Green.jpg" />
+    <Content Include="resources\cars\Audi_Orange.jpg" />
+    <Content Include="resources\cars\Audi_Purple.jpg" />
+    <Content Include="resources\cars\Audi_Red.jpg" />
+    <Content Include="resources\cars\Audi_Yellow.jpg" />
+    <Content Include="resources\cars\Lexus_Black.jpg" />
+    <Content Include="resources\cars\Mazda_Deep Purple.jpg" />
+    <Content Include="resources\cars\Mazda_Green.jpg" />
+    <Content Include="resources\cars\Mercedes-Benz_Gray.jpg" />
+    <Content Include="resources\cars\Mercedes-Benz_White.jpg" />
+    <Content Include="resources\cars\Nissan_Gray.jpg" />
+    <Content Include="resources\cars\noCarFound.jpg" />
+    <Content Include="resources\cars\Seat_White.jpg" />
+    <Content Include="resources\cars\Skoda_Green.jpg" />
+    <Content Include="resources\cars\Skoda_Navy Blue.jpg" />
+    <Content Include="resources\cars\Skoda_Purple.jpg" />
+    <Content Include="resources\cars\Skoda_Racing Blue.jpg" />
+    <Content Include="resources\cars\Skoda_Red.jpg" />
+    <Content Include="resources\cars\Volvo_Blue.jpg" />
+    <Content Include="resources\cars\Volvo_Gray.jpg" />
+    <Content Include="resources\cars\Volvo_Green.jpg" />
+    <Content Include="resources\cars\Volvo_Orange.jpg" />
+    <Content Include="resources\cars\Volvo_Purple.jpg" />
+    <Content Include="resources\cars\Volvo_Red.jpg" />
+    <Content Include="resources\cars\Volvo_Yellow.jpg" />
+    <Content Include="resources\employeeBG.jpg" />
+    <Content Include="resources\employeeBG1.jpg" />
+    <Content Include="resources\loginNebun.jpg" />
+    <Content Include="resources\loginNebun1.jpg" />
+    <Content Include="resources\managerBG.jpg" />
+    <Content Include="resources\managerBG1.jpg" />
+    <Content Include="resources\sa.ico" />
   </ItemGroup>
-
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

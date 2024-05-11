@@ -3,9 +3,11 @@ using MVC_ServiceAuto.View;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace MVC_ServiceAuto.Controller
 {
@@ -50,8 +52,8 @@ namespace MVC_ServiceAuto.Controller
 
             // Add a new legend
             this.vStatistics.GetChart().Legends.Add(criterion);
-            this.vStatistics.GetChart().Legends[0].LegendStyle = FastReport.DataVisualization.Charting.LegendStyle.Table;
-            this.vStatistics.GetChart().Legends[0].Docking = FastReport.DataVisualization.Charting.Docking.Bottom;
+            this.vStatistics.GetChart().Legends[0].LegendStyle = LegendStyle.Table;
+            this.vStatistics.GetChart().Legends[0].Docking = Docking.Bottom;
             this.vStatistics.GetChart().Legends[0].Alignment = StringAlignment.Center;
             this.vStatistics.GetChart().Legends[0].Title = criterion;
             this.vStatistics.GetChart().Legends[0].BorderColor = Color.Black;
@@ -60,7 +62,7 @@ namespace MVC_ServiceAuto.Controller
             var series = this.vStatistics.GetChart().Series.Add(criterion);
 
             // Set the chart type to Pie
-            series.ChartType = FastReport.DataVisualization.Charting.SeriesChartType.Pie;
+            series.ChartType = SeriesChartType.Pie;
 
 
             this.vStatistics.GetChart().Series[criterion].Points.AddXY("Mercedes-Benz", 20);
