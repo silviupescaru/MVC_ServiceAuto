@@ -406,7 +406,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.employeeBG1;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(1240, 739);
             Controls.Add(labelHeader);

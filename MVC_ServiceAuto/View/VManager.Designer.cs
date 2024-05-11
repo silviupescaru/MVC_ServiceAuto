@@ -56,14 +56,17 @@
             labelBrand = new Label();
             labelOwner = new Label();
             labelCarID = new Label();
+            pictureBoxCar = new PictureBox();
+            labelHeader = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCarTable).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownCarID).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCar).BeginInit();
             SuspendLayout();
             // 
             // buttonSaveCSV
             // 
             buttonSaveCSV.Font = new Font("Montserrat", 7.5F);
-            buttonSaveCSV.Location = new Point(320, 182);
+            buttonSaveCSV.Location = new Point(581, 245);
             buttonSaveCSV.Name = "buttonSaveCSV";
             buttonSaveCSV.Size = new Size(75, 23);
             buttonSaveCSV.TabIndex = 56;
@@ -73,7 +76,7 @@
             // buttonSaveJSON
             // 
             buttonSaveJSON.Font = new Font("Montserrat", 7.5F);
-            buttonSaveJSON.Location = new Point(403, 182);
+            buttonSaveJSON.Location = new Point(664, 245);
             buttonSaveJSON.Name = "buttonSaveJSON";
             buttonSaveJSON.Size = new Size(75, 23);
             buttonSaveJSON.TabIndex = 55;
@@ -83,7 +86,7 @@
             // buttonSaveXML
             // 
             buttonSaveXML.Font = new Font("Montserrat", 7.5F);
-            buttonSaveXML.Location = new Point(320, 211);
+            buttonSaveXML.Location = new Point(581, 293);
             buttonSaveXML.Name = "buttonSaveXML";
             buttonSaveXML.Size = new Size(75, 23);
             buttonSaveXML.TabIndex = 54;
@@ -93,7 +96,7 @@
             // buttonSaveDOC
             // 
             buttonSaveDOC.Font = new Font("Montserrat", 7.5F);
-            buttonSaveDOC.Location = new Point(402, 211);
+            buttonSaveDOC.Location = new Point(663, 293);
             buttonSaveDOC.Name = "buttonSaveDOC";
             buttonSaveDOC.Size = new Size(75, 23);
             buttonSaveDOC.TabIndex = 53;
@@ -103,7 +106,7 @@
             // buttonLogout
             // 
             buttonLogout.Font = new Font("Montserrat", 7.5F);
-            buttonLogout.Location = new Point(113, 603);
+            buttonLogout.Location = new Point(962, 624);
             buttonLogout.Name = "buttonLogout";
             buttonLogout.Size = new Size(75, 23);
             buttonLogout.TabIndex = 52;
@@ -116,7 +119,7 @@
             labelLoggedIn.BackColor = Color.Transparent;
             labelLoggedIn.Font = new Font("Montserrat SemiBold", 9.999999F, FontStyle.Bold);
             labelLoggedIn.ForeColor = Color.White;
-            labelLoggedIn.Location = new Point(63, 576);
+            labelLoggedIn.Location = new Point(912, 597);
             labelLoggedIn.Name = "labelLoggedIn";
             labelLoggedIn.Size = new Size(173, 20);
             labelLoggedIn.TabIndex = 51;
@@ -142,15 +145,15 @@
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
             dataGridViewCarTable.DefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCarTable.Location = new Point(52, 276);
+            dataGridViewCarTable.Location = new Point(58, 354);
             dataGridViewCarTable.Name = "dataGridViewCarTable";
-            dataGridViewCarTable.Size = new Size(695, 275);
+            dataGridViewCarTable.Size = new Size(688, 296);
             dataGridViewCarTable.TabIndex = 50;
             // 
             // buttonSearch
             // 
             buttonSearch.Font = new Font("Montserrat", 7.5F);
-            buttonSearch.Location = new Point(664, 211);
+            buttonSearch.Location = new Point(498, 294);
             buttonSearch.Name = "buttonSearch";
             buttonSearch.Size = new Size(75, 23);
             buttonSearch.TabIndex = 49;
@@ -160,7 +163,7 @@
             // buttonViewAll
             // 
             buttonViewAll.Font = new Font("Montserrat", 7.5F);
-            buttonViewAll.Location = new Point(664, 162);
+            buttonViewAll.Location = new Point(498, 245);
             buttonViewAll.Name = "buttonViewAll";
             buttonViewAll.Size = new Size(75, 23);
             buttonViewAll.TabIndex = 48;
@@ -170,7 +173,7 @@
             // textBoxSearchBar
             // 
             textBoxSearchBar.Font = new Font("Montserrat", 8.999999F);
-            textBoxSearchBar.Location = new Point(496, 211);
+            textBoxSearchBar.Location = new Point(330, 294);
             textBoxSearchBar.Name = "textBoxSearchBar";
             textBoxSearchBar.Size = new Size(151, 22);
             textBoxSearchBar.TabIndex = 47;
@@ -180,22 +183,20 @@
             comboBoxFilterBy.Font = new Font("Montserrat", 8.999999F);
             comboBoxFilterBy.FormattingEnabled = true;
             comboBoxFilterBy.Items.AddRange(new object[] { "", "Owner", "Brand", "Color", "Fuel" });
-            comboBoxFilterBy.Location = new Point(496, 161);
+            comboBoxFilterBy.Location = new Point(330, 244);
             comboBoxFilterBy.Name = "comboBoxFilterBy";
             comboBoxFilterBy.Size = new Size(151, 24);
             comboBoxFilterBy.TabIndex = 46;
-            //comboBoxFilterBy.SelectedIndexChanged += comboBoxFilterBy_SelectedIndexChanged;
             // 
             // comboBoxCarFilter
             // 
             comboBoxCarFilter.Font = new Font("Montserrat", 8.999999F);
             comboBoxCarFilter.FormattingEnabled = true;
             comboBoxCarFilter.Items.AddRange(new object[] { "", "None", "Brand and Fuel" });
-            comboBoxCarFilter.Location = new Point(496, 108);
+            comboBoxCarFilter.Location = new Point(330, 191);
             comboBoxCarFilter.Name = "comboBoxCarFilter";
             comboBoxCarFilter.Size = new Size(151, 24);
             comboBoxCarFilter.TabIndex = 45;
-            //comboBoxCarFilter.SelectedIndexChanged += comboBoxCarFilter_SelectedIndexChanged;
             // 
             // labelFilterBy
             // 
@@ -203,7 +204,7 @@
             labelFilterBy.BackColor = Color.Transparent;
             labelFilterBy.Font = new Font("Montserrat SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelFilterBy.ForeColor = Color.White;
-            labelFilterBy.Location = new Point(492, 136);
+            labelFilterBy.Location = new Point(326, 219);
             labelFilterBy.Name = "labelFilterBy";
             labelFilterBy.Size = new Size(79, 22);
             labelFilterBy.TabIndex = 44;
@@ -215,7 +216,7 @@
             labelSearchBar.BackColor = Color.Transparent;
             labelSearchBar.Font = new Font("Montserrat SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelSearchBar.ForeColor = Color.White;
-            labelSearchBar.Location = new Point(492, 186);
+            labelSearchBar.Location = new Point(326, 269);
             labelSearchBar.Name = "labelSearchBar";
             labelSearchBar.Size = new Size(99, 22);
             labelSearchBar.TabIndex = 43;
@@ -227,7 +228,7 @@
             labelCarOrderBy.BackColor = Color.Transparent;
             labelCarOrderBy.Font = new Font("Montserrat SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelCarOrderBy.ForeColor = Color.White;
-            labelCarOrderBy.Location = new Point(492, 83);
+            labelCarOrderBy.Location = new Point(326, 166);
             labelCarOrderBy.Name = "labelCarOrderBy";
             labelCarOrderBy.Size = new Size(116, 22);
             labelCarOrderBy.TabIndex = 42;
@@ -236,7 +237,7 @@
             // textBoxBrand
             // 
             textBoxBrand.Font = new Font("Montserrat", 8.999999F);
-            textBoxBrand.Location = new Point(139, 148);
+            textBoxBrand.Location = new Point(137, 232);
             textBoxBrand.Name = "textBoxBrand";
             textBoxBrand.Size = new Size(161, 22);
             textBoxBrand.TabIndex = 38;
@@ -244,7 +245,7 @@
             // textBoxColor
             // 
             textBoxColor.Font = new Font("Montserrat", 8.999999F);
-            textBoxColor.Location = new Point(139, 178);
+            textBoxColor.Location = new Point(137, 262);
             textBoxColor.Name = "textBoxColor";
             textBoxColor.Size = new Size(161, 22);
             textBoxColor.TabIndex = 37;
@@ -252,7 +253,7 @@
             // textBoxOwner
             // 
             textBoxOwner.Font = new Font("Montserrat", 8.999999F);
-            textBoxOwner.Location = new Point(139, 118);
+            textBoxOwner.Location = new Point(137, 202);
             textBoxOwner.Name = "textBoxOwner";
             textBoxOwner.Size = new Size(161, 22);
             textBoxOwner.TabIndex = 36;
@@ -262,7 +263,7 @@
             comboBoxFuel.Font = new Font("Montserrat", 8.999999F);
             comboBoxFuel.FormattingEnabled = true;
             comboBoxFuel.Items.AddRange(new object[] { "", "Diesel", "Gasoline", "LPG", "Hybrid" });
-            comboBoxFuel.Location = new Point(139, 208);
+            comboBoxFuel.Location = new Point(137, 292);
             comboBoxFuel.Name = "comboBoxFuel";
             comboBoxFuel.Size = new Size(161, 24);
             comboBoxFuel.TabIndex = 35;
@@ -270,7 +271,7 @@
             // numericUpDownCarID
             // 
             numericUpDownCarID.Font = new Font("Montserrat", 8.999999F);
-            numericUpDownCarID.Location = new Point(139, 87);
+            numericUpDownCarID.Location = new Point(137, 171);
             numericUpDownCarID.Maximum = new decimal(new int[] { 4000000, 0, 0, 0 });
             numericUpDownCarID.Name = "numericUpDownCarID";
             numericUpDownCarID.Size = new Size(161, 22);
@@ -282,7 +283,7 @@
             labelFuel.BackColor = Color.Transparent;
             labelFuel.Font = new Font("Montserrat SemiBold", 9.999999F, FontStyle.Bold);
             labelFuel.ForeColor = Color.White;
-            labelFuel.Location = new Point(58, 208);
+            labelFuel.Location = new Point(56, 292);
             labelFuel.Name = "labelFuel";
             labelFuel.Size = new Size(41, 20);
             labelFuel.TabIndex = 33;
@@ -294,7 +295,7 @@
             labelColor.BackColor = Color.Transparent;
             labelColor.Font = new Font("Montserrat SemiBold", 9.999999F, FontStyle.Bold);
             labelColor.ForeColor = Color.White;
-            labelColor.Location = new Point(58, 178);
+            labelColor.Location = new Point(56, 262);
             labelColor.Name = "labelColor";
             labelColor.Size = new Size(47, 20);
             labelColor.TabIndex = 32;
@@ -306,7 +307,7 @@
             labelBrand.BackColor = Color.Transparent;
             labelBrand.Font = new Font("Montserrat SemiBold", 9.999999F, FontStyle.Bold);
             labelBrand.ForeColor = Color.White;
-            labelBrand.Location = new Point(58, 148);
+            labelBrand.Location = new Point(56, 232);
             labelBrand.Name = "labelBrand";
             labelBrand.Size = new Size(54, 20);
             labelBrand.TabIndex = 31;
@@ -318,7 +319,7 @@
             labelOwner.BackColor = Color.Transparent;
             labelOwner.Font = new Font("Montserrat SemiBold", 9.999999F, FontStyle.Bold);
             labelOwner.ForeColor = Color.White;
-            labelOwner.Location = new Point(58, 117);
+            labelOwner.Location = new Point(56, 201);
             labelOwner.Name = "labelOwner";
             labelOwner.Size = new Size(59, 20);
             labelOwner.TabIndex = 30;
@@ -330,19 +331,42 @@
             labelCarID.BackColor = Color.Transparent;
             labelCarID.Font = new Font("Montserrat SemiBold", 9.999999F, FontStyle.Bold);
             labelCarID.ForeColor = Color.White;
-            labelCarID.Location = new Point(58, 87);
+            labelCarID.Location = new Point(56, 171);
             labelCarID.Name = "labelCarID";
             labelCarID.Size = new Size(54, 20);
             labelCarID.TabIndex = 29;
             labelCarID.Text = "Car ID";
             // 
+            // pictureBoxCar
+            // 
+            pictureBoxCar.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxCar.Location = new Point(814, 156);
+            pictureBoxCar.Name = "pictureBoxCar";
+            pictureBoxCar.Size = new Size(373, 373);
+            pictureBoxCar.TabIndex = 57;
+            pictureBoxCar.TabStop = false;
+            // 
+            // labelHeader
+            // 
+            labelHeader.AutoSize = true;
+            labelHeader.BackColor = Color.Transparent;
+            labelHeader.Font = new Font("Montserrat ExtraBold", 39.7499962F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelHeader.ForeColor = Color.White;
+            labelHeader.Location = new Point(373, 31);
+            labelHeader.Name = "labelHeader";
+            labelHeader.Size = new Size(507, 73);
+            labelHeader.TabIndex = 58;
+            labelHeader.Text = "Cars Information";
+            // 
             // VManager
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.managerBG;
+            BackgroundImage = Properties.Resources.managerBG1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(799, 660);
+            ClientSize = new Size(1240, 739);
+            Controls.Add(labelHeader);
+            Controls.Add(pictureBoxCar);
             Controls.Add(buttonSaveCSV);
             Controls.Add(buttonSaveJSON);
             Controls.Add(buttonSaveXML);
@@ -374,6 +398,7 @@
             Text = "ManagerGUI";
             ((System.ComponentModel.ISupportInitialize)dataGridViewCarTable).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownCarID).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -405,5 +430,7 @@
         private Label labelBrand;
         private Label labelOwner;
         private Label labelCarID;
+        private PictureBox pictureBoxCar;
+        private Label labelHeader;
     }
 }

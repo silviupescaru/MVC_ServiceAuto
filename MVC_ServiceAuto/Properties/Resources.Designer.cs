@@ -83,6 +83,16 @@ namespace MVC_ServiceAuto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap employeeBG1 {
+            get {
+                object obj = ResourceManager.GetObject("employeeBG1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap loginNebun {
             get {
                 object obj = ResourceManager.GetObject("loginNebun", resourceCulture);
@@ -96,6 +106,16 @@ namespace MVC_ServiceAuto.Properties {
         internal static System.Drawing.Bitmap managerBG {
             get {
                 object obj = ResourceManager.GetObject("managerBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap managerBG1 {
+            get {
+                object obj = ResourceManager.GetObject("managerBG1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

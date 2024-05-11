@@ -513,6 +513,18 @@ namespace MVC_ServiceAuto.Controller
                     string fuel = drvr.Cells[4].Value.ToString();
                     this.vManager.GetFuel().Text = fuel;
 
+                    string imageName = brand + "_" + color;
+                    string path = "../../../resources/cars/" + imageName + ".jpg";
+                    string secondPath = "../../../resources/cars/noCarFound.jpg";
+
+                    try
+                    {
+                        this.vManager.GetPictureBox().Image = System.Drawing.Image.FromFile(path);
+                    }
+                    catch
+                    {
+                        this.vManager.GetPictureBox().Image = System.Drawing.Image.FromFile(secondPath);
+                    }
                 }
             }
             catch (Exception ex)

@@ -608,8 +608,16 @@ namespace MVC_ServiceAuto.Controller
 
                     string imageName = brand + "_" + color;
                     string path = "../../../resources/cars/" + imageName + ".jpg";
+                    string secondPath = "../../../resources/cars/noCarFound.jpg";
 
-                    this.vEmployee.GetPictureBox().Image = Image.FromFile(path);
+                    try
+                    {
+                        this.vEmployee.GetPictureBox().Image = Image.FromFile(path);
+                    }
+                    catch
+                    {
+                        this.vEmployee.GetPictureBox().Image = Image.FromFile(secondPath);
+                    }
                 }
             }
             catch( Exception ex)

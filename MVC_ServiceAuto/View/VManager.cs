@@ -109,5 +109,10 @@ namespace MVC_ServiceAuto.View
             return this.buttonLogout;
         }
 
+        public PictureBox GetPictureBox()
+        {
+            return this.pictureBoxCar;
+        }
+
     }
 }
