@@ -26,7 +26,9 @@ namespace MVC_ServiceAuto
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             ControllerVLogin login = new ControllerVLogin(1);
-            Application.Run(login.GetView());
+            ControllerVStatistics statistics = new ControllerVStatistics();
+            //Application.Run(login.GetView());
+            Application.Run(statistics.GetView());
         }
     }
 }

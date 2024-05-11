@@ -13,6 +13,9 @@
     <Compile Update="View\VManager.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\VStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Model\Language\string.ru.resx">
