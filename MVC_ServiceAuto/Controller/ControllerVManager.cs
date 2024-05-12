@@ -51,6 +51,7 @@ namespace MVC_ServiceAuto.Controller
             this.vManager.GetSaveJSONButton().Click += new EventHandler(saveJSON);
             this.vManager.GetSaveXMLButton().Click += new EventHandler(saveXML);
             this.vManager.GetSaveDOCButton().Click += new EventHandler(saveDOC);
+            this.vManager.GetStatisticsButton().Click += new EventHandler(showStatistics);
             this.vManager.GetLogoutButton().Click += new EventHandler(logout);
             this.vManager.GetCarTable().RowStateChanged += new DataGridViewRowStateChangedEventHandler(setCarControls);
         }
@@ -469,6 +470,20 @@ namespace MVC_ServiceAuto.Controller
                 }
             }
             catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void showStatistics(object sender, EventArgs e)
+        {
+            try
+            {
+                ControllerVStatistics statistics = new ControllerVStatistics();
+                statistics.GetView();
+                this.vManager.Hide();
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }

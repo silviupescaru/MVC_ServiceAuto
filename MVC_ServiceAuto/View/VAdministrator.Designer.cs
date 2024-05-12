@@ -111,7 +111,7 @@ namespace MVC_ServiceAuto.View
             this.buttonAdd.Font = new System.Drawing.Font("Montserrat", 8F);
             this.buttonAdd.Location = new System.Drawing.Point(51, 205);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(64, 20);
+            this.buttonAdd.Size = new System.Drawing.Size(64, 23);
             this.buttonAdd.TabIndex = 4;
             this.buttonAdd.Text = "ADD";
             this.buttonAdd.UseVisualStyleBackColor = true;
@@ -121,7 +121,7 @@ namespace MVC_ServiceAuto.View
             this.buttonDelete.Font = new System.Drawing.Font("Montserrat", 8F);
             this.buttonDelete.Location = new System.Drawing.Point(204, 205);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(64, 20);
+            this.buttonDelete.Size = new System.Drawing.Size(64, 23);
             this.buttonDelete.TabIndex = 5;
             this.buttonDelete.Text = "DELETE";
             this.buttonDelete.UseVisualStyleBackColor = true;
@@ -131,7 +131,7 @@ namespace MVC_ServiceAuto.View
             this.buttonUpdate.Font = new System.Drawing.Font("Montserrat", 8F);
             this.buttonUpdate.Location = new System.Drawing.Point(127, 205);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(64, 20);
+            this.buttonUpdate.Size = new System.Drawing.Size(64, 23);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Text = "UPDATE";
             this.buttonUpdate.UseVisualStyleBackColor = true;
@@ -179,7 +179,7 @@ namespace MVC_ServiceAuto.View
             this.labelSearch.BackColor = System.Drawing.Color.Transparent;
             this.labelSearch.Font = new System.Drawing.Font("Montserrat", 15F, System.Drawing.FontStyle.Bold);
             this.labelSearch.ForeColor = System.Drawing.Color.White;
-            this.labelSearch.Location = new System.Drawing.Point(434, 127);
+            this.labelSearch.Location = new System.Drawing.Point(434, 146);
             this.labelSearch.Name = "labelSearch";
             this.labelSearch.Size = new System.Drawing.Size(138, 27);
             this.labelSearch.TabIndex = 11;
@@ -188,7 +188,7 @@ namespace MVC_ServiceAuto.View
             // textBoxSearch
             // 
             this.textBoxSearch.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearch.Location = new System.Drawing.Point(438, 156);
+            this.textBoxSearch.Location = new System.Drawing.Point(439, 177);
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.Size = new System.Drawing.Size(259, 22);
             this.textBoxSearch.TabIndex = 12;
@@ -196,9 +196,9 @@ namespace MVC_ServiceAuto.View
             // buttonViewAll
             // 
             this.buttonViewAll.Font = new System.Drawing.Font("Montserrat", 8F);
-            this.buttonViewAll.Location = new System.Drawing.Point(595, 192);
+            this.buttonViewAll.Location = new System.Drawing.Point(595, 205);
             this.buttonViewAll.Name = "buttonViewAll";
-            this.buttonViewAll.Size = new System.Drawing.Size(102, 20);
+            this.buttonViewAll.Size = new System.Drawing.Size(102, 23);
             this.buttonViewAll.TabIndex = 13;
             this.buttonViewAll.Text = "VIEW ALL";
             this.buttonViewAll.UseVisualStyleBackColor = true;
@@ -206,9 +206,9 @@ namespace MVC_ServiceAuto.View
             // buttonSearch
             // 
             this.buttonSearch.Font = new System.Drawing.Font("Montserrat", 8F);
-            this.buttonSearch.Location = new System.Drawing.Point(438, 192);
+            this.buttonSearch.Location = new System.Drawing.Point(438, 205);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(99, 20);
+            this.buttonSearch.Size = new System.Drawing.Size(99, 23);
             this.buttonSearch.TabIndex = 14;
             this.buttonSearch.Text = "SEARCH";
             this.buttonSearch.UseVisualStyleBackColor = true;
@@ -233,17 +233,17 @@ namespace MVC_ServiceAuto.View
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewUsers.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewUsers.Location = new System.Drawing.Point(51, 257);
+            this.dataGridViewUsers.Location = new System.Drawing.Point(50, 254);
             this.dataGridViewUsers.Name = "dataGridViewUsers";
-            this.dataGridViewUsers.Size = new System.Drawing.Size(646, 276);
+            this.dataGridViewUsers.Size = new System.Drawing.Size(646, 282);
             this.dataGridViewUsers.TabIndex = 15;
             // 
             // buttonLogout
             // 
             this.buttonLogout.Font = new System.Drawing.Font("Montserrat", 8F);
-            this.buttonLogout.Location = new System.Drawing.Point(106, 589);
+            this.buttonLogout.Location = new System.Drawing.Point(97, 589);
             this.buttonLogout.Name = "buttonLogout";
-            this.buttonLogout.Size = new System.Drawing.Size(64, 20);
+            this.buttonLogout.Size = new System.Drawing.Size(90, 23);
             this.buttonLogout.TabIndex = 16;
             this.buttonLogout.Text = "LOGOUT";
             this.buttonLogout.UseVisualStyleBackColor = true;
@@ -252,11 +252,11 @@ namespace MVC_ServiceAuto.View
             // 
             this.labelLoggedUser.AutoSize = true;
             this.labelLoggedUser.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoggedUser.Font = new System.Drawing.Font("Montserrat", 10F, System.Drawing.FontStyle.Bold);
+            this.labelLoggedUser.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold);
             this.labelLoggedUser.ForeColor = System.Drawing.Color.White;
-            this.labelLoggedUser.Location = new System.Drawing.Point(34, 566);
+            this.labelLoggedUser.Location = new System.Drawing.Point(52, 568);
             this.labelLoggedUser.Name = "labelLoggedUser";
-            this.labelLoggedUser.Size = new System.Drawing.Size(209, 20);
+            this.labelLoggedUser.Size = new System.Drawing.Size(175, 16);
             this.labelLoggedUser.TabIndex = 17;
             this.labelLoggedUser.Text = "Logged in as Administrator";
             // 
@@ -268,9 +268,9 @@ namespace MVC_ServiceAuto.View
             "English",
             "Japanese",
             "Russian"});
-            this.comboBoxLanguage.Location = new System.Drawing.Point(557, 107);
+            this.comboBoxLanguage.Location = new System.Drawing.Point(561, 107);
             this.comboBoxLanguage.Name = "comboBoxLanguage";
-            this.comboBoxLanguage.Size = new System.Drawing.Size(140, 21);
+            this.comboBoxLanguage.Size = new System.Drawing.Size(136, 21);
             this.comboBoxLanguage.TabIndex = 18;
             // 
             // labelLanguage

@@ -63,6 +63,7 @@
     <Compile Include="Controller\ControllerVManager.cs" />
     <Compile Include="Controller\ControllerVStatistics.cs" />
     <Compile Include="Model\Car.cs" />
+    <Compile Include="Model\CarStatistics.cs" />
     <Compile Include="Model\Language\LangHelper.cs" />
     <Compile Include="Model\Language\string.en.Designer.cs" />
     <Compile Include="Model\Observable.cs" />

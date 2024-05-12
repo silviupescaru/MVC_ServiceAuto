@@ -57,7 +57,6 @@ namespace MVC_ServiceAuto.Controller
             this.vEmployee.GetSaveJSONButton().Click += new EventHandler(saveJSON);
             this.vEmployee.GetSaveXMLButton().Click += new EventHandler(saveXML);
             this.vEmployee.GetSaveDOCButton().Click += new EventHandler(saveDOC);
-            this.vEmployee.GetShowImageButton().Click += new EventHandler(showImage);
             this.vEmployee.GetLogoutButton().Click += new EventHandler(logout);
             this.vEmployee.GetCarTable().RowStateChanged += new DataGridViewRowStateChangedEventHandler(setCarControls);
         }
@@ -555,23 +554,6 @@ namespace MVC_ServiceAuto.Controller
             }
         }
 
-        private void showImage(object sender, EventArgs e)
-        {
-            try
-            {
-                string brand = this.vEmployee.GetBrand().Text;
-                string color = this.vEmployee.GetColor().Text;
-                string imageName = brand + "_" + color;
-                string path = "../../../resources/cars/" + imageName + ".jpg";
-
-                this.vEmployee.GetPictureBox().Image = Image.FromFile(path);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
-
         private void logout(object sender, EventArgs e) 
         {
             try
@@ -612,6 +594,10 @@ namespace MVC_ServiceAuto.Controller
                     string imageName = brand + "_" + color;
                     string workingDirectory = Environment.CurrentDirectory;
                     workingDirectory = workingDirectory.Substring(0, workingDirectory.Length - 9);
+
+
+
+
 
                     string path = workingDirectory + "resources\\cars\\" + imageName + ".jpg";
                     string secondPath = workingDirectory + "resources\\cars\\noCarFound.jpg";

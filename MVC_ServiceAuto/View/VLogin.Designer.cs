@@ -42,26 +42,26 @@ namespace MVC_ServiceAuto.View
             // textBoxUsername
             // 
             this.textBoxUsername.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsername.Location = new System.Drawing.Point(555, 322);
+            this.textBoxUsername.Location = new System.Drawing.Point(592, 344);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(171, 22);
+            this.textBoxUsername.Size = new System.Drawing.Size(182, 22);
             this.textBoxUsername.TabIndex = 0;
             // 
             // textBoxPassword
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(555, 353);
+            this.textBoxPassword.Location = new System.Drawing.Point(592, 376);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
-            this.textBoxPassword.Size = new System.Drawing.Size(171, 22);
+            this.textBoxPassword.Size = new System.Drawing.Size(182, 22);
             this.textBoxPassword.TabIndex = 1;
             // 
             // buttonLogin
             // 
             this.buttonLogin.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogin.Location = new System.Drawing.Point(543, 411);
+            this.buttonLogin.Location = new System.Drawing.Point(580, 437);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(105, 20);
+            this.buttonLogin.Size = new System.Drawing.Size(105, 25);
             this.buttonLogin.TabIndex = 2;
             this.buttonLogin.Text = "LOGIN";
             this.buttonLogin.UseVisualStyleBackColor = true;
@@ -75,7 +75,7 @@ namespace MVC_ServiceAuto.View
             "English",
             "Russian",
             "French"});
-            this.comboBoxChangeLanguage.Location = new System.Drawing.Point(827, 193);
+            this.comboBoxChangeLanguage.Location = new System.Drawing.Point(892, 203);
             this.comboBoxChangeLanguage.Name = "comboBoxChangeLanguage";
             this.comboBoxChangeLanguage.Size = new System.Drawing.Size(129, 24);
             this.comboBoxChangeLanguage.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace MVC_ServiceAuto.View
             this.labelChangeLanguage.BackColor = System.Drawing.Color.Transparent;
             this.labelChangeLanguage.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelChangeLanguage.ForeColor = System.Drawing.Color.White;
-            this.labelChangeLanguage.Location = new System.Drawing.Point(672, 196);
+            this.labelChangeLanguage.Location = new System.Drawing.Point(737, 206);
             this.labelChangeLanguage.Name = "labelChangeLanguage";
             this.labelChangeLanguage.Size = new System.Drawing.Size(149, 21);
             this.labelChangeLanguage.TabIndex = 4;
@@ -97,8 +97,8 @@ namespace MVC_ServiceAuto.View
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1190, 673);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(1267, 717);
             this.Controls.Add(this.labelChangeLanguage);
             this.Controls.Add(this.comboBoxChangeLanguage);
             this.Controls.Add(this.buttonLogin);

@@ -23,9 +23,14 @@ namespace MVC_ServiceAuto.View
             return this.buttonBack;
         }
 
-        public Button GetShowButton()
+        public ComboBox GetCriterion()
         {
-            return this.buttonShowStatistics;
+            return this.comboBoxCriterion;
+        }
+
+        public Label GetLabel()
+        {
+            return this.labelSelectCriterion;
         }
 
         public Chart GetChart() {

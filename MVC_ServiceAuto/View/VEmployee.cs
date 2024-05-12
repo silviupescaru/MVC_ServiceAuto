@@ -118,11 +118,6 @@ namespace MVC_ServiceAuto.View
             return this.buttonViewAll;
         }
 
-        public Button GetShowImageButton()
-        {
-            return this.buttonShowImage;
-        }
-
         public Button GetLogoutButton()
         {
             return this.buttonLogout;

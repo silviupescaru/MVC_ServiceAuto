@@ -1,4 +1,5 @@
 ﻿using MVC_ServiceAuto.Model.Repository;
+using MVC_ServiceAuto.Model;
 using MVC_ServiceAuto.View;
 using System;
 using System.Collections.Generic;
@@ -8,12 +9,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Windows.Forms;
 
 namespace MVC_ServiceAuto.Controller
 {
     public class ControllerVStatistics
     {
         VStatistics vStatistics;
+        CarStatistics carStatistics;
         CarRepository carRepository;
         Repository repository;
 
@@ -21,6 +24,7 @@ namespace MVC_ServiceAuto.Controller
         {
             this.vStatistics = new VStatistics();
             this.carRepository = new CarRepository();
+            this.carStatistics = new CarStatistics(carRepository.CarTable());
             this.repository = Repository.GetInstance();
 
             this.eventsManagement();
@@ -34,44 +38,67 @@ namespace MVC_ServiceAuto.Controller
 
         private void eventsManagement()
         {
+            this.vStatistics.FormClosed += new FormClosedEventHandler(exitApplication);
             this.vStatistics.GetBackButton().Click += new EventHandler(backToManager);
-            this.vStatistics.GetShowButton().Click += new EventHandler(showStatistics);
+            this.vStatistics.GetCriterion().SelectedIndexChanged += new EventHandler(showStatistics);
+        }
+
+        private void exitApplication(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(0);
         }
 
         private void backToManager(object sender, EventArgs e)
         {
-
+            try
+            {
+                ControllerVManager manager = new ControllerVManager();
+                manager.GetView();
+                this.vStatistics.Hide();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void showStatistics(object sender, EventArgs e)
         {
-            string criterion = "brand";
+            string criterion = this.vStatistics.GetCriterion().SelectedItem.ToString();
 
-            this.vStatistics.GetChart().Series.Clear();
-            this.vStatistics.GetChart().Legends.Clear();
+            this.carStatistics.Criterion = criterion;
+            Dictionary<string, uint> dictionary = this.carStatistics.Result;
+            if (dictionary != null)
+            {
+                this.vStatistics.GetChart().Series.Clear();
+                this.vStatistics.GetChart().Legends.Clear();
+                this.vStatistics.GetChart().Legends.Add(criterion);
+                this.vStatistics.GetChart().Legends[0].LegendStyle = LegendStyle.Table;
+                this.vStatistics.GetChart().Legends[0].Docking = Docking.Bottom;
+                this.vStatistics.GetChart().Legends[0].Alignment = StringAlignment.Center;
+                this.vStatistics.GetChart().Legends[0].Title = criterion;
+                this.vStatistics.GetChart().Legends[0].TitleForeColor = Color.White;
+                this.vStatistics.GetChart().Legends[0].TitleFont = new Font("Montserrat", 9);
+                this.vStatistics.GetChart().Legends[0].BorderColor = Color.Transparent;
+                this.vStatistics.GetChart().Legends[0].BackColor = Color.Transparent;
+                this.vStatistics.GetChart().Legends[0].ForeColor = Color.White;
+                this.vStatistics.GetChart().Legends[0].Font = new Font("Montserrat", 9);
+                this.vStatistics.GetChart().Series.Add(criterion);
+                this.vStatistics.GetChart().Series[criterion].ChartType = SeriesChartType.Pie;
 
-            // Add a new legend
-            this.vStatistics.GetChart().Legends.Add(criterion);
-            this.vStatistics.GetChart().Legends[0].LegendStyle = LegendStyle.Table;
-            this.vStatistics.GetChart().Legends[0].Docking = Docking.Bottom;
-            this.vStatistics.GetChart().Legends[0].Alignment = StringAlignment.Center;
-            this.vStatistics.GetChart().Legends[0].Title = criterion;
-            this.vStatistics.GetChart().Legends[0].BorderColor = Color.Black;
+                foreach (KeyValuePair<string, uint> pair in dictionary)
+                {
+                    this.vStatistics.GetChart().Series[criterion].Points.AddXY(pair.Key, pair.Value);
+                }
 
-            // Add a new series
-            var series = this.vStatistics.GetChart().Series.Add(criterion);
+                foreach (DataPoint p in this.vStatistics.GetChart().Series[criterion].Points)
+                {
+                    p.Label = "#PERCENT";
+                }
 
-            // Set the chart type to Pie
-            series.ChartType = SeriesChartType.Pie;
-
-
-            this.vStatistics.GetChart().Series[criterion].Points.AddXY("Mercedes-Benz", 20);
-            this.vStatistics.GetChart().Series[criterion].Points.AddXY("BMW", 40);
-            this.vStatistics.GetChart().Series[criterion].Points.AddXY("Audi", 15);
-            this.vStatistics.GetChart().Series[criterion].Points.AddXY("Daci", 15);
-
-
-            this.vStatistics.GetChart().Show();
+                this.vStatistics.GetChart().Series[criterion].LegendText = "#VALX";
+            }
+            else MessageBox.Show("The list of cars is empty!");
 
             Debug.WriteLine("Done statistics!");
 

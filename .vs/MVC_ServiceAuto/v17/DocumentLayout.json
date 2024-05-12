@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "D:\\Facultate\\MVC_ServiceAuto\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|d:\\facultate\\mvc_serviceauto\\mvc_serviceauto\\controller\\controllervstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\controller\\controllervstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|d:\\facultate\\mvc_serviceauto\\mvc_serviceauto\\controller\\controllervemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\controller\\controllervemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|d:\\facultate\\mvc_serviceauto\\mvc_serviceauto\\controller\\controllervmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\controller\\controllervmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|d:\\facultate\\mvc_serviceauto\\mvc_serviceauto\\view\\vemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\view\\vemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|d:\\facultate\\mvc_serviceauto\\mvc_serviceauto\\view\\vmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\view\\vmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|d:\\facultate\\mvc_serviceauto\\mvc_serviceauto\\view\\vmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\view\\vmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|d:\\facultate\\mvc_serviceauto\\mvc_serviceauto\\view\\vemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\view\\vemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|d:\\facultate\\mvc_serviceauto\\mvc_serviceauto\\view\\vstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\view\\vstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|d:\\facultate\\mvc_serviceauto\\mvc_serviceauto\\view\\vstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\view\\vstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|d:\\facultate\\mvc_serviceauto\\mvc_serviceauto\\model\\carstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|solutionrelative:mvc_serviceauto\\model\\carstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAE47706-161B-4FE7-974C-FAEC86C2060F}|MVC_ServiceAuto\\MVC_ServiceAuto.csproj|d:\\facultate\\mvc_serviceauto\\mvc_serviceauto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,37 +54,138 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ControllerVEmployee.cs",
-              "DocumentMoniker": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
-              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
-              "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
-              "RelativeToolTip": "MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
-              "ViewState": "AQIAAEkCAAAAAAAAAAAAAGgCAABdAAAA",
+              "DocumentIndex": 4,
+              "Title": "VManager.cs",
+              "DocumentMoniker": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VManager.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\View\\VManager.cs",
+              "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VManager.cs",
+              "RelativeToolTip": "MVC_ServiceAuto\\View\\VManager.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAHEAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T20:51:32.206Z",
+              "WhenOpened": "2024-05-12T14:01:34.091Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ControllerVManager.cs",
-              "DocumentMoniker": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
-              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
-              "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
-              "RelativeToolTip": "MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
-              "ViewState": "AQIAAOgBAAAAAAAAAAAAAAYCAABeAAAA",
+              "DocumentIndex": 6,
+              "Title": "VEmployee.cs [Design]",
+              "DocumentMoniker": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VEmployee.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\View\\VEmployee.cs",
+              "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VEmployee.cs [Design]",
+              "RelativeToolTip": "MVC_ServiceAuto\\View\\VEmployee.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T20:36:04.72Z",
+              "WhenOpened": "2024-05-12T14:01:10.658Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VManager.cs [Design]",
+              "DocumentMoniker": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VManager.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\View\\VManager.cs",
+              "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VManager.cs [Design]",
+              "RelativeToolTip": "MVC_ServiceAuto\\View\\VManager.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T14:00:25.794Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VStatistics.cs",
+              "DocumentMoniker": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VStatistics.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\View\\VStatistics.cs",
+              "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VStatistics.cs",
+              "RelativeToolTip": "MVC_ServiceAuto\\View\\VStatistics.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAnwCAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T13:48:11.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VStatistics.cs [Design]",
+              "DocumentMoniker": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VStatistics.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\View\\VStatistics.cs",
+              "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VStatistics.cs [Design]",
+              "RelativeToolTip": "MVC_ServiceAuto\\View\\VStatistics.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T13:33:29.828Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ControllerVStatistics.cs",
+              "DocumentMoniker": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVStatistics.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Controller\\ControllerVStatistics.cs",
+              "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVStatistics.cs",
+              "RelativeToolTip": "MVC_ServiceAuto\\Controller\\ControllerVStatistics.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T13:06:37.608Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ControllerVManager.cs",
+              "DocumentMoniker": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
+              "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
+              "RelativeToolTip": "MVC_ServiceAuto\\Controller\\ControllerVManager.cs",
+              "ViewState": "AQIAAMoBAAAAAAAAAAAAAOMBAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T14:02:00.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VEmployee.cs",
+              "DocumentMoniker": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VEmployee.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\View\\VEmployee.cs",
+              "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\View\\VEmployee.cs",
+              "RelativeToolTip": "MVC_ServiceAuto\\View\\VEmployee.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAnwHYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T14:04:07.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ControllerVEmployee.cs",
+              "DocumentMoniker": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
+              "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
+              "RelativeToolTip": "MVC_ServiceAuto\\Controller\\ControllerVEmployee.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAAD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T14:04:21.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CarStatistics.cs",
+              "DocumentMoniker": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\Model\\CarStatistics.cs",
+              "RelativeDocumentMoniker": "MVC_ServiceAuto\\Model\\CarStatistics.cs",
+              "ToolTip": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\Model\\CarStatistics.cs",
+              "RelativeToolTip": "MVC_ServiceAuto\\Model\\CarStatistics.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T13:07:18.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Facultate\\MVC_ServiceAuto\\MVC_ServiceAuto\\Program.cs",
               "RelativeDocumentMoniker": "MVC_ServiceAuto\\Program.cs",
@@ -60,7 +193,7 @@
               "RelativeToolTip": "MVC_ServiceAuto\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T20:34:45.37Z",
+              "WhenOpened": "2024-05-12T13:31:11.811Z",
               "EditorCaption": ""
             }
           ]
