@@ -16,6 +16,7 @@ namespace MVC_ServiceAuto.Controller
     {
         private VLogin vLogin;
         private UserRepository userRepository;
+        private string language;
 
         public ControllerVLogin(int index)
         {
@@ -48,18 +49,18 @@ namespace MVC_ServiceAuto.Controller
             if (this.vLogin.GetChangeLangugae().SelectedIndex == 1)
             {
                 LangHelper.ChangeLanguage("en");
+                language = "en";
             }
             else if (this.vLogin.GetChangeLangugae().SelectedIndex == 2)
             {
                 LangHelper.ChangeLanguage("ru");
+                language = "ru";
             }
             else if (this.vLogin.GetChangeLangugae().SelectedIndex == 3)
             {
                 LangHelper.ChangeLanguage("fr");
+                language = "fr";
             }
-
-
-            Debug.WriteLine($"{LangHelper.GetString("sig")} {LangHelper.GetString("World")}!");
 
             this.vLogin.GetChangeLanguageLabel().Text = ($"{LangHelper.GetString("labelChangeLanguage")}");
             this.vLogin.GetLoginButton().Text = ($"{LangHelper.GetString("buttonLogin")}");
@@ -93,7 +94,7 @@ namespace MVC_ServiceAuto.Controller
                         } else if (role.Equals("Administrator"))
                         {
                             this.vLogin.Hide();
-                            ControllerVAdministrator ad = new ControllerVAdministrator();
+                            ControllerVAdministrator ad = new ControllerVAdministrator(language);
                             ad.GetView();
                         }
                     }

@@ -10,6 +10,7 @@ using MVC_ServiceAuto.Model;
 using System.Diagnostics;
 using System.Data;
 using System.Windows.Forms;
+using MVC_ServiceAuto.Model.Language;
 
 namespace MVC_ServiceAuto.Controller
 {
@@ -20,8 +21,10 @@ namespace MVC_ServiceAuto.Controller
         private UserRepository userRepository;
         private Repository repository;
 
-        public ControllerVAdministrator()
+
+        public ControllerVAdministrator(string language)
         {
+            LangHelper.ChangeLanguage(language);
             this.vAdministrator = new VAdministrator();
             this.userRepository = new UserRepository();
             this.repository = Repository.GetInstance();

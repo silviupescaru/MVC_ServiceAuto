@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVC_ServiceAuto.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,7 +12,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace MVC_ServiceAuto.View
 {
-    public partial class VStatistics : Form
+    public partial class VStatistics : Form, Observable
     {
         public VStatistics()
         {
@@ -35,6 +36,11 @@ namespace MVC_ServiceAuto.View
 
         public Chart GetChart() {
             return this.chartCarStatistics;
+        }
+
+        public void Update(Subject obs)
+        {
+            //CarStatistics carStatistics = (CarStatistics)obs;
         }
     }
 }
