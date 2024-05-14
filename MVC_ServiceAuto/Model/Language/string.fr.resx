@@ -144,6 +144,9 @@
   <data name="buttonSearch" xml:space="preserve">
     <value>Recherche</value>
   </data>
+  <data name="buttonStatistics" xml:space="preserve">
+    <value>Statistiques</value>
+  </data>
   <data name="buttonUpdate" xml:space="preserve">
     <value>Mise à jour</value>
   </data>
@@ -176,6 +179,9 @@
   </data>
   <data name="labelLoggedIn" xml:space="preserve">
     <value>Connecté en tant qu'employé</value>
+  </data>
+  <data name="labelLoggedManager" xml:space="preserve">
+    <value>Connecté en tant que Manager</value>
   </data>
   <data name="labelOrderBy" xml:space="preserve">
     <value>Commande de voiture par</value>

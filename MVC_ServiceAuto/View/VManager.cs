@@ -1,5 +1,6 @@
 ﻿using MVC_ServiceAuto.Controller;
 using MVC_ServiceAuto.Model;
+using MVC_ServiceAuto.Model.Language;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +14,10 @@ using System.Windows.Forms;
 
 namespace MVC_ServiceAuto.View
 {
-    public partial class VManager : Form
+    public partial class VManager : Form, Observable
     {
 
-        public VManager()
+        public VManager(int index)
         {
             InitializeComponent();
             this.numericUpDownCarID.Value = 1;
@@ -27,6 +28,8 @@ namespace MVC_ServiceAuto.View
             this.comboBoxFuel.SelectedItem = 0;
             this.comboBoxFilterBy.SelectedItem = 0;
             this.comboBoxCarFilter.SelectedItem = 0;
+
+            this.comboBoxLanguage.SelectedItem = index;
         }
 
         public NumericUpDown GetCarID()
@@ -122,6 +125,32 @@ namespace MVC_ServiceAuto.View
         public PictureBox GetPictureBox()
         {
             return this.pictureBoxCar;
+        }
+
+        public void Update(Subject obs)
+        {
+            LangHelper lang = (LangHelper)obs;
+
+            this.labelHeader.Text = lang.GetString("labelHeader");
+            this.labelCarID.Text = lang.GetString("labelCarID");
+            this.labelOwner.Text = lang.GetString("labelOwner");
+            this.labelBrand.Text = lang.GetString("labelBrand");
+            this.labelColor.Text = lang.GetString("labelColor");
+            this.labelFuel.Text = lang.GetString("labelFuel");
+            this.labelCarOrderBy.Text = lang.GetString("labelOrderBy");
+            this.labelFilterBy.Text = lang.GetString("labelFilterBy");
+            this.labelSearchBar.Text = lang.GetString("labelSearch");
+            this.labelChangeLanguage.Text = lang.GetString("labelChangeLanguage");
+            this.labelLoggedIn.Text = lang.GetString("labelLoggedManager");
+
+            this.buttonSearch.Text = lang.GetString("buttonSearch");
+            this.buttonViewAll.Text = lang.GetString("buttonViewAll");
+            this.buttonSaveCSV.Text = lang.GetString("buttonSaveCSV");
+            this.buttonSaveXML.Text = lang.GetString("buttonSaveXML");
+            this.buttonSaveDOC.Text = lang.GetString("buttonSaveDOC");
+            this.buttonSaveJSON.Text = lang.GetString("buttonSaveJSON");
+            this.buttonStatistics.Text = lang.GetString("buttonStatistics");
+            this.buttonLogout.Text = lang.GetString("buttonLogout");
         }
 
     }

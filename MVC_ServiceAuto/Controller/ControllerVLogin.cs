@@ -86,7 +86,7 @@ namespace MVC_ServiceAuto.Controller
                         } else if (role.Equals("Manager"))
                         {
                             this.vLogin.Hide();
-                            ControllerVManager ma = new ControllerVManager();
+                            ControllerVManager ma = new ControllerVManager(this.vLogin.GetChangeLangugae().SelectedIndex);
                             ma.GetView();
                         } else if (role.Equals("Administrator"))
                         {

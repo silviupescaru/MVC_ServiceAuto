@@ -102,7 +102,7 @@ namespace MVC_ServiceAuto.View
             // buttonSaveDOC
             // 
             this.buttonSaveDOC.Font = new System.Drawing.Font("Montserrat", 7.5F);
-            this.buttonSaveDOC.Location = new System.Drawing.Point(567, 280);
+            this.buttonSaveDOC.Location = new System.Drawing.Point(468, 237);
             this.buttonSaveDOC.Name = "buttonSaveDOC";
             this.buttonSaveDOC.Size = new System.Drawing.Size(90, 23);
             this.buttonSaveDOC.TabIndex = 53;
@@ -169,7 +169,7 @@ namespace MVC_ServiceAuto.View
             // buttonViewAll
             // 
             this.buttonViewAll.Font = new System.Drawing.Font("Montserrat", 7.5F);
-            this.buttonViewAll.Location = new System.Drawing.Point(468, 238);
+            this.buttonViewAll.Location = new System.Drawing.Point(567, 280);
             this.buttonViewAll.Name = "buttonViewAll";
             this.buttonViewAll.Size = new System.Drawing.Size(90, 23);
             this.buttonViewAll.TabIndex = 48;

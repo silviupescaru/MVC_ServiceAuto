@@ -144,6 +144,9 @@
   <data name="buttonSearch" xml:space="preserve">
     <value>Поиск</value>
   </data>
+  <data name="buttonStatistics" xml:space="preserve">
+    <value>Статистика</value>
+  </data>
   <data name="buttonUpdate" xml:space="preserve">
     <value>Обновлять</value>
   </data>
@@ -176,6 +179,9 @@
   </data>
   <data name="labelLoggedIn" xml:space="preserve">
     <value>Вошёл как сотрудник</value>
+  </data>
+  <data name="labelLoggedManager" xml:space="preserve">
+    <value>Вошёл как менеджер</value>
   </data>
   <data name="labelOrderBy" xml:space="preserve">
     <value>Заказ автомобиля по</value>

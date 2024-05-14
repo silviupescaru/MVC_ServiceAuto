@@ -179,7 +179,7 @@ namespace MVC_ServiceAuto.View
             this.labelSearch.BackColor = System.Drawing.Color.Transparent;
             this.labelSearch.Font = new System.Drawing.Font("Montserrat", 15F, System.Drawing.FontStyle.Bold);
             this.labelSearch.ForeColor = System.Drawing.Color.White;
-            this.labelSearch.Location = new System.Drawing.Point(434, 146);
+            this.labelSearch.Location = new System.Drawing.Point(434, 120);
             this.labelSearch.Name = "labelSearch";
             this.labelSearch.Size = new System.Drawing.Size(138, 27);
             this.labelSearch.TabIndex = 11;
@@ -188,7 +188,7 @@ namespace MVC_ServiceAuto.View
             // textBoxSearch
             // 
             this.textBoxSearch.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearch.Location = new System.Drawing.Point(439, 177);
+            this.textBoxSearch.Location = new System.Drawing.Point(439, 151);
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.Size = new System.Drawing.Size(259, 22);
             this.textBoxSearch.TabIndex = 12;
@@ -196,7 +196,7 @@ namespace MVC_ServiceAuto.View
             // buttonViewAll
             // 
             this.buttonViewAll.Font = new System.Drawing.Font("Montserrat", 8F);
-            this.buttonViewAll.Location = new System.Drawing.Point(595, 205);
+            this.buttonViewAll.Location = new System.Drawing.Point(595, 179);
             this.buttonViewAll.Name = "buttonViewAll";
             this.buttonViewAll.Size = new System.Drawing.Size(102, 23);
             this.buttonViewAll.TabIndex = 13;
@@ -206,7 +206,7 @@ namespace MVC_ServiceAuto.View
             // buttonSearch
             // 
             this.buttonSearch.Font = new System.Drawing.Font("Montserrat", 8F);
-            this.buttonSearch.Location = new System.Drawing.Point(438, 205);
+            this.buttonSearch.Location = new System.Drawing.Point(438, 179);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(99, 23);
             this.buttonSearch.TabIndex = 14;

@@ -53,7 +53,7 @@ namespace MVC_ServiceAuto.Controller
         {
             try
             {
-                ControllerVManager manager = new ControllerVManager();
+                ControllerVManager manager = new ControllerVManager(0);
                 manager.GetView();
                 this.vStatistics.Hide();
             }

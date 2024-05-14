@@ -14,6 +14,7 @@ using Text = DocumentFormat.OpenXml.Wordprocessing.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
+using MVC_ServiceAuto.Model.Language;
 
 namespace MVC_ServiceAuto.Controller
 {
@@ -23,13 +24,17 @@ namespace MVC_ServiceAuto.Controller
         private VLogin vLogin;
         private CarRepository carRepository;
         private Repository repository;
+        private LangHelper lang;
 
-        public ControllerVManager()
+        public ControllerVManager(int index)
         {
-            this.vManager = new VManager();
+            this.vManager = new VManager(index);
             this.vLogin = new VLogin(1);
             this.carRepository = new CarRepository();
             this.repository = Repository.GetInstance();
+            this.lang = new LangHelper();
+            this.lang.Add(this.vManager);
+
 
             this.eventsManagement();
         }
@@ -54,11 +59,29 @@ namespace MVC_ServiceAuto.Controller
             this.vManager.GetStatisticsButton().Click += new EventHandler(showStatistics);
             this.vManager.GetLogoutButton().Click += new EventHandler(logout);
             this.vManager.GetCarTable().RowStateChanged += new DataGridViewRowStateChangedEventHandler(setCarControls);
+            this.vManager.GetLanguageBox().SelectedIndexChanged += new EventHandler(changeLanguage);
         }
 
         private void exitApplication(object sender, FormClosedEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void changeLanguage(object sender, EventArgs e)
+        {
+            if (this.vManager.GetLanguageBox().SelectedIndex == 0)
+            {
+                this.lang.ChangeLanguage("en");
+            }
+            else if (this.vManager.GetLanguageBox().SelectedIndex == 1)
+            {
+                this.lang.ChangeLanguage("fr");
+            }
+            else if (this.vManager.GetLanguageBox().SelectedIndex == 2)
+            {
+                this.lang.ChangeLanguage("ru");
+            }
+
         }
 
         private void searchBy(object sender, EventArgs e)
