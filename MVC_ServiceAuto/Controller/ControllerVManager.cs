@@ -25,15 +25,17 @@ namespace MVC_ServiceAuto.Controller
         private CarRepository carRepository;
         private Repository repository;
         private LangHelper lang;
+        private int index;
 
         public ControllerVManager(int index)
         {
             this.vManager = new VManager(index);
-            this.vLogin = new VLogin(1);
+            this.vLogin = new VLogin(index);
             this.carRepository = new CarRepository();
             this.repository = Repository.GetInstance();
             this.lang = new LangHelper();
             this.lang.Add(this.vManager);
+            this.index = index;
 
 
             this.eventsManagement();
@@ -502,7 +504,7 @@ namespace MVC_ServiceAuto.Controller
         {
             try
             {
-                ControllerVStatistics statistics = new ControllerVStatistics();
+                ControllerVStatistics statistics = new ControllerVStatistics(index);
                 statistics.GetView();
                 this.vManager.Hide();
             }

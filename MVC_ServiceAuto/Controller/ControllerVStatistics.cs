@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Windows.Forms;
+using MVC_ServiceAuto.Model.Language;
 
 namespace MVC_ServiceAuto.Controller
 {
@@ -19,12 +20,17 @@ namespace MVC_ServiceAuto.Controller
         private CarStatistics carStatistics;
         private CarRepository carRepository;
         private Repository repository;
+        private LangHelper lang;
+        private int index;
 
-        public ControllerVStatistics() 
+        public ControllerVStatistics(int index) 
         {
-            this.vStatistics = new VStatistics();
+            this.vStatistics = new VStatistics(index);
             this.carRepository = new CarRepository();
             this.carStatistics = new CarStatistics(carRepository.CarTable());
+            this.lang = new LangHelper();
+            this.lang.Add(this.vStatistics);
+
 
             this.repository = Repository.GetInstance();
 
@@ -37,10 +43,13 @@ namespace MVC_ServiceAuto.Controller
             return this.vStatistics;
         }
 
+
+
         private void eventsManagement()
         {
             this.vStatistics.FormClosed += new FormClosedEventHandler(exitApplication);
             this.vStatistics.GetBackButton().Click += new EventHandler(backToManager);
+            this.vStatistics.GetLanguageBox().SelectedIndexChanged += new EventHandler(changeLanguage);
             this.vStatistics.GetCriterion().SelectedIndexChanged += new EventHandler(showStatistics);
         }
 
@@ -49,11 +58,21 @@ namespace MVC_ServiceAuto.Controller
             Environment.Exit(0);
         }
 
+        private void changeLanguage(object sender, EventArgs e)
+        {
+            if (this.vStatistics.GetLanguageBox().SelectedIndex == 0)
+                this.lang.ChangeLanguage("en");
+            else if (this.vStatistics.GetLanguageBox().SelectedIndex == 1)
+                this.lang.ChangeLanguage("fr");
+            else if (this.vStatistics.GetLanguageBox().SelectedIndex == 2)
+                this.lang.ChangeLanguage("ru");
+        }
+
         private void backToManager(object sender, EventArgs e)
         {
             try
             {
-                ControllerVManager manager = new ControllerVManager(0);
+                ControllerVManager manager = new ControllerVManager(index);
                 manager.GetView();
                 this.vStatistics.Hide();
             }

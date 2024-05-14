@@ -39,13 +39,15 @@ namespace MVC_ServiceAuto.View
             this.chartCarStatistics = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.comboBoxCriterion = new System.Windows.Forms.ComboBox();
             this.labelSelectCriterion = new System.Windows.Forms.Label();
+            this.labelChangeLanguage = new System.Windows.Forms.Label();
+            this.comboBoxChangeLanguage = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.chartCarStatistics)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonBack
             // 
             this.buttonBack.Font = new System.Drawing.Font("Montserrat", 9F);
-            this.buttonBack.Location = new System.Drawing.Point(527, 624);
+            this.buttonBack.Location = new System.Drawing.Point(527, 622);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(138, 29);
             this.buttonBack.TabIndex = 1;
@@ -85,7 +87,7 @@ namespace MVC_ServiceAuto.View
             "",
             "Brand",
             "Fuel"});
-            this.comboBoxCriterion.Location = new System.Drawing.Point(387, 628);
+            this.comboBoxCriterion.Location = new System.Drawing.Point(399, 610);
             this.comboBoxCriterion.Name = "comboBoxCriterion";
             this.comboBoxCriterion.Size = new System.Drawing.Size(119, 21);
             this.comboBoxCriterion.TabIndex = 4;
@@ -96,11 +98,35 @@ namespace MVC_ServiceAuto.View
             this.labelSelectCriterion.BackColor = System.Drawing.Color.Transparent;
             this.labelSelectCriterion.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.labelSelectCriterion.ForeColor = System.Drawing.Color.White;
-            this.labelSelectCriterion.Location = new System.Drawing.Point(228, 626);
+            this.labelSelectCriterion.Location = new System.Drawing.Point(230, 607);
             this.labelSelectCriterion.Name = "labelSelectCriterion";
             this.labelSelectCriterion.Size = new System.Drawing.Size(139, 22);
             this.labelSelectCriterion.TabIndex = 5;
             this.labelSelectCriterion.Text = "Select Criterion";
+            // 
+            // labelChangeLanguage
+            // 
+            this.labelChangeLanguage.AutoSize = true;
+            this.labelChangeLanguage.BackColor = System.Drawing.Color.Transparent;
+            this.labelChangeLanguage.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.labelChangeLanguage.ForeColor = System.Drawing.Color.White;
+            this.labelChangeLanguage.Location = new System.Drawing.Point(230, 641);
+            this.labelChangeLanguage.Name = "labelChangeLanguage";
+            this.labelChangeLanguage.Size = new System.Drawing.Size(163, 22);
+            this.labelChangeLanguage.TabIndex = 7;
+            this.labelChangeLanguage.Text = "Change Language";
+            // 
+            // comboBoxChangeLanguage
+            // 
+            this.comboBoxChangeLanguage.FormattingEnabled = true;
+            this.comboBoxChangeLanguage.Items.AddRange(new object[] {
+            "English",
+            "French",
+            "Russian"});
+            this.comboBoxChangeLanguage.Location = new System.Drawing.Point(399, 644);
+            this.comboBoxChangeLanguage.Name = "comboBoxChangeLanguage";
+            this.comboBoxChangeLanguage.Size = new System.Drawing.Size(119, 21);
+            this.comboBoxChangeLanguage.TabIndex = 6;
             // 
             // VStatistics
             // 
@@ -109,6 +135,8 @@ namespace MVC_ServiceAuto.View
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(900, 699);
+            this.Controls.Add(this.labelChangeLanguage);
+            this.Controls.Add(this.comboBoxChangeLanguage);
             this.Controls.Add(this.labelSelectCriterion);
             this.Controls.Add(this.comboBoxCriterion);
             this.Controls.Add(this.chartCarStatistics);
@@ -129,5 +157,7 @@ namespace MVC_ServiceAuto.View
         private System.Windows.Forms.DataVisualization.Charting.Chart chartCarStatistics;
         private ComboBox comboBoxCriterion;
         private Label labelSelectCriterion;
+        private Label labelChangeLanguage;
+        private ComboBox comboBoxChangeLanguage;
     }
 }

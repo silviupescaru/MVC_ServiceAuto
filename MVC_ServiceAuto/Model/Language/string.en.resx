@@ -120,6 +120,9 @@
   <data name="buttonAdd" xml:space="preserve">
     <value>Add</value>
   </data>
+  <data name="buttonBack" xml:space="preserve">
+    <value>Back to Manager</value>
+  </data>
   <data name="buttonDelete" xml:space="preserve">
     <value>Delete</value>
   </data>
@@ -164,6 +167,9 @@
   </data>
   <data name="labelColor" xml:space="preserve">
     <value>Color</value>
+  </data>
+  <data name="labelCriterion" xml:space="preserve">
+    <value>Criterion</value>
   </data>
   <data name="labelFilterBy" xml:space="preserve">
     <value>Filter By</value>
