@@ -54,6 +54,8 @@ namespace MVC_ServiceAuto.View
             this.labelLoggedUser = new System.Windows.Forms.Label();
             this.comboBoxLanguage = new System.Windows.Forms.ComboBox();
             this.labelLanguage = new System.Windows.Forms.Label();
+            this.labelChangeLanguage = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownUserID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
             this.SuspendLayout();
@@ -285,6 +287,31 @@ namespace MVC_ServiceAuto.View
             this.labelLanguage.TabIndex = 19;
             this.labelLanguage.Text = "Language";
             // 
+            // labelChangeLanguage
+            // 
+            this.labelChangeLanguage.AutoSize = true;
+            this.labelChangeLanguage.BackColor = System.Drawing.Color.Transparent;
+            this.labelChangeLanguage.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChangeLanguage.ForeColor = System.Drawing.Color.White;
+            this.labelChangeLanguage.Location = new System.Drawing.Point(397, 552);
+            this.labelChangeLanguage.Name = "labelChangeLanguage";
+            this.labelChangeLanguage.Size = new System.Drawing.Size(163, 22);
+            this.labelChangeLanguage.TabIndex = 35;
+            this.labelChangeLanguage.Text = "Change Language";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Montserrat", 8.999999F);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "English",
+            "French",
+            "Russian"});
+            this.comboBox1.Location = new System.Drawing.Point(566, 552);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(130, 24);
+            this.comboBox1.TabIndex = 34;
+            // 
             // VAdministrator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -292,6 +319,8 @@ namespace MVC_ServiceAuto.View
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(745, 635);
+            this.Controls.Add(this.labelChangeLanguage);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.labelLanguage);
             this.Controls.Add(this.comboBoxLanguage);
             this.Controls.Add(this.labelLoggedUser);
@@ -344,5 +373,7 @@ namespace MVC_ServiceAuto.View
         private Label labelLoggedUser;
         private ComboBox comboBoxLanguage;
         private Label labelLanguage;
+        private Label labelChangeLanguage;
+        private ComboBox comboBox1;
     }
 }

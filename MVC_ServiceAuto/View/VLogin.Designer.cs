@@ -37,6 +37,8 @@ namespace MVC_ServiceAuto.View
             this.buttonLogin = new System.Windows.Forms.Button();
             this.comboBoxChangeLanguage = new System.Windows.Forms.ComboBox();
             this.labelChangeLanguage = new System.Windows.Forms.Label();
+            this.labelUsername = new System.Windows.Forms.Label();
+            this.labelPassword = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxUsername
@@ -61,7 +63,7 @@ namespace MVC_ServiceAuto.View
             this.buttonLogin.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.Location = new System.Drawing.Point(580, 437);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(105, 25);
+            this.buttonLogin.Size = new System.Drawing.Size(135, 35);
             this.buttonLogin.TabIndex = 2;
             this.buttonLogin.Text = "LOGIN";
             this.buttonLogin.UseVisualStyleBackColor = true;
@@ -73,8 +75,8 @@ namespace MVC_ServiceAuto.View
             this.comboBoxChangeLanguage.Items.AddRange(new object[] {
             "",
             "English",
-            "Russian",
-            "French"});
+            "French",
+            "Russian"});
             this.comboBoxChangeLanguage.Location = new System.Drawing.Point(892, 203);
             this.comboBoxChangeLanguage.Name = "comboBoxChangeLanguage";
             this.comboBoxChangeLanguage.Size = new System.Drawing.Size(129, 24);
@@ -92,6 +94,30 @@ namespace MVC_ServiceAuto.View
             this.labelChangeLanguage.TabIndex = 4;
             this.labelChangeLanguage.Text = "Change Language";
             // 
+            // labelUsername
+            // 
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.BackColor = System.Drawing.Color.Transparent;
+            this.labelUsername.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.ForeColor = System.Drawing.Color.White;
+            this.labelUsername.Location = new System.Drawing.Point(723, 309);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(96, 22);
+            this.labelUsername.TabIndex = 5;
+            this.labelUsername.Text = "Username";
+            // 
+            // labelPassword
+            // 
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.BackColor = System.Drawing.Color.Transparent;
+            this.labelPassword.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.ForeColor = System.Drawing.Color.White;
+            this.labelPassword.Location = new System.Drawing.Point(800, 344);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(91, 22);
+            this.labelPassword.TabIndex = 6;
+            this.labelPassword.Text = "Password";
+            // 
             // VLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -99,6 +125,8 @@ namespace MVC_ServiceAuto.View
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1267, 717);
+            this.Controls.Add(this.labelPassword);
+            this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.labelChangeLanguage);
             this.Controls.Add(this.comboBoxChangeLanguage);
             this.Controls.Add(this.buttonLogin);
@@ -119,5 +147,7 @@ namespace MVC_ServiceAuto.View
         private Button buttonLogin;
         private ComboBox comboBoxChangeLanguage;
         private Label labelChangeLanguage;
+        private Label labelUsername;
+        private Label labelPassword;
     }
 }

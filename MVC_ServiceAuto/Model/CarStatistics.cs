@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MVC_ServiceAuto.Model
 {
-    public class CarStatistics : Subject
+    public class CarStatistics
     {
 
         private string criterion;
@@ -18,32 +18,13 @@ namespace MVC_ServiceAuto.Model
         {
             this.carList = carList;
             this.criterion = "Fuel";
-            this.obsList = new List<Observable>();
             this.resultDetermination();
-        }
-
-        public void Attach(Observable obs)
-        {
-            this.obsList.Add(obs);
-        }
-
-        public void Detach(Observable obs)
-        {
-            this.obsList.Remove(obs);
-        }
-
-        public void Notify()
-        {
-            foreach (var obs in this.obsList)
-            {
-                obs.Update(this);
-            }
         }
 
         public string Criterion
         {
             get { return this.criterion; }
-            set { this.criterion = value; this.resultDetermination(); this.Notify(); }
+            set { this.criterion = value; this.resultDetermination(); }
         }
 
         public Dictionary<string, uint> Result

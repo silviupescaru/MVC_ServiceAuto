@@ -8,11 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MVC_ServiceAuto.Model;
 using MVC_ServiceAuto.Model.Language;
 
 namespace MVC_ServiceAuto.View
 {
-    public partial class VLogin : Form
+    public partial class VLogin : Form, Observable
     {
 
         public VLogin(int index)
@@ -39,14 +40,19 @@ namespace MVC_ServiceAuto.View
             return this.comboBoxChangeLanguage;
         }
 
-        public Label GetChangeLanguageLabel()
-        {
-            return this.labelChangeLanguage;
-        }
-
         public Button GetLoginButton()
         {
             return this.buttonLogin;
+        }
+
+        public void Update(Subject subj)
+        {
+            LangHelper lang = (LangHelper)subj;
+
+            //this.labelChangeLanguage.Text = lang.GetString("labelChangeLanguage");
+            this.buttonLogin.Text = lang.GetString("buttonLogin");
+            this.labelUsername.Text = lang.GetString("labelUsername");
+            this.labelPassword.Text = lang.GetString("labelPassword");
         }
     }
 }

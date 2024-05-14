@@ -62,6 +62,8 @@ namespace MVC_ServiceAuto.View
             this.pictureBoxCar = new System.Windows.Forms.PictureBox();
             this.labelHeader = new System.Windows.Forms.Label();
             this.buttonStatistics = new System.Windows.Forms.Button();
+            this.labelChangeLanguage = new System.Windows.Forms.Label();
+            this.comboBoxLanguage = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCarTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCarID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCar)).BeginInit();
@@ -389,6 +391,31 @@ namespace MVC_ServiceAuto.View
             this.buttonStatistics.Text = "STATISTICS";
             this.buttonStatistics.UseVisualStyleBackColor = true;
             // 
+            // labelChangeLanguage
+            // 
+            this.labelChangeLanguage.AutoSize = true;
+            this.labelChangeLanguage.BackColor = System.Drawing.Color.Transparent;
+            this.labelChangeLanguage.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChangeLanguage.ForeColor = System.Drawing.Color.White;
+            this.labelChangeLanguage.Location = new System.Drawing.Point(48, 660);
+            this.labelChangeLanguage.Name = "labelChangeLanguage";
+            this.labelChangeLanguage.Size = new System.Drawing.Size(163, 22);
+            this.labelChangeLanguage.TabIndex = 61;
+            this.labelChangeLanguage.Text = "Change Language";
+            // 
+            // comboBoxLanguage
+            // 
+            this.comboBoxLanguage.Font = new System.Drawing.Font("Montserrat", 8.999999F);
+            this.comboBoxLanguage.FormattingEnabled = true;
+            this.comboBoxLanguage.Items.AddRange(new object[] {
+            "English",
+            "French",
+            "Russian"});
+            this.comboBoxLanguage.Location = new System.Drawing.Point(217, 660);
+            this.comboBoxLanguage.Name = "comboBoxLanguage";
+            this.comboBoxLanguage.Size = new System.Drawing.Size(130, 24);
+            this.comboBoxLanguage.TabIndex = 60;
+            // 
             // VManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -396,6 +423,8 @@ namespace MVC_ServiceAuto.View
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1224, 700);
+            this.Controls.Add(this.labelChangeLanguage);
+            this.Controls.Add(this.comboBoxLanguage);
             this.Controls.Add(this.buttonStatistics);
             this.Controls.Add(this.labelHeader);
             this.Controls.Add(this.pictureBoxCar);
@@ -465,5 +494,7 @@ namespace MVC_ServiceAuto.View
         private PictureBox pictureBoxCar;
         private Label labelHeader;
         private Button buttonStatistics;
+        private Label labelChangeLanguage;
+        private ComboBox comboBoxLanguage;
     }
 }

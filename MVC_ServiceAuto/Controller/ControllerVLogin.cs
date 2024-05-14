@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MVC_ServiceAuto.Controller;
+using MVC_ServiceAuto.Model;
 using MVC_ServiceAuto.Model.Language;
 using MVC_ServiceAuto.Model.Repository;
 using MVC_ServiceAuto.View;
@@ -16,12 +17,15 @@ namespace MVC_ServiceAuto.Controller
     {
         private VLogin vLogin;
         private UserRepository userRepository;
-        private string language;
+        private LangHelper lang;
 
         public ControllerVLogin(int index)
         {
             this.vLogin = new VLogin(index);
             this.userRepository = new UserRepository();
+            this.lang = new LangHelper();
+            this.lang.Add(this.vLogin);
+
 
             this.eventsManagement();
         }
@@ -48,23 +52,16 @@ namespace MVC_ServiceAuto.Controller
         {
             if (this.vLogin.GetChangeLangugae().SelectedIndex == 1)
             {
-                LangHelper.ChangeLanguage("en");
-                language = "en";
-            }
-            else if (this.vLogin.GetChangeLangugae().SelectedIndex == 2)
-            {
-                LangHelper.ChangeLanguage("ru");
-                language = "ru";
+                this.lang.ChangeLanguage("en");
             }
             else if (this.vLogin.GetChangeLangugae().SelectedIndex == 3)
             {
-                LangHelper.ChangeLanguage("fr");
-                language = "fr";
+                this.lang.ChangeLanguage("ru");
             }
-
-            this.vLogin.GetChangeLanguageLabel().Text = ($"{LangHelper.GetString("labelChangeLanguage")}");
-            this.vLogin.GetLoginButton().Text = ($"{LangHelper.GetString("buttonLogin")}");
-
+            else if (this.vLogin.GetChangeLangugae().SelectedIndex == 2)
+            {
+                this.lang.ChangeLanguage("fr");
+            }
 
         }
 
@@ -84,7 +81,7 @@ namespace MVC_ServiceAuto.Controller
                         if (role.Equals("Employee"))
                         {
                             this.vLogin.Hide();
-                            ControllerVEmployee em = new ControllerVEmployee();
+                            ControllerVEmployee em = new ControllerVEmployee(this.vLogin.GetChangeLangugae().SelectedIndex);
                             em.GetView();
                         } else if (role.Equals("Manager"))
                         {
@@ -94,7 +91,7 @@ namespace MVC_ServiceAuto.Controller
                         } else if (role.Equals("Administrator"))
                         {
                             this.vLogin.Hide();
-                            ControllerVAdministrator ad = new ControllerVAdministrator(language);
+                            ControllerVAdministrator ad = new ControllerVAdministrator();
                             ad.GetView();
                         }
                     }

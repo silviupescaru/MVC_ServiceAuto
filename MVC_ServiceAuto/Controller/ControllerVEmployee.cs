@@ -18,6 +18,7 @@ using System.Reflection;
 using System.Windows.Forms;
 using System.IO;
 using System.Drawing;
+using MVC_ServiceAuto.Model.Language;
 
 namespace MVC_ServiceAuto.Controller
 {
@@ -27,12 +28,14 @@ namespace MVC_ServiceAuto.Controller
         private VLogin vLogin;
         private CarRepository carRepository;
         private Repository repository;
+        private LangHelper lang;
 
-        public ControllerVEmployee()
+        public ControllerVEmployee(int index)
         {
-            this.vEmployee = new VEmployee();
+            this.vEmployee = new VEmployee(index);
             this.carRepository = new CarRepository();
             this.repository = Repository.GetInstance();
+            this.lang.Add(this.vEmployee);
 
             this.eventManagement();
         }

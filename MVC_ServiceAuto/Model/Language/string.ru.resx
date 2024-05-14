@@ -121,12 +121,12 @@
     <value>Авторизоваться</value>
   </data>
   <data name="labelChangeLanguage" xml:space="preserve">
-    <value>Изменить язык</value>
+    <value>Изменение языка</value>
   </data>
-  <data name="sig" xml:space="preserve">
-    <value>Привет</value>
+  <data name="labelPassword" xml:space="preserve">
+    <value>Пароль</value>
   </data>
-  <data name="World" xml:space="preserve">
-    <value>мир</value>
+  <data name="labelUsername" xml:space="preserve">
+    <value>Имя пользователя</value>
   </data>
 </root>

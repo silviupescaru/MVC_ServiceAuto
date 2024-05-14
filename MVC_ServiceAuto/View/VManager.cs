@@ -49,6 +49,11 @@ namespace MVC_ServiceAuto.View
             return this.textBoxColor;
         }
 
+        public ComboBox GetLanguageBox()
+        {
+            return this.comboBoxLanguage;
+        }
+
         public ComboBox GetFuel()
         {
             return this.comboBoxFuel;

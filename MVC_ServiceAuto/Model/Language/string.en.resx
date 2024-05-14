@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="buttonLogin" xml:space="preserve">
-    <value>LOGIN</value>
+    <value>Login</value>
   </data>
   <data name="labelChangeLanguage" xml:space="preserve">
     <value>Change Language</value>
   </data>
-  <data name="sig" xml:space="preserve">
-    <value>Hello</value>
+  <data name="labelPassword" xml:space="preserve">
+    <value>Password</value>
   </data>
-  <data name="World" xml:space="preserve">
-    <value>World</value>
+  <data name="labelUsername" xml:space="preserve">
+    <value>Username</value>
   </data>
 </root>

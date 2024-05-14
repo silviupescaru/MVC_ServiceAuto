@@ -15,7 +15,6 @@ namespace MVC_ServiceAuto
             Application.SetCompatibleTextRenderingDefault(false);
 
             ControllerVLogin login = new ControllerVLogin(1);
-            ControllerVStatistics statistics = new ControllerVStatistics();
             Application.Run(login.GetView());
             //Application.Run(statistics.GetView());
         }

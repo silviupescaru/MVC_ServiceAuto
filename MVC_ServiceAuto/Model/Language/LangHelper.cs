@@ -9,26 +9,29 @@ using System.Threading.Tasks;
 
 namespace MVC_ServiceAuto.Model.Language
 {
-    public static class LangHelper
+    public class LangHelper : Subject
     {
         private static ResourceManager rm;
 
-        static LangHelper()
+        public LangHelper()
         {
+            this.obsList = new List<Observable>();
             rm = new ResourceManager("MVC_ServiceAuto.Model.Language.string", Assembly.GetExecutingAssembly());
         }
 
-        public static string GetString(string name)
+        public string GetString(string name)
         {
             return rm.GetString(name);
         }
 
-        public static void ChangeLanguage(string language)
+        public void ChangeLanguage(string language)
         {
             var cultureInfo = new CultureInfo(language);
 
             CultureInfo.CurrentCulture = cultureInfo;
             CultureInfo.CurrentUICulture = cultureInfo;
+
+            this.Notify();
         }
     }
 }

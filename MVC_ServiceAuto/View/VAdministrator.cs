@@ -44,6 +44,11 @@ namespace MVC_ServiceAuto.View
             return this.textBoxRole;
         }
 
+        public ComboBox GetLanguageBox()
+        {
+            return this.comboBoxLanguage;
+        }
+
         public ComboBox GetLanguage()
         {
             return this.comboBoxLanguage;

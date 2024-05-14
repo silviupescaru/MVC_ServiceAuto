@@ -66,11 +66,11 @@
     <Compile Include="Model\CarStatistics.cs" />
     <Compile Include="Model\Language\LangHelper.cs" />
     <Compile Include="Model\Language\string.en.Designer.cs" />
-    <Compile Include="Model\Observable.cs" />
+    <Compile Include="Model\Language\Observable.cs" />
     <Compile Include="Model\Repository\CarRepository.cs" />
     <Compile Include="Model\Repository\Repository.cs" />
     <Compile Include="Model\Repository\UserRepository.cs" />
-    <Compile Include="Model\Subject.cs" />
+    <Compile Include="Model\Language\Subject.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
