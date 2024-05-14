@@ -50,17 +50,17 @@ namespace MVC_ServiceAuto.Controller
 
         private void changeLanguage(object sender, EventArgs e)
         {
-            if (this.vLogin.GetChangeLangugae().SelectedIndex == 1)
+            if (this.vLogin.GetChangeLangugae().SelectedIndex == 0)
             {
                 this.lang.ChangeLanguage("en");
             }
-            else if (this.vLogin.GetChangeLangugae().SelectedIndex == 3)
+            else if (this.vLogin.GetChangeLangugae().SelectedIndex == 1)
             {
-                this.lang.ChangeLanguage("ru");
+                this.lang.ChangeLanguage("fr");
             }
             else if (this.vLogin.GetChangeLangugae().SelectedIndex == 2)
             {
-                this.lang.ChangeLanguage("fr");
+                this.lang.ChangeLanguage("ru");
             }
 
         }

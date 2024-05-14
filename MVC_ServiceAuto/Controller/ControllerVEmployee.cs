@@ -35,6 +35,7 @@ namespace MVC_ServiceAuto.Controller
             this.vEmployee = new VEmployee(index);
             this.carRepository = new CarRepository();
             this.repository = Repository.GetInstance();
+            this.lang = new LangHelper();
             this.lang.Add(this.vEmployee);
 
             this.eventManagement();
@@ -62,11 +63,29 @@ namespace MVC_ServiceAuto.Controller
             this.vEmployee.GetSaveDOCButton().Click += new EventHandler(saveDOC);
             this.vEmployee.GetLogoutButton().Click += new EventHandler(logout);
             this.vEmployee.GetCarTable().RowStateChanged += new DataGridViewRowStateChangedEventHandler(setCarControls);
+            this.vEmployee.GetLanguageBox().SelectedIndexChanged += new EventHandler(changeLanguage);
         }
 
         private void exitApplication(object sender, FormClosedEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void changeLanguage(object sender, EventArgs e)
+        {
+            if (this.vEmployee.GetLanguageBox().SelectedIndex == 0)
+            {
+                this.lang.ChangeLanguage("en");
+            }
+            else if (this.vEmployee.GetLanguageBox().SelectedIndex == 1)
+            {
+                this.lang.ChangeLanguage("fr");
+            }
+            else if (this.vEmployee.GetLanguageBox().SelectedIndex == 2)
+            {
+                this.lang.ChangeLanguage("ru");
+            }
+
         }
 
         private void addCar(object sender, EventArgs e)

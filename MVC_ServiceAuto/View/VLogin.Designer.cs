@@ -73,7 +73,6 @@ namespace MVC_ServiceAuto.View
             this.comboBoxChangeLanguage.Font = new System.Drawing.Font("Montserrat", 9F);
             this.comboBoxChangeLanguage.FormattingEnabled = true;
             this.comboBoxChangeLanguage.Items.AddRange(new object[] {
-            "",
             "English",
             "French",
             "Russian"});

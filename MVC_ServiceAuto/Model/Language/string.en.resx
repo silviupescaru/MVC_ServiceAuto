@@ -117,14 +117,74 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="buttonAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="buttonDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
   <data name="buttonLogin" xml:space="preserve">
     <value>Login</value>
+  </data>
+  <data name="buttonLogout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="buttonSaveCSV" xml:space="preserve">
+    <value>Save CSV</value>
+  </data>
+  <data name="buttonSaveDOC" xml:space="preserve">
+    <value>Save DOC</value>
+  </data>
+  <data name="buttonSaveJSON" xml:space="preserve">
+    <value>Save JSON</value>
+  </data>
+  <data name="buttonSaveXML" xml:space="preserve">
+    <value>Save XML</value>
+  </data>
+  <data name="buttonSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="buttonUpdate" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="buttonViewAll" xml:space="preserve">
+    <value>View All</value>
+  </data>
+  <data name="labelBrand" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="labelCarID" xml:space="preserve">
+    <value>Car ID</value>
   </data>
   <data name="labelChangeLanguage" xml:space="preserve">
     <value>Change Language</value>
   </data>
+  <data name="labelColor" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="labelFilterBy" xml:space="preserve">
+    <value>Filter By</value>
+  </data>
+  <data name="labelFuel" xml:space="preserve">
+    <value>Fuel</value>
+  </data>
+  <data name="labelHeader" xml:space="preserve">
+    <value>Cars Information</value>
+  </data>
+  <data name="labelLoggedIn" xml:space="preserve">
+    <value>Logged in as Employee</value>
+  </data>
+  <data name="labelOrderBy" xml:space="preserve">
+    <value>Car Order By</value>
+  </data>
+  <data name="labelOwner" xml:space="preserve">
+    <value>Owner</value>
+  </data>
   <data name="labelPassword" xml:space="preserve">
     <value>Password</value>
+  </data>
+  <data name="labelSearch" xml:space="preserve">
+    <value>Search Bar</value>
   </data>
   <data name="labelUsername" xml:space="preserve">
     <value>Username</value>

@@ -77,7 +77,7 @@ namespace MVC_ServiceAuto.View
             this.labelCarID.BackColor = System.Drawing.Color.Transparent;
             this.labelCarID.Font = new System.Drawing.Font("Montserrat SemiBold", 9.999999F, System.Drawing.FontStyle.Bold);
             this.labelCarID.ForeColor = System.Drawing.Color.White;
-            this.labelCarID.Location = new System.Drawing.Point(73, 165);
+            this.labelCarID.Location = new System.Drawing.Point(52, 165);
             this.labelCarID.Name = "labelCarID";
             this.labelCarID.Size = new System.Drawing.Size(54, 20);
             this.labelCarID.TabIndex = 0;
@@ -89,7 +89,7 @@ namespace MVC_ServiceAuto.View
             this.labelOwner.BackColor = System.Drawing.Color.Transparent;
             this.labelOwner.Font = new System.Drawing.Font("Montserrat SemiBold", 9.999999F, System.Drawing.FontStyle.Bold);
             this.labelOwner.ForeColor = System.Drawing.Color.White;
-            this.labelOwner.Location = new System.Drawing.Point(73, 191);
+            this.labelOwner.Location = new System.Drawing.Point(52, 191);
             this.labelOwner.Name = "labelOwner";
             this.labelOwner.Size = new System.Drawing.Size(59, 20);
             this.labelOwner.TabIndex = 1;
@@ -101,7 +101,7 @@ namespace MVC_ServiceAuto.View
             this.labelColor.BackColor = System.Drawing.Color.Transparent;
             this.labelColor.Font = new System.Drawing.Font("Montserrat SemiBold", 9.999999F, System.Drawing.FontStyle.Bold);
             this.labelColor.ForeColor = System.Drawing.Color.White;
-            this.labelColor.Location = new System.Drawing.Point(73, 243);
+            this.labelColor.Location = new System.Drawing.Point(52, 243);
             this.labelColor.Name = "labelColor";
             this.labelColor.Size = new System.Drawing.Size(47, 20);
             this.labelColor.TabIndex = 3;
@@ -113,7 +113,7 @@ namespace MVC_ServiceAuto.View
             this.labelBrand.BackColor = System.Drawing.Color.Transparent;
             this.labelBrand.Font = new System.Drawing.Font("Montserrat SemiBold", 9.999999F, System.Drawing.FontStyle.Bold);
             this.labelBrand.ForeColor = System.Drawing.Color.White;
-            this.labelBrand.Location = new System.Drawing.Point(73, 217);
+            this.labelBrand.Location = new System.Drawing.Point(52, 217);
             this.labelBrand.Name = "labelBrand";
             this.labelBrand.Size = new System.Drawing.Size(54, 20);
             this.labelBrand.TabIndex = 2;
@@ -125,7 +125,7 @@ namespace MVC_ServiceAuto.View
             this.labelFuel.BackColor = System.Drawing.Color.Transparent;
             this.labelFuel.Font = new System.Drawing.Font("Montserrat SemiBold", 9.999999F, System.Drawing.FontStyle.Bold);
             this.labelFuel.ForeColor = System.Drawing.Color.White;
-            this.labelFuel.Location = new System.Drawing.Point(73, 269);
+            this.labelFuel.Location = new System.Drawing.Point(52, 269);
             this.labelFuel.Name = "labelFuel";
             this.labelFuel.Size = new System.Drawing.Size(41, 20);
             this.labelFuel.TabIndex = 4;
@@ -134,7 +134,7 @@ namespace MVC_ServiceAuto.View
             // numericUpDownCarID
             // 
             this.numericUpDownCarID.Font = new System.Drawing.Font("Montserrat", 8.999999F);
-            this.numericUpDownCarID.Location = new System.Drawing.Point(142, 165);
+            this.numericUpDownCarID.Location = new System.Drawing.Point(162, 165);
             this.numericUpDownCarID.Maximum = new decimal(new int[] {
             4000000,
             0,
@@ -154,7 +154,7 @@ namespace MVC_ServiceAuto.View
             "Gasoline",
             "LPG",
             "Hybrid"});
-            this.comboBoxFuel.Location = new System.Drawing.Point(142, 269);
+            this.comboBoxFuel.Location = new System.Drawing.Point(162, 269);
             this.comboBoxFuel.Name = "comboBoxFuel";
             this.comboBoxFuel.Size = new System.Drawing.Size(139, 24);
             this.comboBoxFuel.TabIndex = 6;
@@ -162,7 +162,7 @@ namespace MVC_ServiceAuto.View
             // textBoxOwner
             // 
             this.textBoxOwner.Font = new System.Drawing.Font("Montserrat", 8.999999F);
-            this.textBoxOwner.Location = new System.Drawing.Point(142, 191);
+            this.textBoxOwner.Location = new System.Drawing.Point(162, 191);
             this.textBoxOwner.Name = "textBoxOwner";
             this.textBoxOwner.Size = new System.Drawing.Size(139, 22);
             this.textBoxOwner.TabIndex = 7;
@@ -170,7 +170,7 @@ namespace MVC_ServiceAuto.View
             // textBoxColor
             // 
             this.textBoxColor.Font = new System.Drawing.Font("Montserrat", 8.999999F);
-            this.textBoxColor.Location = new System.Drawing.Point(142, 243);
+            this.textBoxColor.Location = new System.Drawing.Point(162, 243);
             this.textBoxColor.Name = "textBoxColor";
             this.textBoxColor.Size = new System.Drawing.Size(139, 22);
             this.textBoxColor.TabIndex = 8;
@@ -178,7 +178,7 @@ namespace MVC_ServiceAuto.View
             // textBoxBrand
             // 
             this.textBoxBrand.Font = new System.Drawing.Font("Montserrat", 8.999999F);
-            this.textBoxBrand.Location = new System.Drawing.Point(142, 217);
+            this.textBoxBrand.Location = new System.Drawing.Point(162, 217);
             this.textBoxBrand.Name = "textBoxBrand";
             this.textBoxBrand.Size = new System.Drawing.Size(139, 22);
             this.textBoxBrand.TabIndex = 9;
@@ -186,9 +186,9 @@ namespace MVC_ServiceAuto.View
             // buttonAdd
             // 
             this.buttonAdd.Font = new System.Drawing.Font("Montserrat", 7.5F);
-            this.buttonAdd.Location = new System.Drawing.Point(73, 296);
+            this.buttonAdd.Location = new System.Drawing.Point(56, 296);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(64, 23);
+            this.buttonAdd.Size = new System.Drawing.Size(81, 23);
             this.buttonAdd.TabIndex = 10;
             this.buttonAdd.Text = "ADD";
             this.buttonAdd.UseVisualStyleBackColor = true;
@@ -198,7 +198,7 @@ namespace MVC_ServiceAuto.View
             this.buttonDelete.Font = new System.Drawing.Font("Montserrat", 7.5F);
             this.buttonDelete.Location = new System.Drawing.Point(217, 296);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(64, 23);
+            this.buttonDelete.Size = new System.Drawing.Size(83, 23);
             this.buttonDelete.TabIndex = 11;
             this.buttonDelete.Text = "DELETE";
             this.buttonDelete.UseVisualStyleBackColor = true;
@@ -206,9 +206,9 @@ namespace MVC_ServiceAuto.View
             // buttonUpdate
             // 
             this.buttonUpdate.Font = new System.Drawing.Font("Montserrat", 7.5F);
-            this.buttonUpdate.Location = new System.Drawing.Point(145, 296);
+            this.buttonUpdate.Location = new System.Drawing.Point(138, 296);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(64, 23);
+            this.buttonUpdate.Size = new System.Drawing.Size(78, 23);
             this.buttonUpdate.TabIndex = 12;
             this.buttonUpdate.Text = "UPDATE";
             this.buttonUpdate.UseVisualStyleBackColor = true;
@@ -290,7 +290,7 @@ namespace MVC_ServiceAuto.View
             this.buttonSearch.Font = new System.Drawing.Font("Montserrat", 7.5F);
             this.buttonSearch.Location = new System.Drawing.Point(466, 302);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(90, 23);
+            this.buttonSearch.Size = new System.Drawing.Size(125, 23);
             this.buttonSearch.TabIndex = 21;
             this.buttonSearch.Text = "SEARCH";
             this.buttonSearch.UseVisualStyleBackColor = true;
@@ -298,9 +298,9 @@ namespace MVC_ServiceAuto.View
             // buttonViewAll
             // 
             this.buttonViewAll.Font = new System.Drawing.Font("Montserrat", 7.5F);
-            this.buttonViewAll.Location = new System.Drawing.Point(562, 303);
+            this.buttonViewAll.Location = new System.Drawing.Point(607, 303);
             this.buttonViewAll.Name = "buttonViewAll";
-            this.buttonViewAll.Size = new System.Drawing.Size(90, 23);
+            this.buttonViewAll.Size = new System.Drawing.Size(125, 23);
             this.buttonViewAll.TabIndex = 20;
             this.buttonViewAll.Text = "VIEW ALL";
             this.buttonViewAll.UseVisualStyleBackColor = true;
@@ -345,9 +345,9 @@ namespace MVC_ServiceAuto.View
             // buttonLogout
             // 
             this.buttonLogout.Font = new System.Drawing.Font("Montserrat", 7.5F);
-            this.buttonLogout.Location = new System.Drawing.Point(958, 623);
+            this.buttonLogout.Location = new System.Drawing.Point(945, 621);
             this.buttonLogout.Name = "buttonLogout";
-            this.buttonLogout.Size = new System.Drawing.Size(82, 26);
+            this.buttonLogout.Size = new System.Drawing.Size(115, 26);
             this.buttonLogout.TabIndex = 24;
             this.buttonLogout.Text = "LOGOUT";
             this.buttonLogout.UseVisualStyleBackColor = true;
@@ -357,7 +357,7 @@ namespace MVC_ServiceAuto.View
             this.buttonSaveXML.Font = new System.Drawing.Font("Montserrat", 7.5F);
             this.buttonSaveXML.Location = new System.Drawing.Point(466, 259);
             this.buttonSaveXML.Name = "buttonSaveXML";
-            this.buttonSaveXML.Size = new System.Drawing.Size(90, 23);
+            this.buttonSaveXML.Size = new System.Drawing.Size(125, 23);
             this.buttonSaveXML.TabIndex = 26;
             this.buttonSaveXML.Text = "SAVE XML";
             this.buttonSaveXML.UseVisualStyleBackColor = true;
@@ -365,9 +365,9 @@ namespace MVC_ServiceAuto.View
             // buttonSaveDOC
             // 
             this.buttonSaveDOC.Font = new System.Drawing.Font("Montserrat", 7.5F);
-            this.buttonSaveDOC.Location = new System.Drawing.Point(562, 260);
+            this.buttonSaveDOC.Location = new System.Drawing.Point(607, 260);
             this.buttonSaveDOC.Name = "buttonSaveDOC";
-            this.buttonSaveDOC.Size = new System.Drawing.Size(90, 23);
+            this.buttonSaveDOC.Size = new System.Drawing.Size(125, 23);
             this.buttonSaveDOC.TabIndex = 25;
             this.buttonSaveDOC.Text = "SAVE DOC";
             this.buttonSaveDOC.UseVisualStyleBackColor = true;
@@ -377,7 +377,7 @@ namespace MVC_ServiceAuto.View
             this.buttonSaveCSV.Font = new System.Drawing.Font("Montserrat", 7.5F);
             this.buttonSaveCSV.Location = new System.Drawing.Point(466, 214);
             this.buttonSaveCSV.Name = "buttonSaveCSV";
-            this.buttonSaveCSV.Size = new System.Drawing.Size(90, 23);
+            this.buttonSaveCSV.Size = new System.Drawing.Size(125, 23);
             this.buttonSaveCSV.TabIndex = 28;
             this.buttonSaveCSV.Text = "SAVE CSV";
             this.buttonSaveCSV.UseVisualStyleBackColor = true;
@@ -385,9 +385,9 @@ namespace MVC_ServiceAuto.View
             // buttonSaveJSON
             // 
             this.buttonSaveJSON.Font = new System.Drawing.Font("Montserrat", 7.5F);
-            this.buttonSaveJSON.Location = new System.Drawing.Point(562, 214);
+            this.buttonSaveJSON.Location = new System.Drawing.Point(607, 213);
             this.buttonSaveJSON.Name = "buttonSaveJSON";
-            this.buttonSaveJSON.Size = new System.Drawing.Size(90, 23);
+            this.buttonSaveJSON.Size = new System.Drawing.Size(125, 23);
             this.buttonSaveJSON.TabIndex = 27;
             this.buttonSaveJSON.Text = "SAVE JSON";
             this.buttonSaveJSON.UseVisualStyleBackColor = true;
@@ -421,7 +421,7 @@ namespace MVC_ServiceAuto.View
             "English",
             "French",
             "Russian"});
-            this.comboBoxLanguage.Location = new System.Drawing.Point(497, 165);
+            this.comboBoxLanguage.Location = new System.Drawing.Point(522, 167);
             this.comboBoxLanguage.Name = "comboBoxLanguage";
             this.comboBoxLanguage.Size = new System.Drawing.Size(130, 24);
             this.comboBoxLanguage.TabIndex = 32;
