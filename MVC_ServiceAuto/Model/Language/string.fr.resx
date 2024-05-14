@@ -171,6 +171,9 @@
   <data name="labelHeader" xml:space="preserve">
     <value>Informations sur les voitures</value>
   </data>
+  <data name="labelLoggedAdmin" xml:space="preserve">
+    <value>Connecté en tant qu'administrateur</value>
+  </data>
   <data name="labelLoggedIn" xml:space="preserve">
     <value>Connecté en tant qu'employé</value>
   </data>
@@ -183,8 +186,17 @@
   <data name="labelPassword" xml:space="preserve">
     <value>Mot de passe</value>
   </data>
+  <data name="labelRole" xml:space="preserve">
+    <value>Rôle</value>
+  </data>
   <data name="labelSearch" xml:space="preserve">
     <value>Barre de recherche</value>
+  </data>
+  <data name="labelSearchRole" xml:space="preserve">
+    <value>Rôle de recherche</value>
+  </data>
+  <data name="labelUserID" xml:space="preserve">
+    <value>ID de l'utilisateur</value>
   </data>
   <data name="labelUsername" xml:space="preserve">
     <value>Nom d'utilisateur</value>

@@ -171,6 +171,9 @@
   <data name="labelHeader" xml:space="preserve">
     <value>Информация об автомобилях</value>
   </data>
+  <data name="labelLoggedAdmin" xml:space="preserve">
+    <value>Вошёл как администратор</value>
+  </data>
   <data name="labelLoggedIn" xml:space="preserve">
     <value>Вошёл как сотрудник</value>
   </data>
@@ -183,8 +186,17 @@
   <data name="labelPassword" xml:space="preserve">
     <value>Пароль</value>
   </data>
+  <data name="labelRole" xml:space="preserve">
+    <value>Роль</value>
+  </data>
   <data name="labelSearch" xml:space="preserve">
     <value>Панель поиска</value>
+  </data>
+  <data name="labelSearchRole" xml:space="preserve">
+    <value>Поиск роли</value>
+  </data>
+  <data name="labelUserID" xml:space="preserve">
+    <value>ид пользователя</value>
   </data>
   <data name="labelUsername" xml:space="preserve">
     <value>Имя пользователя</value>

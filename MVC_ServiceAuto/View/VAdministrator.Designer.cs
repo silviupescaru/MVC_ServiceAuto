@@ -52,10 +52,8 @@ namespace MVC_ServiceAuto.View
             this.dataGridViewUsers = new System.Windows.Forms.DataGridView();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.labelLoggedUser = new System.Windows.Forms.Label();
-            this.comboBoxLanguage = new System.Windows.Forms.ComboBox();
-            this.labelLanguage = new System.Windows.Forms.Label();
             this.labelChangeLanguage = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxChangeLanguage = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownUserID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
             this.SuspendLayout();
@@ -262,31 +260,6 @@ namespace MVC_ServiceAuto.View
             this.labelLoggedUser.TabIndex = 17;
             this.labelLoggedUser.Text = "Logged in as Administrator";
             // 
-            // comboBoxLanguage
-            // 
-            this.comboBoxLanguage.FormattingEnabled = true;
-            this.comboBoxLanguage.Items.AddRange(new object[] {
-            "",
-            "English",
-            "Japanese",
-            "Russian"});
-            this.comboBoxLanguage.Location = new System.Drawing.Point(561, 107);
-            this.comboBoxLanguage.Name = "comboBoxLanguage";
-            this.comboBoxLanguage.Size = new System.Drawing.Size(136, 21);
-            this.comboBoxLanguage.TabIndex = 18;
-            // 
-            // labelLanguage
-            // 
-            this.labelLanguage.AutoSize = true;
-            this.labelLanguage.BackColor = System.Drawing.Color.Transparent;
-            this.labelLanguage.Font = new System.Drawing.Font("Montserrat", 12.75F, System.Drawing.FontStyle.Bold);
-            this.labelLanguage.ForeColor = System.Drawing.Color.White;
-            this.labelLanguage.Location = new System.Drawing.Point(435, 106);
-            this.labelLanguage.Name = "labelLanguage";
-            this.labelLanguage.Size = new System.Drawing.Size(99, 24);
-            this.labelLanguage.TabIndex = 19;
-            this.labelLanguage.Text = "Language";
-            // 
             // labelChangeLanguage
             // 
             this.labelChangeLanguage.AutoSize = true;
@@ -299,18 +272,18 @@ namespace MVC_ServiceAuto.View
             this.labelChangeLanguage.TabIndex = 35;
             this.labelChangeLanguage.Text = "Change Language";
             // 
-            // comboBox1
+            // comboBoxChangeLanguage
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Montserrat", 8.999999F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxChangeLanguage.Font = new System.Drawing.Font("Montserrat", 8.999999F);
+            this.comboBoxChangeLanguage.FormattingEnabled = true;
+            this.comboBoxChangeLanguage.Items.AddRange(new object[] {
             "English",
             "French",
             "Russian"});
-            this.comboBox1.Location = new System.Drawing.Point(566, 552);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(130, 24);
-            this.comboBox1.TabIndex = 34;
+            this.comboBoxChangeLanguage.Location = new System.Drawing.Point(566, 552);
+            this.comboBoxChangeLanguage.Name = "comboBoxChangeLanguage";
+            this.comboBoxChangeLanguage.Size = new System.Drawing.Size(130, 24);
+            this.comboBoxChangeLanguage.TabIndex = 34;
             // 
             // VAdministrator
             // 
@@ -320,9 +293,7 @@ namespace MVC_ServiceAuto.View
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(745, 635);
             this.Controls.Add(this.labelChangeLanguage);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.labelLanguage);
-            this.Controls.Add(this.comboBoxLanguage);
+            this.Controls.Add(this.comboBoxChangeLanguage);
             this.Controls.Add(this.labelLoggedUser);
             this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.dataGridViewUsers);
@@ -371,9 +342,7 @@ namespace MVC_ServiceAuto.View
         private DataGridView dataGridViewUsers;
         private Button buttonLogout;
         private Label labelLoggedUser;
-        private ComboBox comboBoxLanguage;
-        private Label labelLanguage;
         private Label labelChangeLanguage;
-        private ComboBox comboBox1;
+        private ComboBox comboBoxChangeLanguage;
     }
 }

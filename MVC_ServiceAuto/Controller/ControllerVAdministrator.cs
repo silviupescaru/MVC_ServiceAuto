@@ -20,14 +20,16 @@ namespace MVC_ServiceAuto.Controller
         private VLogin vLogin;
         private UserRepository userRepository;
         private Repository repository;
+        private LangHelper lang;
 
 
-        public ControllerVAdministrator()
+        public ControllerVAdministrator(int index)
         {
-            //LangHelper.ChangeLanguage(language);
-            this.vAdministrator = new VAdministrator();
+            this.vAdministrator = new VAdministrator(index);
             this.userRepository = new UserRepository();
             this.repository = Repository.GetInstance();
+            this.lang = new LangHelper();
+            this.lang.Add(this.vAdministrator);
 
             this.eventsManagement();
         }
@@ -48,12 +50,28 @@ namespace MVC_ServiceAuto.Controller
             this.vAdministrator.GetViewAllButton().Click += new EventHandler(viewAllUsers);
             this.vAdministrator.GetLogoutButton().Click += new EventHandler(logout);
             this.vAdministrator.GetUserTable().RowStateChanged += new DataGridViewRowStateChangedEventHandler(setUserControls);
-
+            this.vAdministrator.GetLanguageBox().SelectedIndexChanged += new EventHandler(changeLanguage);
         }
 
         private void exitApplication(object sender, FormClosedEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void changeLanguage(object sender, EventArgs e)
+        {
+            if (this.vAdministrator.GetLanguageBox().SelectedIndex == 0)
+            {
+                this.lang.ChangeLanguage("en");
+            }
+            else if (this.vAdministrator.GetLanguageBox().SelectedIndex == 1)
+            {
+                this.lang.ChangeLanguage("fr");
+            }
+            else if (this.vAdministrator.GetLanguageBox().SelectedIndex == 2)
+            {
+                this.lang.ChangeLanguage("ru");
+            }
         }
 
         private void addUser(object sender, EventArgs e)
@@ -162,7 +180,6 @@ namespace MVC_ServiceAuto.Controller
                         dt.Columns.Add("username", typeof(string));
                         dt.Columns.Add("password", typeof(string));
                         dt.Columns.Add("role", typeof(string));
-                        dt.Columns.Add("language", typeof(string));
 
 
                         foreach (User user in list)
@@ -173,7 +190,6 @@ namespace MVC_ServiceAuto.Controller
                             row["username"] = user.Username;
                             row["password"] = user.Password;
                             row["role"] = user.Role;
-                            row["language"] = user.Language;
 
                             dt.Rows.Add(row);
                         }
@@ -242,9 +258,6 @@ namespace MVC_ServiceAuto.Controller
                     string role = drvr.Cells[3].Value.ToString();
                     this.vAdministrator.GetRole().Text = role;
 
-                    string language = drvr.Cells[4].Value.ToString();
-                    this.vAdministrator.GetLanguage().Text = language;
-
                 }
             }
             catch(Exception ex) 
@@ -278,13 +291,7 @@ namespace MVC_ServiceAuto.Controller
                 MessageBox.Show("Role is empty!");
                 return null;
             }
-
-            if (this.vAdministrator.GetLanguage().Text == null || this.vAdministrator.GetLanguage().Text.Length == 0)
-            {
-                MessageBox.Show("Language is empty!");
-                return null;
-            }
-                return new User((uint)this.vAdministrator.GetUserID().Value, this.vAdministrator.GetUsername().Text, this.vAdministrator.GetPassword().Text, this.vAdministrator.GetRole().Text, this.vAdministrator.GetLanguage().Text);
+                return new User((uint)this.vAdministrator.GetUserID().Value, this.vAdministrator.GetUsername().Text, this.vAdministrator.GetPassword().Text, this.vAdministrator.GetRole().Text);
         }
 
         private void resetGUIControls()
@@ -293,7 +300,6 @@ namespace MVC_ServiceAuto.Controller
             this.vAdministrator.GetUsername().Text = string.Empty;
             this.vAdministrator.GetPassword().Text = string.Empty;
             this.vAdministrator.GetRole().Text = string.Empty;
-            this.vAdministrator.GetLanguage().Text = string.Empty;
             this.vAdministrator.GetSearch().Text = string.Empty;
             this.vAdministrator.GetUserTable().DataSource = repository.GetTable("SELECT * FROM [User]");
         }

@@ -91,7 +91,7 @@ namespace MVC_ServiceAuto.Controller
                         } else if (role.Equals("Administrator"))
                         {
                             this.vLogin.Hide();
-                            ControllerVAdministrator ad = new ControllerVAdministrator();
+                            ControllerVAdministrator ad = new ControllerVAdministrator(this.vLogin.GetChangeLangugae().SelectedIndex);
                             ad.GetView();
                         }
                     }

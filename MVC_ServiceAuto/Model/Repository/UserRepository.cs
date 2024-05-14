@@ -20,7 +20,7 @@ namespace MVC_ServiceAuto.Model.Repository
         {
             string commandSQL = "insert into [User] values('";
             commandSQL += user.Username + "','" + user.Password + "','" + user.Role;
-            commandSQL += "','" + user.Language + "');";
+            commandSQL += "','" + "');";
             return this.repository.CommandSQL(commandSQL);
         }
 
@@ -79,7 +79,7 @@ namespace MVC_ServiceAuto.Model.Repository
         {
             string commandSQL = "update [User] set [username] = '";
             commandSQL += user.Username + "', [password] = '" + user.Password;
-            commandSQL += "', [role] = '" + user.Role + "', [language] = '" + user.Language;
+            commandSQL += "', [role] = '" + user.Role;
             commandSQL += "' where [userID] = '" + user.UserID + "'";
             return this.repository.CommandSQL(commandSQL);
         }
@@ -174,7 +174,7 @@ namespace MVC_ServiceAuto.Model.Repository
         private User convertToUser(DataRow dataRow)
         {
             int id = (int)dataRow["userID"];
-            return new User((uint)id, (string)dataRow["username"], (string)dataRow["password"], (string)dataRow["role"], (string)dataRow["language"]);
+            return new User((uint)id, (string)dataRow["username"], (string)dataRow["password"], (string)dataRow["role"]);
         }
 
     }

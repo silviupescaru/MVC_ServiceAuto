@@ -7,13 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MVC_ServiceAuto.Model;
+using MVC_ServiceAuto.Model.Language;
 
 namespace MVC_ServiceAuto.View
 {
-    public partial class VAdministrator : Form
+    public partial class VAdministrator : Form, Observable
     {
 
-        public VAdministrator()
+        public VAdministrator(int index)
         {
             InitializeComponent();
             this.numericUpDownUserID.Value = 0;
@@ -21,7 +23,8 @@ namespace MVC_ServiceAuto.View
             this.textBoxPassword.Text = string.Empty;
             this.textBoxRole.Text = string.Empty;
             this.textBoxSearch.Text = string.Empty;
-            this.comboBoxLanguage.SelectedItem = 0;
+
+            this.comboBoxChangeLanguage.SelectedItem = index;
         }
 
         public NumericUpDown GetUserID()
@@ -46,12 +49,7 @@ namespace MVC_ServiceAuto.View
 
         public ComboBox GetLanguageBox()
         {
-            return this.comboBoxLanguage;
-        }
-
-        public ComboBox GetLanguage()
-        {
-            return this.comboBoxLanguage;
+            return this.comboBoxChangeLanguage;
         }
 
         public TextBox GetSearch()
@@ -92,6 +90,26 @@ namespace MVC_ServiceAuto.View
         public Button GetLogoutButton()
         {
             return this.buttonLogout;
+        }
+
+        public void Update(Subject obs)
+        {
+            LangHelper lang = (LangHelper)obs;
+
+            this.labelUserID.Text = lang.GetString("labelUserID");
+            this.labelUsername.Text = lang.GetString("labelUsername");
+            this.labelPassword.Text = lang.GetString("labelPassword");
+            this.labelRole.Text = lang.GetString("labelRole");
+            this.labelChangeLanguage.Text = lang.GetString("labelChangeLanguage");
+            this.labelSearch.Text = lang.GetString("labelSearchRole");
+            this.labelLoggedUser.Text = lang.GetString("labelLoggedAdmin");
+
+            this.buttonAdd.Text = lang.GetString("buttonAdd");
+            this.buttonUpdate.Text = lang.GetString("buttonUpdate");
+            this.buttonDelete.Text = lang.GetString("buttonDelete");
+            this.buttonSearch.Text = lang.GetString("buttonSearch");
+            this.buttonViewAll.Text = lang.GetString("buttonViewAll");
+            this.buttonLogout.Text = lang.GetString("buttonLogout");
         }
 
 
