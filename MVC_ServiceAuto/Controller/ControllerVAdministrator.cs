@@ -20,14 +20,16 @@ namespace MVC_ServiceAuto.Controller
         private VLogin vLogin;
         private UserRepository userRepository;
         private Repository repository;
+        private string language;
 
 
         public ControllerVAdministrator(string language)
         {
-            LangHelper.ChangeLanguage(language);
+            //LangHelper.ChangeLanguage(language);
             this.vAdministrator = new VAdministrator();
             this.userRepository = new UserRepository();
             this.repository = Repository.GetInstance();
+            this.language = language;
 
             this.eventsManagement();
         }

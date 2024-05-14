@@ -15,16 +15,18 @@ namespace MVC_ServiceAuto.Controller
 {
     public class ControllerVStatistics
     {
-        VStatistics vStatistics;
-        CarStatistics carStatistics;
-        CarRepository carRepository;
-        Repository repository;
+        private VStatistics vStatistics;
+        private CarStatistics carStatistics;
+        private CarRepository carRepository;
+        private Repository repository;
 
         public ControllerVStatistics() 
         {
             this.vStatistics = new VStatistics();
             this.carRepository = new CarRepository();
             this.carStatistics = new CarStatistics(carRepository.CarTable());
+            this.carStatistics.Attach(this.vStatistics);
+
             this.repository = Repository.GetInstance();
 
             this.eventsManagement();
@@ -64,6 +66,9 @@ namespace MVC_ServiceAuto.Controller
 
         private void showStatistics(object sender, EventArgs e)
         {
+
+            this.carStatistics.Notify();
+
             string criterion = this.vStatistics.GetCriterion().SelectedItem.ToString();
 
             this.carStatistics.Criterion = criterion;
@@ -99,6 +104,8 @@ namespace MVC_ServiceAuto.Controller
                 this.vStatistics.GetChart().Series[criterion].LegendText = "#VALX";
             }
             else MessageBox.Show("The list of cars is empty!");
+
+            this.carStatistics.Detach(this.vStatistics);
 
             Debug.WriteLine("Done statistics!");
 

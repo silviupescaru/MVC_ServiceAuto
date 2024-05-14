@@ -22,6 +22,24 @@ namespace MVC_ServiceAuto.Model
             this.resultDetermination();
         }
 
+        public void Attach(Observable obs)
+        {
+            this.obsList.Add(obs);
+        }
+
+        public void Detach(Observable obs)
+        {
+            this.obsList.Remove(obs);
+        }
+
+        public void Notify()
+        {
+            foreach (var obs in this.obsList)
+            {
+                obs.Update(this);
+            }
+        }
+
         public string Criterion
         {
             get { return this.criterion; }

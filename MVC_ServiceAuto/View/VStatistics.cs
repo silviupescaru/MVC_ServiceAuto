@@ -40,7 +40,9 @@ namespace MVC_ServiceAuto.View
 
         public void Update(Subject obs)
         {
-            //CarStatistics carStatistics = (CarStatistics)obs;
+            CarStatistics carStatistics = (CarStatistics)obs;
+
+            Dictionary<string, uint> result = carStatistics.Result;
         }
     }
 }
