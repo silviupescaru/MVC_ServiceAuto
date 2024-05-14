@@ -85,14 +85,14 @@ namespace MVC_ServiceAuto.Controller
                     bool result = this.userRepository.AddUser(user);
                     if (result == true)
                     {
-                        MessageBox.Show("Adding was successful!");
+                        MessageBox.Show(this.lang.GetString("messageBoxAddSuccess"));
                         this.resetGUIControls();
 
                         if (this.vAdministrator.GetUserTable() == null)
-                            MessageBox.Show("There is no data in your table!");
+                            MessageBox.Show(this.lang.GetString("messageBoxNoData"));
 
                     }
-                    else MessageBox.Show("Adding ended with failure!");
+                    else MessageBox.Show(this.lang.GetString("messageBoxAddFail"));
                 }
             }
             catch (Exception ex)
@@ -113,13 +113,13 @@ namespace MVC_ServiceAuto.Controller
                         bool result = this.userRepository.UpdateUser(user);
                         if (result)
                         {
-                            MessageBox.Show("Updating was completed successfully!");
+                            MessageBox.Show(this.lang.GetString("messageBoxUpdateSuccess"));
                             this.resetGUIControls();
                         }
-                        else MessageBox.Show("Updating ended with failure!");
+                        else MessageBox.Show(this.lang.GetString("messageBoxUpdateFail"));
                     }
                 }
-                else MessageBox.Show("No data has been selected to be updated!");
+                else MessageBox.Show(this.lang.GetString("messageBoxNoDataSelected"));
             }
             catch (Exception ex)
             {
@@ -138,15 +138,15 @@ namespace MVC_ServiceAuto.Controller
                     bool result = this.userRepository.DeleteUser((uint)this.vAdministrator.GetUserID().Value);
                     if (result == true)
                     {
-                        MessageBox.Show("Deleting was successfull!");
+                        MessageBox.Show(this.lang.GetString("messageBoxDeleteSuccess"));
                         this.resetGUIControls();
 
                         if (this.vAdministrator.GetUserTable() == null)
                         {
-                            MessageBox.Show("There is no data in your table!");
+                            MessageBox.Show(this.lang.GetString("messageBoxNoData"));
                         }
                     }
-                    else MessageBox.Show("Deleting ended with failure!");
+                    else MessageBox.Show(this.lang.GetString("messageBoxDeleteFail"));
                 }
 
             } 
@@ -169,7 +169,7 @@ namespace MVC_ServiceAuto.Controller
 
                     if (list == null)
                     {
-                        MessageBox.Show("No user with desired role!");
+                        MessageBox.Show(this.lang.GetString("messageBoxNoUserDesiredRole"));
                     }
                     else
                     {
@@ -198,7 +198,7 @@ namespace MVC_ServiceAuto.Controller
                     }
 
                 }
-                else MessageBox.Show("Search bar is empty!");
+                else MessageBox.Show(this.lang.GetString("messageBoxSearchEmpty"));
             }
             catch( Exception ex )
             {
@@ -270,25 +270,25 @@ namespace MVC_ServiceAuto.Controller
         {
             if (this.vAdministrator.GetUserID().Value == 0)
             {
-                MessageBox.Show("User ID must be non-zero natural number!");
+                MessageBox.Show(this.lang.GetString("messageBoxUserIDNonZero"));
                 return null;
             }
 
             if (this.vAdministrator.GetUsername().Text == null || this.vAdministrator.GetUsername().Text.Length == 0)
             {
-                MessageBox.Show("Username is empty!");
+                MessageBox.Show(this.lang.GetString("messageBoxUsernameEmpty"));
                 return null;
             }
 
             if (this.vAdministrator.GetPassword().Text == null || this.vAdministrator.GetPassword().Text.Length == 0)
             {
-                MessageBox.Show("Password is empty!");
+                MessageBox.Show(this.lang.GetString("messageBoxPasswordEmpty"));
                 return null;
             }
 
             if (this.vAdministrator.GetRole().Text == null || this.vAdministrator.GetRole().Text.Length == 0)
             {
-                MessageBox.Show("Role is empty!");
+                MessageBox.Show(this.lang.GetString("messageBoxRoleEmpty"));
                 return null;
             }
                 return new User((uint)this.vAdministrator.GetUserID().Value, this.vAdministrator.GetUsername().Text, this.vAdministrator.GetPassword().Text, this.vAdministrator.GetRole().Text);
