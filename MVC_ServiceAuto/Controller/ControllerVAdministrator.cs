@@ -89,7 +89,7 @@ namespace MVC_ServiceAuto.Controller
                         this.resetGUIControls();
 
                         if (this.vAdministrator.GetUserTable() == null)
-                            MessageBox.Show("There is no user in your table!");
+                            MessageBox.Show("There is no data in your table!");
 
                     }
                     else MessageBox.Show("Adding ended with failure!");
@@ -119,7 +119,7 @@ namespace MVC_ServiceAuto.Controller
                         else MessageBox.Show("Updating ended with failure!");
                     }
                 }
-                else MessageBox.Show("No user has been selected to be updated!");
+                else MessageBox.Show("No data has been selected to be updated!");
             }
             catch (Exception ex)
             {
@@ -143,7 +143,7 @@ namespace MVC_ServiceAuto.Controller
 
                         if (this.vAdministrator.GetUserTable() == null)
                         {
-                            MessageBox.Show("There is no user in your table!");
+                            MessageBox.Show("There is no data in your table!");
                         }
                     }
                     else MessageBox.Show("Deleting ended with failure!");

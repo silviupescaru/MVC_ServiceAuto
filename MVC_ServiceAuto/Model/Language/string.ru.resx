@@ -213,4 +213,46 @@
   <data name="labelUsername" xml:space="preserve">
     <value>Имя пользователя</value>
   </data>
+  <data name="messageBoxAddFail" xml:space="preserve">
+    <value>Добавление завершилось неудачей!</value>
+  </data>
+  <data name="messageBoxAddSuccess" xml:space="preserve">
+    <value>Добавление прошло успешно!</value>
+  </data>
+  <data name="messageBoxDeleteFail" xml:space="preserve">
+    <value>Удаление завершилось неудачей!</value>
+  </data>
+  <data name="messageBoxDeleteSuccess" xml:space="preserve">
+    <value>Удаление прошло успешно!</value>
+  </data>
+  <data name="messageBoxNoData" xml:space="preserve">
+    <value>В вашей таблице нет данных!</value>
+  </data>
+  <data name="messageBoxNoDataSelected" xml:space="preserve">
+    <value>Нет данных, выбранных для обновления!</value>
+  </data>
+  <data name="messageBoxNoUserDesiredRole" xml:space="preserve">
+    <value>Нет пользователя с желаемой ролью!</value>
+  </data>
+  <data name="messageBoxPasswordEmpty" xml:space="preserve">
+    <value>Пароль пуст!</value>
+  </data>
+  <data name="messageBoxRoleEmpty" xml:space="preserve">
+    <value>Роль пуста!</value>
+  </data>
+  <data name="messageBoxSearchEmpty" xml:space="preserve">
+    <value>Строка поиска пуста!</value>
+  </data>
+  <data name="messageBoxUpdateFail" xml:space="preserve">
+    <value>Обновление завершилось неудачей!</value>
+  </data>
+  <data name="messageBoxUpdateSucess" xml:space="preserve">
+    <value>Обновление прошло успешно!</value>
+  </data>
+  <data name="messageBoxUserIDNonZero" xml:space="preserve">
+    <value>ID пользователя должен быть ненулевым натуральным числом!</value>
+  </data>
+  <data name="messageBoxUsernameEmpty" xml:space="preserve">
+    <value>Имя пользователя пусто!</value>
+  </data>
 </root>

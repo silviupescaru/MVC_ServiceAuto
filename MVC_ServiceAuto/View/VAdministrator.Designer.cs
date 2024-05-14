@@ -62,11 +62,11 @@ namespace MVC_ServiceAuto.View
             // 
             this.labelUserID.AutoSize = true;
             this.labelUserID.BackColor = System.Drawing.Color.Transparent;
-            this.labelUserID.Font = new System.Drawing.Font("Montserrat", 12.75F, System.Drawing.FontStyle.Bold);
+            this.labelUserID.Font = new System.Drawing.Font("Montserrat", 11F, System.Drawing.FontStyle.Bold);
             this.labelUserID.ForeColor = System.Drawing.Color.White;
-            this.labelUserID.Location = new System.Drawing.Point(51, 102);
+            this.labelUserID.Location = new System.Drawing.Point(51, 107);
             this.labelUserID.Name = "labelUserID";
-            this.labelUserID.Size = new System.Drawing.Size(75, 24);
+            this.labelUserID.Size = new System.Drawing.Size(66, 21);
             this.labelUserID.TabIndex = 0;
             this.labelUserID.Text = "User ID";
             // 
@@ -74,11 +74,11 @@ namespace MVC_ServiceAuto.View
             // 
             this.labelRole.AutoSize = true;
             this.labelRole.BackColor = System.Drawing.Color.Transparent;
-            this.labelRole.Font = new System.Drawing.Font("Montserrat", 12.75F, System.Drawing.FontStyle.Bold);
+            this.labelRole.Font = new System.Drawing.Font("Montserrat", 11F, System.Drawing.FontStyle.Bold);
             this.labelRole.ForeColor = System.Drawing.Color.White;
-            this.labelRole.Location = new System.Drawing.Point(51, 172);
+            this.labelRole.Location = new System.Drawing.Point(51, 180);
             this.labelRole.Name = "labelRole";
-            this.labelRole.Size = new System.Drawing.Size(49, 24);
+            this.labelRole.Size = new System.Drawing.Size(45, 21);
             this.labelRole.TabIndex = 1;
             this.labelRole.Text = "Role";
             // 
@@ -86,11 +86,11 @@ namespace MVC_ServiceAuto.View
             // 
             this.labelPassword.AutoSize = true;
             this.labelPassword.BackColor = System.Drawing.Color.Transparent;
-            this.labelPassword.Font = new System.Drawing.Font("Montserrat", 12.75F, System.Drawing.FontStyle.Bold);
+            this.labelPassword.Font = new System.Drawing.Font("Montserrat", 11F, System.Drawing.FontStyle.Bold);
             this.labelPassword.ForeColor = System.Drawing.Color.White;
-            this.labelPassword.Location = new System.Drawing.Point(51, 149);
+            this.labelPassword.Location = new System.Drawing.Point(51, 155);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(96, 24);
+            this.labelPassword.Size = new System.Drawing.Size(86, 21);
             this.labelPassword.TabIndex = 2;
             this.labelPassword.Text = "Password";
             // 
@@ -98,17 +98,17 @@ namespace MVC_ServiceAuto.View
             // 
             this.labelUsername.AutoSize = true;
             this.labelUsername.BackColor = System.Drawing.Color.Transparent;
-            this.labelUsername.Font = new System.Drawing.Font("Montserrat", 12.75F, System.Drawing.FontStyle.Bold);
+            this.labelUsername.Font = new System.Drawing.Font("Montserrat", 11F, System.Drawing.FontStyle.Bold);
             this.labelUsername.ForeColor = System.Drawing.Color.White;
-            this.labelUsername.Location = new System.Drawing.Point(51, 126);
+            this.labelUsername.Location = new System.Drawing.Point(51, 131);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(101, 24);
+            this.labelUsername.Size = new System.Drawing.Size(89, 21);
             this.labelUsername.TabIndex = 3;
             this.labelUsername.Text = "Username";
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Font = new System.Drawing.Font("Montserrat", 8F);
+            this.buttonAdd.Font = new System.Drawing.Font("Montserrat", 6F);
             this.buttonAdd.Location = new System.Drawing.Point(51, 205);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(64, 23);
@@ -118,7 +118,7 @@ namespace MVC_ServiceAuto.View
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Font = new System.Drawing.Font("Montserrat", 8F);
+            this.buttonDelete.Font = new System.Drawing.Font("Montserrat", 6F);
             this.buttonDelete.Location = new System.Drawing.Point(204, 205);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(64, 23);
@@ -128,7 +128,7 @@ namespace MVC_ServiceAuto.View
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Font = new System.Drawing.Font("Montserrat", 8F);
+            this.buttonUpdate.Font = new System.Drawing.Font("Montserrat", 6F);
             this.buttonUpdate.Location = new System.Drawing.Point(127, 205);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(64, 23);
@@ -241,9 +241,9 @@ namespace MVC_ServiceAuto.View
             // buttonLogout
             // 
             this.buttonLogout.Font = new System.Drawing.Font("Montserrat", 8F);
-            this.buttonLogout.Location = new System.Drawing.Point(97, 589);
+            this.buttonLogout.Location = new System.Drawing.Point(81, 587);
             this.buttonLogout.Name = "buttonLogout";
-            this.buttonLogout.Size = new System.Drawing.Size(90, 23);
+            this.buttonLogout.Size = new System.Drawing.Size(121, 23);
             this.buttonLogout.TabIndex = 16;
             this.buttonLogout.Text = "LOGOUT";
             this.buttonLogout.UseVisualStyleBackColor = true;

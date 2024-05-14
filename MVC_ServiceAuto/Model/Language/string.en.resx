@@ -213,4 +213,46 @@
   <data name="labelUsername" xml:space="preserve">
     <value>Username</value>
   </data>
+  <data name="messageBoxAddFail" xml:space="preserve">
+    <value>Adding ended with failure!</value>
+  </data>
+  <data name="messageBoxAddSuccess" xml:space="preserve">
+    <value>Adding was successful!</value>
+  </data>
+  <data name="messageBoxDeleteFail" xml:space="preserve">
+    <value>Deleting ended with failure!</value>
+  </data>
+  <data name="messageBoxDeleteSuccess" xml:space="preserve">
+    <value>Deleting was successful!</value>
+  </data>
+  <data name="messageBoxNoData" xml:space="preserve">
+    <value>There is no data in your table!</value>
+  </data>
+  <data name="messageBoxNoDataSelected" xml:space="preserve">
+    <value>No data has been selected to be updated!</value>
+  </data>
+  <data name="messageBoxNoUserDesiredRole" xml:space="preserve">
+    <value>No user with desired role!</value>
+  </data>
+  <data name="messageBoxPasswordEmpty" xml:space="preserve">
+    <value>Password is empty!</value>
+  </data>
+  <data name="messageBoxRoleEmpty" xml:space="preserve">
+    <value>Role is empty!</value>
+  </data>
+  <data name="messageBoxSearchEmpty" xml:space="preserve">
+    <value>Search Bar is empty!</value>
+  </data>
+  <data name="messageBoxUpdateFail" xml:space="preserve">
+    <value>Updating ended with failure!</value>
+  </data>
+  <data name="messageBoxUpdateSucess" xml:space="preserve">
+    <value>Updating was successful!</value>
+  </data>
+  <data name="messageBoxUserIDNonZero" xml:space="preserve">
+    <value>User ID must be non-zero natural number!</value>
+  </data>
+  <data name="messageBoxUsernameEmpty" xml:space="preserve">
+    <value>Username is empty!</value>
+  </data>
 </root>
