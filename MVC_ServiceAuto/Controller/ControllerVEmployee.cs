@@ -99,13 +99,13 @@ namespace MVC_ServiceAuto.Controller
                     bool result = this.carRepository.AddCar(car);
                     if (result == true)
                     {
-                        MessageBox.Show("Adding was successful!");
+                        MessageBox.Show(this.lang.GetString("messageBoxAddSuccess"));
                         this.resetGUIControls();
 
                         if (this.vEmployee.GetCarTable() == null)
-                            MessageBox.Show("There is no car in your table!");
+                            MessageBox.Show(this.lang.GetString("messageBoxNoData"));
                     }
-                    else MessageBox.Show("Adding was ended in failure!");
+                    else MessageBox.Show(this.lang.GetString("messageBoxAddFail"));
                 }
             }
             catch(Exception ex)
@@ -126,13 +126,13 @@ namespace MVC_ServiceAuto.Controller
                         bool result = this.carRepository.UpdateCar(car);
                         if (result)
                         {
-                            MessageBox.Show("Updating was successful!");
+                            MessageBox.Show(this.lang.GetString("messageBoxUpdateSuccess"));
                             this.resetGUIControls();
                         }
-                        else MessageBox.Show("Updating ended with failure!");
+                        else MessageBox.Show(this.lang.GetString("messageBoxUpdateFail"));
                     }
                 }
-                else MessageBox.Show("No car has been selected to be updated");
+                else MessageBox.Show(this.lang.GetString("messageBoxNoDataSelected"));
             }
             catch(Exception ex)
             {
@@ -150,12 +150,12 @@ namespace MVC_ServiceAuto.Controller
 
                     if (result)
                     {
-                        MessageBox.Show("Deleting was successful!");
+                        MessageBox.Show(this.lang.GetString("messageBoxDeleteSuccess"));
                         this.resetGUIControls();
                     }
-                    else MessageBox.Show("Deletion ended with failure!");
+                    else MessageBox.Show(this.lang.GetString("messageBoxDeleteFail"));
                 }
-                else MessageBox.Show("No car has been selected to be deleted!");
+                else MessageBox.Show(this.lang.GetString("messageBoxNoDataSelectedDelete"));
             }
             catch(Exception ex)
             {
@@ -175,7 +175,7 @@ namespace MVC_ServiceAuto.Controller
                     List<Car> list = this.carRepository.SearchCarByOwner(this.vEmployee.GetSearch().Text);
                     if (list == null)
                     {
-                        MessageBox.Show("No car with desired owner!");
+                        MessageBox.Show(this.lang.GetString("messageBoxNoCarDesiredOwner"));
                     }
                     else
                     {
@@ -203,7 +203,7 @@ namespace MVC_ServiceAuto.Controller
                         this.vEmployee.GetCarTable().DataSource = dt;
                     }
                 }
-                else MessageBox.Show("Search bar is empty!");
+                else MessageBox.Show(this.lang.GetString("messageBoxSearchEmpty"));
             }
             catch (Exception ex)
             {
@@ -335,7 +335,7 @@ namespace MVC_ServiceAuto.Controller
                             this.vEmployee.GetCarTable().DataSource = dt;
                         }
                     }
-                    else MessageBox.Show("The cars from desired filter is empty!");
+                    else MessageBox.Show(this.lang.GetString("messageBoxNoDataDesiredFilter"));
 
                 }
             }
@@ -414,7 +414,7 @@ namespace MVC_ServiceAuto.Controller
                     if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
                         File.WriteAllText(saveFileDialog.FileName, sb.ToString());
-                        MessageBox.Show("File saved successfully!");
+                        MessageBox.Show(this.lang.GetString("messageBoxFileSaveSuccess"));
                     }
                 }
             }
@@ -469,7 +469,7 @@ namespace MVC_ServiceAuto.Controller
                         {
                             serializer.Serialize(writer, rows);
                         }
-                        MessageBox.Show("File saved successfully!");
+                        MessageBox.Show(this.lang.GetString("messageBoxFileSaveSuccess"));
                     }
                 }
             }
@@ -510,7 +510,7 @@ namespace MVC_ServiceAuto.Controller
                     {
                         dt.TableName = "Cars"; // Set the table name.
                         dt.WriteXml(saveFileDialog.FileName); // Write the DataTable to an XML file.
-                        MessageBox.Show("File saved successfully!");
+                        MessageBox.Show(this.lang.GetString("messageBoxFileSaveSuccess"));
                     }
                 }
             }
@@ -565,7 +565,7 @@ namespace MVC_ServiceAuto.Controller
 
                             body.Append(t);
                             document.Save();
-                            MessageBox.Show("File saved successfully!");
+                            MessageBox.Show(this.lang.GetString("messageBoxFileSaveSuccess"));
                         }
                     }
                 }
@@ -660,35 +660,35 @@ namespace MVC_ServiceAuto.Controller
             Debug.Print("Car ID: " + id);
             if (id == 0)
             {
-                MessageBox.Show("Car ID must be non-zero natural number!");
+                MessageBox.Show(this.lang.GetString("messageBoxCarIDNonZero"));
                 return null;
             }
             string owner = this.vEmployee.GetOwner().Text;
             Debug.Print("Car Owner: " + owner);
             if (owner == null || owner.Length == 0)
             {
-                MessageBox.Show("Car Owner is empty!");
+                MessageBox.Show(this.lang.GetString("messageBoxOwnerEmpty"));
                 return null;
             }
             string brand = this.vEmployee.GetBrand().Text;
             Debug.Print("Car Brand: " + brand);
             if (brand == null || brand.Length == 0)
             {
-                MessageBox.Show("Car Brand is empty!");
+                MessageBox.Show(this.lang.GetString("messageBoxBrandEmpty"));
                 return null;
             }
             string color = this.vEmployee.GetColor().Text;
             Debug.Print("Car Color: " + color);
             if (color == null || color.Length == 0)
             {
-                MessageBox.Show("Car Color is empty");
+                MessageBox.Show(this.lang.GetString("messageBoxColorEmpty"));
                 return null;
             }
             string fuel = this.vEmployee.GetFuel().Text;
             Debug.Print("Car Fuel: " + fuel);
             if (fuel == null || fuel.Length == 0)
             {
-                MessageBox.Show("Car Fuel is empty");
+                MessageBox.Show(this.lang.GetString("messageBoxFuelEmpty"));
                 return null;
             }
             return new Car(id, owner, brand, color, fuel);

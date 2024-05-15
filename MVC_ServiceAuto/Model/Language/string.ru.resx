@@ -219,20 +219,47 @@
   <data name="messageBoxAddSuccess" xml:space="preserve">
     <value>Добавление прошло успешно!</value>
   </data>
+  <data name="messageBoxBrand" xml:space="preserve">
+    <value>Марка автомобиля не указана!</value>
+  </data>
+  <data name="messageBoxCarIDNonZero" xml:space="preserve">
+    <value>ID автомобиля должен быть ненулевым натуральным числом!</value>
+  </data>
+  <data name="messageBoxColor" xml:space="preserve">
+    <value>Цвет автомобиля не указан!</value>
+  </data>
   <data name="messageBoxDeleteFail" xml:space="preserve">
     <value>Удаление завершилось неудачей!</value>
   </data>
   <data name="messageBoxDeleteSuccess" xml:space="preserve">
     <value>Удаление прошло успешно!</value>
   </data>
+  <data name="messageBoxFileSaveSuccess" xml:space="preserve">
+    <value>Файл успешно сохранен!</value>
+  </data>
+  <data name="messageBoxFuel" xml:space="preserve">
+    <value>Тип топлива автомобиля не указан!</value>
+  </data>
+  <data name="messageBoxNoCarDesiredOwner" xml:space="preserve">
+    <value>Нет данных с желаемым владельцем!</value>
+  </data>
   <data name="messageBoxNoData" xml:space="preserve">
     <value>В вашей таблице нет данных!</value>
+  </data>
+  <data name="messageBoxNoDataDesiredFilter" xml:space="preserve">
+    <value>Данные из желаемого фильтра пусты!</value>
   </data>
   <data name="messageBoxNoDataSelected" xml:space="preserve">
     <value>Нет данных, выбранных для обновления!</value>
   </data>
+  <data name="messageBoxNoDataSelectedDelete" xml:space="preserve">
+    <value>Данные для удаления не выбраны!</value>
+  </data>
   <data name="messageBoxNoUserDesiredRole" xml:space="preserve">
     <value>Нет пользователя с желаемой ролью!</value>
+  </data>
+  <data name="messageBoxOwnerEmpty" xml:space="preserve">
+    <value>Владелец автомобиля не указан!</value>
   </data>
   <data name="messageBoxPasswordEmpty" xml:space="preserve">
     <value>Пароль пуст!</value>
