@@ -270,6 +270,9 @@
   <data name="messageBoxSearchEmpty" xml:space="preserve">
     <value>Search Bar is empty!</value>
   </data>
+  <data name="messageBoxStatistics" xml:space="preserve">
+    <value>The list of cars is empty!</value>
+  </data>
   <data name="messageBoxUpdateFail" xml:space="preserve">
     <value>Updating ended with failure!</value>
   </data>

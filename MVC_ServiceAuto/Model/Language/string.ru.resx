@@ -270,6 +270,9 @@
   <data name="messageBoxSearchEmpty" xml:space="preserve">
     <value>Строка поиска пуста!</value>
   </data>
+  <data name="messageBoxStatistics" xml:space="preserve">
+    <value>Список автомобилей пуст!</value>
+  </data>
   <data name="messageBoxUpdateFail" xml:space="preserve">
     <value>Обновление завершилось неудачей!</value>
   </data>

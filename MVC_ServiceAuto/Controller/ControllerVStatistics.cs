@@ -119,7 +119,7 @@ namespace MVC_ServiceAuto.Controller
 
                 this.vStatistics.GetChart().Series[criterion].LegendText = "#VALX";
             }
-            else MessageBox.Show("The list of cars is empty!");
+            else MessageBox.Show(this.lang.GetString("messageBoxStatistics"));
 
 
             Debug.WriteLine("Done statistics!");

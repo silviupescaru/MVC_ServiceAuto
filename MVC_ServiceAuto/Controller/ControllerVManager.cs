@@ -124,7 +124,7 @@ namespace MVC_ServiceAuto.Controller
 
                         this.vManager.GetCarTable().DataSource = dt;
                     }
-                    else MessageBox.Show("There is no car with desired owner!");
+                    else MessageBox.Show(this.lang.GetString("messageBoxNoCarDesiredOwner"));
                 }
             }
             catch (Exception exception)
@@ -257,7 +257,7 @@ namespace MVC_ServiceAuto.Controller
                             this.vManager.GetCarTable().DataSource = dt;
                         }
                     }
-                    else MessageBox.Show("The cars from desired filter is empty!");
+                    else MessageBox.Show(this.lang.GetString("messageBoxNoDataDesiredFilter"));
 
                 }
             }
@@ -335,7 +335,7 @@ namespace MVC_ServiceAuto.Controller
                     if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
                         File.WriteAllText(saveFileDialog.FileName, sb.ToString());
-                        MessageBox.Show("File saved successfully!");
+                        MessageBox.Show(this.lang.GetString("messageBoxFileSaveSuccess"));
                     }
                 }
             }
@@ -391,7 +391,7 @@ namespace MVC_ServiceAuto.Controller
                         {
                             serializer.Serialize(writer, rows);
                         }
-                        MessageBox.Show("File saved successfully!");
+                        MessageBox.Show(this.lang.GetString("messageBoxFileSaveSuccess"));
                     }
                 }
             }
@@ -433,7 +433,7 @@ namespace MVC_ServiceAuto.Controller
                     {
                         dt.TableName = "Cars"; // Set the table name.
                         dt.WriteXml(saveFileDialog.FileName); // Write the DataTable to an XML file.
-                        MessageBox.Show("File saved successfully!");
+                        MessageBox.Show(this.lang.GetString("messageBoxFileSaveSuccess"));
                     }
                 }
             }
@@ -489,7 +489,7 @@ namespace MVC_ServiceAuto.Controller
 
                             body.Append(t);
                             document.Save();
-                            MessageBox.Show("File saved successfully!");
+                            MessageBox.Show(this.lang.GetString("messageBoxFileSaveSuccess"));
                         }
                     }
                 }
