@@ -116,6 +116,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="View\VAdministrator.resx">
       <DependentUpon>VAdministrator.cs</DependentUpon>
@@ -179,6 +180,8 @@
     <Content Include="resources\cars\Volvo_Yellow.jpg" />
     <Content Include="resources\employeeBG.jpg" />
     <Content Include="resources\employeeBG1.jpg" />
+    <None Include="resources\statisticsBG.jpg" />
+    <None Include="resources\loginBG.jpg" />
     <Content Include="resources\loginNebun.jpg" />
     <Content Include="resources\loginNebun1.jpg" />
     <Content Include="resources\managerBG.jpg" />

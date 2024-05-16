@@ -31,7 +31,6 @@ namespace MVC_ServiceAuto.View
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VLogin));
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.buttonLogin = new System.Windows.Forms.Button();
@@ -44,7 +43,7 @@ namespace MVC_ServiceAuto.View
             // textBoxUsername
             // 
             this.textBoxUsername.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsername.Location = new System.Drawing.Point(592, 344);
+            this.textBoxUsername.Location = new System.Drawing.Point(546, 372);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(182, 22);
             this.textBoxUsername.TabIndex = 0;
@@ -52,7 +51,7 @@ namespace MVC_ServiceAuto.View
             // textBoxPassword
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(592, 376);
+            this.textBoxPassword.Location = new System.Drawing.Point(546, 430);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(182, 22);
@@ -61,7 +60,7 @@ namespace MVC_ServiceAuto.View
             // buttonLogin
             // 
             this.buttonLogin.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogin.Location = new System.Drawing.Point(580, 437);
+            this.buttonLogin.Location = new System.Drawing.Point(569, 475);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(135, 35);
             this.buttonLogin.TabIndex = 2;
@@ -76,7 +75,7 @@ namespace MVC_ServiceAuto.View
             "English",
             "French",
             "Russian"});
-            this.comboBoxChangeLanguage.Location = new System.Drawing.Point(892, 203);
+            this.comboBoxChangeLanguage.Location = new System.Drawing.Point(546, 317);
             this.comboBoxChangeLanguage.Name = "comboBoxChangeLanguage";
             this.comboBoxChangeLanguage.Size = new System.Drawing.Size(129, 24);
             this.comboBoxChangeLanguage.TabIndex = 3;
@@ -87,7 +86,7 @@ namespace MVC_ServiceAuto.View
             this.labelChangeLanguage.BackColor = System.Drawing.Color.Transparent;
             this.labelChangeLanguage.Font = new System.Drawing.Font("Montserrat SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelChangeLanguage.ForeColor = System.Drawing.Color.White;
-            this.labelChangeLanguage.Location = new System.Drawing.Point(737, 206);
+            this.labelChangeLanguage.Location = new System.Drawing.Point(542, 293);
             this.labelChangeLanguage.Name = "labelChangeLanguage";
             this.labelChangeLanguage.Size = new System.Drawing.Size(149, 21);
             this.labelChangeLanguage.TabIndex = 4;
@@ -99,7 +98,7 @@ namespace MVC_ServiceAuto.View
             this.labelUsername.BackColor = System.Drawing.Color.Transparent;
             this.labelUsername.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsername.ForeColor = System.Drawing.Color.White;
-            this.labelUsername.Location = new System.Drawing.Point(723, 309);
+            this.labelUsername.Location = new System.Drawing.Point(542, 347);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(96, 22);
             this.labelUsername.TabIndex = 5;
@@ -111,7 +110,7 @@ namespace MVC_ServiceAuto.View
             this.labelPassword.BackColor = System.Drawing.Color.Transparent;
             this.labelPassword.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPassword.ForeColor = System.Drawing.Color.White;
-            this.labelPassword.Location = new System.Drawing.Point(800, 344);
+            this.labelPassword.Location = new System.Drawing.Point(542, 405);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(91, 22);
             this.labelPassword.TabIndex = 6;
@@ -121,8 +120,8 @@ namespace MVC_ServiceAuto.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BackgroundImage = global::MVC_ServiceAuto.Properties.Resources.loginBG;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1267, 717);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.labelUsername);
