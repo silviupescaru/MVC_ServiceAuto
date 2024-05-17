@@ -49,7 +49,7 @@ namespace MVC_ServiceAuto.View
         {
             LangHelper lang = (LangHelper)subj;
 
-            //this.labelChangeLanguage.Text = lang.GetString("labelChangeLanguage");
+            this.labelChangeLanguage.Text = lang.GetString("labelChangeLanguage");
             this.buttonLogin.Text = lang.GetString("buttonLogin");
             this.labelUsername.Text = lang.GetString("labelUsername");
             this.labelPassword.Text = lang.GetString("labelPassword");

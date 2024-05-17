@@ -276,7 +276,7 @@
   <data name="messageBoxUpdateFail" xml:space="preserve">
     <value>Обновление завершилось неудачей!</value>
   </data>
-  <data name="messageBoxUpdateSucess" xml:space="preserve">
+  <data name="messageBoxUpdateSuccess" xml:space="preserve">
     <value>Обновление прошло успешно!</value>
   </data>
   <data name="messageBoxUserIDNonZero" xml:space="preserve">

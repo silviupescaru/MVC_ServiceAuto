@@ -18,9 +18,14 @@ namespace MVC_ServiceAuto.Model.Repository
 
         public bool AddUser(User user)
         {
+
+            Debug.WriteLine(user.Username);
+            Debug.WriteLine(user.Password);
+            Debug.WriteLine(user.Role);
+
             string commandSQL = "insert into [User] values('";
             commandSQL += user.Username + "','" + user.Password + "','" + user.Role;
-            commandSQL += "','" + "');";
+            commandSQL += "')";
             return this.repository.CommandSQL(commandSQL);
         }
 

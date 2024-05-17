@@ -273,7 +273,7 @@
   <data name="messageBoxUpdateFail" xml:space="preserve">
     <value>La mise à jour a échoué!</value>
   </data>
-  <data name="messageBoxUpdateSucess" xml:space="preserve">
+  <data name="messageBoxUpdateSuccess" xml:space="preserve">
     <value>La mise à jour a réussi!</value>
   </data>
   <data name="messageBoxUserIDNonZero" xml:space="preserve">

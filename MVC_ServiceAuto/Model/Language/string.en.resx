@@ -276,7 +276,7 @@
   <data name="messageBoxUpdateFail" xml:space="preserve">
     <value>Updating ended with failure!</value>
   </data>
-  <data name="messageBoxUpdateSucess" xml:space="preserve">
+  <data name="messageBoxUpdateSuccess" xml:space="preserve">
     <value>Updating was successful!</value>
   </data>
   <data name="messageBoxUserIDNonZero" xml:space="preserve">
